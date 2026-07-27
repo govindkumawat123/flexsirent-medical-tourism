@@ -61,6 +61,10 @@
   color: var(--text_707070);
 }
 
+.ct_text_444E77{
+  color: #444E77;
+}
+
 .ct_text_op_6 {
   opacity: 0.6;
 }
@@ -783,7 +787,7 @@ textarea {
   gap: 20px; */
   background-color: #fff;
   padding-inline: 5px !important;
-  padding-block: 5px !important;
+  padding-block: 10px !important;
   border-radius: 100px !important;
   margin-top: 35px;
   -webkit-box-align: center;
@@ -4756,4 +4760,10 @@ color: #475569;
 .declaration_box .ct_custom_check label{
   font-size: 14px;
   color: #374151;
+}
+
+.why_host_confi_img img{
+  max-height: 56px;
+  max-width: 56px;
+  object-fit: contain;
 }
