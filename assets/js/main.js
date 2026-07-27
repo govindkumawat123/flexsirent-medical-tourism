@@ -98,3 +98,16 @@ $(document).ready(function () {
     $(".ct_mobile_filter_category_content").removeClass("active");
   });
 });
+
+
+flatpickr("#appointmentCalendar", {
+  inline: true,
+
+  mode: "multiple",
+
+  minDate: "today",
+
+  appendTo: document.getElementById("calendarWrapper"),
+
+  dateFormat: "Y-m-d",
+});

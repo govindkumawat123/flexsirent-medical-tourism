@@ -4718,3 +4718,167 @@ button.ct_show_all_images_btn:hover {
 .ct_review_badge span{
     color: #191C1D;
 }
+
+
+.ct_stats_card{
+    background: #fff;
+    border: 1px solid #D8DDE3;
+    border-radius: 18px;
+    padding: 22px 15px;
+    text-align: center;
+    height: 100%;
+    transition: .3s ease;
+}
+
+.ct_stats_card:hover{
+    border-color: var(--orange);
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transform: translateY(-4px);
+}
+
+.ct_stats_icon{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 22px;
+}
+
+.ct_stats_card h3{
+    color: #191C1D;
+    line-height: 1.1;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.ct_stats_card p{
+    letter-spacing: 1;
+    font-weight: 400;
+    color: #3D4947;
+    font-size: 12px;
+}
+
+
+
+.ct_booking_card{
+    background:#fff;
+    border-radius:18px;
+    padding:24px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.ct_info_btn{
+    border:none;
+    background:transparent;
+    color:var(--orange);
+    font-size:22px;
+}
+
+.ct_price_box{
+    background:#F6F6F6;
+    border-radius:10px;
+    padding:15px 18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+}
+
+.ct_price_box span{
+    color:#666;
+}
+
+.ct_price_box strong{
+    font-size:22px;
+}
+
+
+/* Flatpickr */
+
+.flatpickr-calendar{
+    width:100% !important;
+    box-shadow:none;
+    border:1px solid #e5e5e5;
+    border-radius:14px;
+}
+
+.flatpickr-month{
+    background:#f7f7f7;
+}
+
+.flatpickr-current-month{
+    font-size:16px;
+}
+
+.flatpickr-day.selected{
+    background:var(--orange);
+    border-color:var(--orange);
+}
+
+.flatpickr-day.selected:hover{
+    background:var(--orange);
+}
+
+.flatpickr-day.today{
+    border-color:var(--orange);
+}
+
+.flatpickr-rContainer{
+    width:100%;
+}
+
+.dayContainer{
+    width:100%;
+    min-width:100%;
+    max-width:100%;
+}
+
+.flatpickr-days{
+    width:100%;
+}
+
+
+
+.ct_doctor_card{
+    background:#fff;
+    border:1px solid #D8DDE3;
+    border-radius:18px;
+    padding:18px 20px;
+    transition:.3s ease;
+    height:100%;
+}
+
+.ct_doctor_card:hover{
+    border-color:var(--orange);
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transform:translateY(-5px);
+}
+
+.ct_doctor_img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+.ct_doctor_card h5{
+    font-size:20px;
+    line-height:1.2;
+}
+
+.ct_doctor_card small{
+    color:#000;
+    display:block;
+    margin-top:2px;
+}
+
+.ct_doctor_card h6{
+    font-size:18px;
+    font-weight:600;
+    color:#222;
+}
+
