@@ -4731,6 +4731,8 @@ row-gap: 16px;
 column-gap: 4px;
 
 flex-wrap: wrap;
+max-height: 240px;
+overflow-y: auto;
 }
 
 .clinic_facility_select_box_desc{
