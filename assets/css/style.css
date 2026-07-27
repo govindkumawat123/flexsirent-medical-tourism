@@ -5191,3 +5191,18 @@ color: #475569;
     }
 
 }
+
+.copyright_sec{
+  display: flex;
+  margin-top: 60px;
+  color: #fff;
+  justify-content: space-between;
+}
+.copyright_sec ul{
+  display: flex;
+
+  color: #0073D1;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 20px;
+}
