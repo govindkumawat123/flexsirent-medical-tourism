@@ -3220,6 +3220,7 @@ span.ct_pricing_badge {
 #become_host_form_success .modal-content {
   position: relative;
   z-index: 1;
+  border-radius: 30px;
 }
 
 #become_host_form_success .modal-content:before {
@@ -3234,6 +3235,7 @@ span.ct_pricing_badge {
   opacity: 0.1;
   background-position: top;
   background-size: contain;
+  border-radius: 30px;
 }
 
 .ct_apply_filter_btn {
