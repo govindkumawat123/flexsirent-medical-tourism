@@ -11,7 +11,10 @@
   .ct_host_process_bg {
     padding: 107px 80px;
   }
-   
+   ul#ct_bhk_drop {
+    max-width: 250px;
+    min-width: 250px;
+}
 }
 @media screen and (max-width: 991px) {
   .ct_navbar > ul {

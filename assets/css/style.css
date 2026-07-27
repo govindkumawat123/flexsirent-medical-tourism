@@ -5221,3 +5221,8 @@ color: #475569;
   gap: 16px;
   font-size: 20px;
 }
+
+ul#ct_bhk_drop {
+    max-width: 331px;
+    min-width: 331px;
+}
