@@ -218,7 +218,7 @@ input[type="number"] {
 }
 
 .ct_fs_12 {
-  font-style: 12px;
+  font-size: 12px;
 }
 
 .ct_fs_16 {
@@ -294,13 +294,13 @@ input[type="number"] {
 
 /* Custom Scroll Css E */
 
-.form-control:focus {
+.form-control:focus , .form-select:focus {
   -webkit-box-shadow: unset;
           box-shadow: unset;
   border-color: var(--orange);
 }
 
-.form-control {
+.form-control  {
   -webkit-appearance: auto;
      -moz-appearance: auto;
           appearance: auto;
@@ -2314,27 +2314,27 @@ span.ct_pricing_badge {
   padding: 107px 115px;
   border-radius: 20px;
   z-index: 1;
-  position: relative;
+  position: relative !important;
 }
 
 .ct_host_process_bg:after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
+  bottom: 60px;
+  left: 20px;
   width: 100%;
   height: 100%;
   background-image: url(../img/vector_8.png);
   z-index: -1;
-  opacity: 0.1;
+  opacity: 0.5;
   background-position: top;
   background-size: contain;
-  max-width: 600px;
-  max-height: 600px;
+  max-width: 400px;
+  max-height: 250px;
   background-repeat: no-repeat;
-  -webkit-transform: translate(-50%, -50%);
+  /* -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); */
 }
 
 .ct_listing_white_bg {
@@ -2414,11 +2414,11 @@ span.ct_pricing_badge {
 
 .ct_custom_check .form-check-input:checked[type="checkbox"] {
   background-image: url(../img/check_icon_orange.svg);
-  background-color: var(--orange) !important;
+  background-color: transparent !important;
 }
 
 .ct_custom_check .form-check-input:checked {
-  background-color: var(--orange) !important;
+  background-color: transparent !important;
   border-color: var(--orange) !important;
 }
 
@@ -3120,7 +3120,7 @@ span.ct_pricing_badge {
 .ct_upload_product_main {
   border: 2px dashed #d1d5db;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: transparent;
   height: 165px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3139,9 +3139,9 @@ span.ct_pricing_badge {
 }
 
 .ct_browse_btn {
-  background-color: #f3f4f6;
-  padding: 9px 20px;
-  font-weight: 500;
+  background-color: #2828280F;
+  padding: 8px 18px;
+  font-weight: 400;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -4882,3 +4882,35 @@ button.ct_show_all_images_btn:hover {
     color:#222;
 }
 
+.clinic_facility_select_box{
+  background: #FFFFFF08;
+border: 1px solid #D3DCE8;
+border-radius: 10px;
+padding: 14px;
+display: flex;
+row-gap: 16px;
+column-gap: 4px;
+
+flex-wrap: wrap;
+}
+
+.clinic_facility_select_box_desc{
+border: 1px solid #E5E7EB;
+background: #FFFFFF;
+
+border-radius: 8px;
+padding: 6px 12px;
+color: #475569;
+}
+
+
+.declaration_box{
+  background: #EF7F1829;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.declaration_box .ct_custom_check label{
+  font-size: 14px;
+  color: #374151;
+}
