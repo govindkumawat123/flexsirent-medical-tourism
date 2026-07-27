@@ -2845,6 +2845,7 @@ span.ct_pricing_badge {
   width: 100%;
   margin-inline: auto;
   gap: 20px;
+  overflow-x: auto;
 }
 
 #ct_form_progressbar .active {
@@ -3121,7 +3122,7 @@ span.ct_pricing_badge {
   border: 2px dashed #d1d5db;
   border-radius: 5px;
   background-color: transparent;
-  height: 165px;
+  height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
