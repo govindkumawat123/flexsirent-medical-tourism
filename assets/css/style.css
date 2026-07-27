@@ -61,6 +61,10 @@
   color: var(--text_707070);
 }
 
+.ct_text_444E77{
+  color: #444E77;
+}
+
 .ct_text_op_6 {
   opacity: 0.6;
 }
@@ -783,7 +787,7 @@ textarea {
   gap: 20px; */
   background-color: #fff;
   padding-inline: 5px !important;
-  padding-block: 5px !important;
+  padding-block: 10px !important;
   border-radius: 100px !important;
   margin-top: 35px;
   -webkit-box-align: center;
@@ -2845,6 +2849,7 @@ span.ct_pricing_badge {
   width: 100%;
   margin-inline: auto;
   gap: 20px;
+  overflow-x: auto;
 }
 
 #ct_form_progressbar .active {
@@ -3121,7 +3126,7 @@ span.ct_pricing_badge {
   border: 2px dashed #d1d5db;
   border-radius: 5px;
   background-color: transparent;
-  height: 165px;
+  height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3219,6 +3224,7 @@ span.ct_pricing_badge {
 #become_host_form_success .modal-content {
   position: relative;
   z-index: 1;
+  border-radius: 30px;
 }
 
 #become_host_form_success .modal-content:before {
@@ -3233,6 +3239,7 @@ span.ct_pricing_badge {
   opacity: 0.1;
   background-position: top;
   background-size: contain;
+  border-radius: 30px;
 }
 
 .ct_apply_filter_btn {
@@ -4893,6 +4900,8 @@ row-gap: 16px;
 column-gap: 4px;
 
 flex-wrap: wrap;
+max-height: 240px;
+overflow-y: auto;
 }
 
 .clinic_facility_select_box_desc{
@@ -5110,6 +5119,11 @@ color: #475569;
 .ct_review_next:hover{
     background:#000;
 }
+.why_host_confi_img img{
+  max-height: 56px;
+  max-width: 56px;
+  object-fit: contain;
+}
 
 /* Responsive */
 
@@ -5136,4 +5150,5 @@ color: #475569;
       gap: 10px;
       margin-top: 20px;
     }
-}
+
+  }
