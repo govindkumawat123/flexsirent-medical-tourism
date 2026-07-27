@@ -272,6 +272,7 @@ input[type="number"] {
 
 .ct_h_50 {
   min-height: 50px;
+  height: 50px;
 }
 
 /* all font size css E */
@@ -5127,28 +5128,66 @@ color: #475569;
 
 /* Responsive */
 
-@media(max-width:575px){
 
-    .ct_review_slider{
-        padding-inline:0;
+.ct_booking_summary{
+    background:#fff;
+    border-radius:16px;
+}
+
+.ct_summary_item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    padding:18px 0;
+    border-bottom:1px solid #D9DDE3;
+}
+
+.ct_summary_icon{
+    width:36px;
+    height:36px;
+    border-radius:8px;
+    background:#EF7F1833;
+    color:var(--orange);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    font-size:16px;
+}
+
+.ct_summary_doctor{
+    width:40px !important;
+    height:40px !important;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+.ct_summary_item h5{
+    font-size:16px;
+    color:#222;
+}
+
+.ct_summary_item p{
+    font-size:15px;
+    margin-top:2px;
+}
+
+@media(max-width:767px){
+
+    .ct_summary_item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
     }
 
-   
-    .ct_review_slider{
-      width: 100%;
-    }
-    .ct_review_prev, .ct_review_next{
-      position: unset;
-      width: 35px;
-      height: 35px;
-      transform: unset;
-    }
-    .ct_responsive_nav{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 20px;
+    .ct_summary_item .text-end{
+        text-align:left !important;
     }
 
-  }
+    .ct_summary_item h5{
+        font-size:18px;
+    }
+
+}

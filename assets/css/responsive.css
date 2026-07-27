@@ -328,4 +328,26 @@
   .ct_avalable_table td {
     font-size: 14px;
   }
+
+      .ct_review_slider{
+        padding-inline:0;
+    }
+
+   
+    .ct_review_slider{
+      width: 100%;
+    }
+    .ct_review_prev, .ct_review_next{
+      position: unset;
+      width: 35px;
+      height: 35px;
+      transform: unset;
+    }
+    .ct_responsive_nav{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
 }
