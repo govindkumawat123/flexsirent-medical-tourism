@@ -1,0 +1,777 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="assets/img/fav_icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="assets/img/fav_icon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Flexsirent Medical Tourism</title>
+  </head>
+  <body>
+    <header class="ct_header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="ct_navbr_main">
+              <div class="ct_logo">
+                <a href="home.html"
+                  ><img loading="lazy" src="assets/img/logo.svg" alt=""
+                /></a>
+              </div>
+              <div class="ct_navbar">
+                <ul>
+                  <div class="ct_close_menu">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a class="active" href="clinics.html">Clinics</a></li>
+                  <li>
+                    <a class="" href="join-us-clinic.html">Join as Clinic</a>
+                  </li>
+                  <li><a href="blog.html" class="">Blogs</a></li>
+                  <li><a href="help.html" class="">Help</a></li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <li class="d-flex align-items-center">
+                  <div
+                    class="mb-0"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="d-flex align-items-center gap-1">
+                      <div class="dropdown ct_login_dropdown ct_cursor_pointer">
+                        <span
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          data-bs-target="#ct_login_modal"
+                          class=""
+                          ><span>Sign Up</span> |</span
+                        >
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Sign up as Patient</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Sign up as Clinic</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown ct_login_dropdown ct_cursor_pointer">
+                        <span
+                          id="dropdownMenuButton2"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          ><span>Login</span></span
+                        >
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton2"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Login as Patient</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Login as Clinic</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <div class="ct_menu_bar">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+
+    <section class="py-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ct_multistep_form_card  pt-4  mt-3 mb-3 ct_host_process_bg">
+                            <form id="msform">
+                                <!-- progressbar -->
+                                <ul id="ct_form_progressbar" class="ct_host_process_multi_form">
+                                    <li class="active ct_flex_1">
+                                        <h5>Step 1</h5>
+                                    </li>
+                                    <li class="ct_flex_1">
+                                        <h5>Step 2</h5>
+                                    </li>
+                                    <li class="ct_flex_1">
+                                        <h5>Step 3</h5>
+                                    </li>
+                                    <li id="ct_pricing">
+                                        <h5>Step 4</h5>
+                                    </li>
+                                </ul>
+                                <fieldset class="ct_mt_60">
+                                    <div class="ct_form-card">
+                                        <h2 class="ct_fs_35 ct_fw_600 mb-2">1. Tell Us About Yourself</h2>
+                                        <p class="ct_text_op_8 mb-0">
+                                            Help us get to know you—share your contact details and
+                                        what kind of host you are.
+                                        </p>
+                                        <div class="row mt-5">
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">First Name</label>
+                                                    <input type="text" placeholder="First Name" class="form-control ct_input ct_input ct_input_h_50">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">Last Name</label>
+                                                    <input type="text" placeholder="Last Name" class="form-control ct_input ct_input_h_50">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">Email Address</label>
+                                                    <input type="email" placeholder="Email Address" class="form-control ct_input ct_input_h_50">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">Phone Number</label>
+                                                    <input type="number" placeholder="Phone Number" class="form-control ct_input ct_input_h_50">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">Property Type</label>
+                                                    <select type="text" placeholder="Last Name" class="form-control ct_input ct_input_h_50">
+                                                        <option value="">Land</option>
+                                                        <option value="">House</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">Are You a</label>
+                                                    <div>
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault"
+                                                                >
+                                                            </div>
+                                                            <label for="">Individual Owner</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault"
+                                                                >
+                                                            </div>
+                                                            <label for="">Property Manager</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <input type="button" name="next" class="ct_form_next action-button" value="Next" /> -->
+                                    <button type="button" class="ct_orange_btn ct_form_next float-end">Next</button>
+                                    <a href="become-a-host-process.html" class="ct_outline_btn previous float-end me-3">Back</a>
+                                </fieldset>
+                                <fieldset class="ct_mt_60">
+                                    <div class="ct_form-card">
+                                        <h2 class="ct_fs_35 ct_fw_600 mb-2">2. Describe Your Space</h2>
+                                        <p class="ct_text_op_8 mb-0">
+                                            Add essential details about your property so we can
+                                        present it clearly to potential guests.
+                                        </p>
+                                        <div class="row mt-5">
+                                            <div class="col-md-12">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">Property Title</label>
+                                                    <input type="text" placeholder="Property Title" class="form-control ct_input ct_input ct_input_h_50">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">Location</label>
+                                                    <select type="text" placeholder="Last Name" class="form-control ct_input ct_input_h_50">
+                                                        <option>Uk</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">Total Bedrooms</label>
+                                                    <div class="position-relative ">
+                                                        <div class="ct_increase_btn ct_input_icon_left">
+                                                            -
+                                                        </div>
+                                                       
+                                                        <input type="email" placeholder="0" class="form-control ct_input ct_input_h_50 ct_input_px_60 text-center">
+                                                        <div class="ct_decrease_btn  ct_show_eye">
+                                                            +
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">Total Bathrooms</label>
+                                                    <div class="position-relative overflow-hidden">
+                                                        <div class="ct_increase_btn  ct_input_icon_left">
+                                                            -
+                                                        </div>
+                                                        
+                                                        <input type="email" placeholder="0" class="form-control ct_input ct_input_h_50 ct_input_px_60 text-center">
+                                                        <div class="ct_decrease_btn ct_show_eye">
+                                                            +
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">Total Beds Available</label>
+                                                    <div class="position-relative overflow-hidden">
+                                                        <div class="ct_increase_btn ct_input_icon_left">
+                                                            -
+                                                        </div>
+                                                        <input type="email" placeholder="0" class="form-control ct_input ct_input_h_50 ct_input_px_60 text-center">
+                                                        
+                                                        <div class="ct_decrease_btn  ct_show_eye">
+                                                            +
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">Square Footage</label>
+                                                    <div class="position-relative overflow-hidden">
+                                                        <div class="ct_increase_btn  ct_input_icon_left">
+                                                            -
+                                                        </div>
+                                                        <input type="email" placeholder="0" class="form-control ct_input ct_input_h_50 ct_input_px_60 text-center">
+                                                       
+                                                        <div class="ct_decrease_btn ct_show_eye">
+                                                            +
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">Property Description</label>
+                                                    <textarea
+                                                        type="text"
+                                                        placeholder="Property Description"
+                                                        rows="4"
+                                                        class="form-control ct_input ct_input ct_input_h_50 h-auto"
+                                                        aria-placeholder=""
+                                                    ></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group mb-4">
+                                                    <label for="" class="mb-2 ct_fw_400">Upload Images & Videos</label>
+                                                    <div class="ct_upload_product_main">
+                                                        <svg
+                                                            width="33"
+                                                            height="33"
+                                                            viewBox="0 0 33 33"
+                                                            fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path
+                                                                d="M5.87174 22.0167C4.26376 20.9403 3.20508 19.1073 3.20508 17.027C3.20508 13.9023 5.59376 11.3354 8.64473 11.0528C9.26883 7.25653 12.5654 4.36035 16.5384 4.36035C20.5114 4.36035 23.808 7.25653 24.4321 11.0528C27.4831 11.3354 29.8717 13.9023 29.8717 17.027C29.8717 19.1073 28.8131 20.9403 27.2051 22.0167M11.2051 21.6937L16.5384 16.3604M16.5384 16.3604L21.8717 21.6937M16.5384 16.3604V28.3604"
+                                                                stroke="#9CA3AF"
+                                                                stroke-width="2.66667"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                            ></path>
+                                                        </svg>
+                                                        <p class="text-center ct_fs_18 ct_text_op_6 mb-0">
+                                                            Upload Your
+                                                        Images & Videos
+                                                        here
+                                                        </p>
+                                                        <label for="ct_upload_product">
+                                                            <input
+                                                                type="file"
+                                                                name=""
+                                                                id="ct_upload_product"
+                                                                class="d-none"
+                                                            >
+                                                            <div class="ct_browse_btn mt-3">
+                                                                <span>Browse Files</span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="ct_multiple_img_div ct_custom_scroll d-none">
+                                                        <div class="ct_uploaded_img123 position-relative ">
+                                                            <div class="ct_uploaded_img_w">
+                                                                <img src="../assets/img/apartments/apartment_detail_small_1.png" alt="">
+                                                                <i class="fa-solid fa-xmark"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ct_uploaded_img123 position-relative ">
+                                                            <div class="ct_uploaded_img_w">
+                                                                <img src="../assets/img/apartments/apartment_detail_small_1.png" alt="">
+                                                                <i class="fa-solid fa-xmark"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ct_uploaded_img123 position-relative ">
+                                                            <div class="ct_uploaded_img_w">
+                                                                <img src="../assets/img/apartments/apartment_detail_small_1.png" alt="">
+                                                                <i class="fa-solid fa-xmark"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ct_uploaded_img123 position-relative ">
+                                                            <div class="ct_uploaded_img_w">
+                                                                <video width="100" height="100" controls>
+                                                                    <source src="https://youtu.be/9xwazD5SyVg?si=FBRmGuM69BoRrXvp" type="video/mp4">
+                                                                </video>
+                                                                <i class="fa-solid fa-xmark"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ct_uploaded_img123 position-relative ">
+                                                            <div class="ct_uploaded_img_w">
+                                                                <img src="../assets/img/apartments/apartment_detail_small_1.png" alt="">
+                                                                <i class="fa-solid fa-xmark"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="ct_uploaded_img123 position-relative ">
+                                                            <div class="ct_uploaded_img_w">
+                                                                <img src="../assets/img/apartments/apartment_detail_small_1.png" alt="">
+                                                                <i class="fa-solid fa-xmark"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <input type="button" name="previous" class="previous" value="Previous" />
+                                <input type="button" name="next" class="ct_form_next" value="Next" /> -->
+                                    <br>
+                                    <br>
+                                    <button type="button" class="ct_orange_btn ct_form_next float-end">Next</button>
+                                    <button type="button" class="ct_outline_btn previous float-end me-3">Back</button>
+                                </fieldset>
+                                <fieldset class="ct_mt_60">
+                                    <div class="ct_form-card">
+                                        <h2 class="ct_fs_35 ct_fw_600 mb-2">3. What’s Included & Who’s It For?</h2>
+                                        <p class="ct_text_op_8 mb-0">
+                                            Let renters know what they’ll get and set expectations
+                                        with amenities and house rules.
+                                        </p>
+                                        <div class="row mt-5">
+                                            <div class="col-md-12">
+                                                <div class="mb-4">
+                                                    <p class="ct_fs_18 ct_fw_500 mb-2">Amenities</p>
+                                                    <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault"
+                                                                >
+                                                            </div>
+                                                            <label for="">Air Conditioned</label>
+                                                        </div>
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault2"
+                                                                >
+                                                            </div>
+                                                            <label for="">Wi-Fi</label>
+                                                        </div>
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault3"
+                                                                >
+                                                            </div>
+                                                            <label for="">Laundry</label>
+                                                        </div>
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault4"
+                                                                >
+                                                            </div>
+                                                            <label for="">Parking</label>
+                                                        </div>
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault5"
+                                                                >
+                                                            </div>
+                                                            <label for="">Kitchen Access</label>
+                                                        </div>
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault6"
+                                                                >
+                                                            </div>
+                                                            <label for="">CCTV</label>
+                                                        </div>
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault7"
+                                                                >
+                                                            </div>
+                                                            <label for="">Furnished</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <p class="ct_fs_18 ct_fw_500 mb-2">Safety Amenities</p>
+                                                    <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault"
+                                                                >
+                                                            </div>
+                                                            <label for="">Smoke Detector</label>
+                                                        </div>
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault2"
+                                                                >
+                                                            </div>
+                                                            <label for="">Carbon Monoxide Detector</label>
+                                                        </div>
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault3"
+                                                                >
+                                                            </div>
+                                                            <label for="">First Aid Kit</label>
+                                                        </div>
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault4"
+                                                                >
+                                                            </div>
+                                                            <label for="">Safety Card</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <p class="ct_fs_18 ct_fw_500 mb-2">Who Is It Ideal For?</p>
+                                                    <div class="d-flex align-items-center gap-3 flex-wrap">
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault"
+                                                                >
+                                                            </div>
+                                                            <label for="">Students</label>
+                                                        </div>
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault2"
+                                                                >
+                                                            </div>
+                                                            <label for="">Digital Nomads</label>
+                                                        </div>
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault3"
+                                                                >
+                                                            </div>
+                                                            <label for="">Couples</label>
+                                                        </div>
+                                                        <div class="d-flex align-items-center gap-1">
+                                                            <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                                                <input
+                                                                    class="form-check-input"
+                                                                    type="checkbox"
+                                                                    value=""
+                                                                    id="flexCheckDefault4"
+                                                                >
+                                                            </div>
+                                                            <label for="">Families</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 mb-4">
+                                                        <div class="form-group">
+                                                            <label for="" class="mb-2 ct_fw_500">Check In</label>
+                                                            <input type="time" class="form-control ct_input ct_input_h_50">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mb-4">
+                                                        <div class="form-group">
+                                                            <label for="" class="mb-2 ct_fw_500">Check Out</label>
+                                                            <input type="time" class="form-control ct_input ct_input_h_50">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-4">
+                                                        <div class="form-group">
+                                                            <label for="" class="mb-2 ct_fw_500">House Rules</label>
+                                                            <textarea class="form-control ct_input ct_input_h_50 h-auto" rows="4" placeholder="House Rules"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <input type="button" name="previous" class="previous" value="Previous" />
+                                <input type="button" name="next" class="ct_form_next" value="Next" /> -->
+                                    <br>
+                                    <br>
+                                    <button type="button" class="ct_orange_btn ct_form_next float-end">Next</button>
+                                    <button type="button" class="ct_outline_btn previous float-end me-3">Back</button>
+                                </fieldset>
+                                <fieldset>
+                                    <div class="ct_form-card">
+                                        <h2 class="ct_fs_35 ct_fw_600 mb-2">4. Set Your Price & Open Your Calendar</h2>
+                                        <p class="ct_text_op_8 mb-0">
+                                            Add your monthly rent, deposit details, and
+                                        availability dates to start hosting with ease.
+                                        </p>
+                                        <div class="row mt-5">
+                                            <div class="col-md-12">
+                                                <div class="row">
+                                                    <div class="col-md-12 mb-4">
+                                                        <div class="form-group">
+                                                            <label for="" class="mb-2 ct_fw_500">Monthly Rent</label>
+                                                            <div class="position-relative">
+                                                                <input type="number" class="form-control ct_input ct_input_h_50" placeholder="0.00">
+                                                                <span class="ct_show_eye">€</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-4">
+                                                        <div class="form-group">
+                                                            <label for="" class="mb-2 ct_fw_500">Security Deposit</label>
+                                                            <div class="position-relative">
+                                                                <input type="number" class="form-control ct_input ct_input_h_50" placeholder="0.00">
+                                                                <span class="ct_show_eye">€</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-4">
+                                                        <div class="form-group">
+                                                            <label for="" class="mb-2 ct_fw_500">Available From</label>
+                                                            <input type="date" class="form-control ct_input ct_input_h_50">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 mb-4">
+                                                        <div class="form-group">
+                                                            <label for="" class="mb-2 ct_fw_500">
+                                                                Minimum Stay
+                                                            Duration
+                                                            </label>
+                                                            <select class="form-control ct_input ct_input_h_50">
+                                                                <option value="">30 Days</option>
+                                                                <option value="">60 Days</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <button
+                                        type="button"
+                                        class="ct_orange_btn  float-end"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#become_host_form_success"
+                                    >Submit
+                                    </button>
+                                    <button type="button" class="ct_outline_btn previous float-end me-3">Back</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- news later section S -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="ct_newsletter_bg">
+              <img
+                src="../assets/img/newletter_left_img.png"
+                alt=""
+                class="ct_flex_shrink_0"
+              />
+              <div class="ct_py_70 ct_py_0_res_991">
+                <h4 class="ct_fs_24 ct_fw_600">Stay in the Loop</h4>
+                <p class="mb-0">
+                  Get exclusive updates, property highlights, and hosting tips
+                  delivered to your inbox.
+                </p>
+              </div>
+              <div class="">
+                <p class="mb-3">Never miss a new listing or a special offer.</p>
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="form-control ct_input ct_input_h_50 ct_border_radius_100 ct_pe_120"
+                    placeholder="Enter Email"
+                  />
+                  <button class="ct_subscribe_btn">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section S -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5 col-md-5 mb-4 mb-lg-0">
+            <div class="ct_footer_left_info">
+              <a href="index.html" class="ct_footer_logo">
+                <img src="../assets/img/logo.svg" alt="" />
+              </a>
+              <p class="my-4 text-white">
+                Mid‑term homes for students & nomads—direct from hosts. Verified
+                stays, flexible terms, zero hassle.
+              </p>
+              <p class="mb-0 text-white">
+                From verified listings to multilingual support, we’re on a
+                mission to help you feel at home—wherever life takes you.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3">
+            <h4 class="ct_fs_20 text-white mb-3">Usefull Link</h4>
+            <ul class="ct_footer_link">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="become-host.html">Become a host</a>
+              </li>
+              <li>
+                <a href="terms-&-policy.html">Terms & Privacy</a>
+              </li>
+              <li>
+                <a href="help.html">Help</a>
+              </li>
+              <li>
+                <a href="blogs.html">Blogs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section E -->
+    <div class="ct_loader_main">
+      <span class="loader"></span>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dubrox/Multiple-Dates-Picker-for-jQuery-UI/jquery-ui.multidatespicker.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

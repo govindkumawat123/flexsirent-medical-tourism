@@ -3447,10 +3447,14 @@ span.ct_pricing_badge {
 }
 
 .ct_apartment_detail_section_links li a {
-  color: #000;
+  color: #0D0D0D;
+  font-size: 16px;
+  font-weight: 300;
+ 
 }
 .ct_apartment_detail_section_links li a.active{
   color: #FF5A3C;
+   font-weight: 500;
 }
 
 .ct_apartment_detail_section_links {
