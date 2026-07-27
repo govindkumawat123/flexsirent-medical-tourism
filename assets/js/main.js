@@ -99,7 +99,6 @@ $(document).ready(function () {
   });
 });
 
-
 flatpickr("#appointmentCalendar", {
   inline: true,
 
@@ -110,4 +109,29 @@ flatpickr("#appointmentCalendar", {
   appendTo: document.getElementById("calendarWrapper"),
 
   dateFormat: "Y-m-d",
+});
+
+new Swiper(".ct_review_slider", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+
+  navigation: {
+    nextEl: ".ct_review_next",
+    prevEl: ".ct_review_prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 2,
+    },
+
+    992: {
+      slidesPerView: 3,
+    },
+  },
 });

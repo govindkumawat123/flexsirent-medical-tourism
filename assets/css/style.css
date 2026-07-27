@@ -3599,6 +3599,9 @@ ul.ct_landloard_right_info li {
   padding-inline: 40px;
   border-right: 1px solid #dddddd;
 }
+ul.ct_landloard_right_info li:last-child{
+  border-right: 0px;
+}
 
 .ct_client_user_img {
   -ms-flex-negative: 0;
@@ -4853,8 +4856,7 @@ button.ct_show_all_images_btn:hover {
 
 .ct_doctor_card:hover{
     border-color:var(--orange);
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-    transform:translateY(-5px);
+
 }
 
 .ct_doctor_img{
@@ -4877,9 +4879,8 @@ button.ct_show_all_images_btn:hover {
 }
 
 .ct_doctor_card h6{
-    font-size:18px;
+    font-size:16px;
     font-weight:600;
-    color:#222;
 }
 
 .clinic_facility_select_box{
@@ -4913,4 +4914,226 @@ color: #475569;
 .declaration_box .ct_custom_check label{
   font-size: 14px;
   color: #374151;
+}
+.ct_text_0D0D0D{
+  color: #0D0D0D;
+}
+
+
+
+.ct_treatment_card{
+    background:#fff;
+    border:1px solid #D9DDE3;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.35s;
+    height:100%;
+}
+
+.ct_treatment_card:hover{
+
+    border-color:var(--orange);
+}
+
+.ct_treatment_img{
+    overflow:hidden;
+}
+
+.ct_treatment_img img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.ct_treatment_card:hover img{
+    transform:scale(1.08);
+}
+
+.ct_treatment_content{
+    padding:24px;
+}
+
+.ct_treatment_content h4{
+    font-size:24px;
+    color:#191C1D;
+}
+
+.ct_treatment_btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:48px;
+    background:#F4F4F4;
+    border-radius:10px;
+    color:#007B73;
+    font-weight:500;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.ct_treatment_btn:hover{
+    background:var(--orange);
+    color:#fff;
+}
+
+.ct_view_more{
+    font-size:20px;
+    font-weight:600;
+    color:#0D0D0D;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.ct_view_more:hover{
+    color:var(--orange);
+}
+
+
+
+.ct_related_clinic_card{
+    display:block;
+    text-decoration:none;
+    color:#222;
+    transition:.35s ease;
+}
+
+.ct_related_clinic_img{
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.ct_related_clinic_img img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+    transition:.4s;
+    display:block;
+}
+
+.ct_related_clinic_card:hover .ct_related_clinic_img img{
+    transform:scale(1.08);
+}
+
+.ct_related_clinic_card h5{
+    font-size:18px;
+    transition:.3s;
+}
+
+.ct_related_clinic_card:hover h5{
+    color:var(--orange);
+}
+
+.ct_related_clinic_card p{
+    font-size:16px;
+    line-height:1.6;
+    color: #5C727D;
+}
+
+.ct_related_clinic_card .ct_orange_text{
+    font-weight:500;
+    color: var(--orange);
+}
+
+
+.ct_review_slider {
+    width: calc(100% - 140px);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ct_review_card{
+    background:#F8F8F8;
+    border-radius:18px;
+    padding:22px;
+    height:100%;
+    transition:.35s;
+}
+
+.ct_review_card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.ct_review_card img{
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.ct_star_wrap{
+    display:flex;
+    gap:4px;
+}
+
+.ct_star_wrap i{
+    color:#FDB813;
+    font-size:14px;
+}
+
+.ct_review_card p{
+    font-size:14px;
+    line-height:1.7;
+}
+
+/* Navigation */
+
+.ct_review_prev,
+.ct_review_next{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:var(--orange);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:10;
+    transition:.3s;
+}
+
+.ct_review_prev{
+    left:0;
+}
+
+.ct_review_next{
+    right:0;
+}
+
+.ct_review_prev:hover,
+.ct_review_next:hover{
+    background:#000;
+}
+
+/* Responsive */
+
+@media(max-width:575px){
+
+    .ct_review_slider{
+        padding-inline:0;
+    }
+
+   
+    .ct_review_slider{
+      width: 100%;
+    }
+    .ct_review_prev, .ct_review_next{
+      position: unset;
+      width: 35px;
+      height: 35px;
+      transform: unset;
+    }
+    .ct_responsive_nav{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
 }
