@@ -18,6 +18,9 @@
       rel="stylesheet"
       href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <title>Flexsirent Medical Tourism</title>
@@ -210,103 +213,198 @@
               <a href="#overview" class="active">Overview</a>
             </li>
             <li>
-              <a href="#rent-&-deposit">Rent & Deposit</a>
+              <a href="#Treatments">Treatments</a>
             </li>
+            <li>
+              <a href="#rent-&-deposit">Doctors</a>
+            </li>
+            <li>
+              <a href="#rent-&-deposit">Specialists</a>
+            </li>
+         
             <li>
               <a href="#cancellation-policies">Cancellation Policies</a>
             </li>
             <li>
-              <a href="#house-rules">House Rules</a>
+              <a href="#house-rules">Healthcare Provider</a>
             </li>
-            <li>
-              <a href="#landlord">Landlord</a>
-            </li>
+          
             <li>
               <a href="#availabilities">Availabilities</a>
             </li>
-            <li>
-              <a href="#getting-around">Getting Around</a>
-            </li>
+           
           </ul>
         </div>
-        <div class="row">
+        <div class="row mt-4">
             <div class="col-xl-8 col-lg-7 mb-4 mb-lg-0">
-                <div class="ct_white_bg ct_box_shadow p-4 mt-4 pe-0" id="overview">
-          <h4 class="ct_fs_20 ct_fw_600 ct_pe_30">About This Property</h4>
+                <div class="ct_white_bg ct_box_shadow p-4 pe-0" id="overview">
+                      <div class="row ct_pe_30">
+
+            <div class="col-lg-3 col-md-6 col-6  mb-4">
+                <div class="ct_stats_card">
+                    <div class="ct_stats_icon">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.25 22.5C8.375 22.5 5.86979 21.5469 3.73438 19.6406C1.59896 17.7344 0.375 15.3542 0.0625 12.5H2.625C2.91667 14.6667 3.88021 16.4583 5.51562 17.875C7.15104 19.2917 9.0625 20 11.25 20C13.6875 20 15.7552 19.151 17.4531 17.4531C19.151 15.7552 20 13.6875 20 11.25C20 8.8125 19.151 6.74479 17.4531 5.04688C15.7552 3.34896 13.6875 2.5 11.25 2.5C9.8125 2.5 8.46875 2.83333 7.21875 3.5C5.96875 4.16667 4.91667 5.08333 4.0625 6.25H7.5V8.75H0V1.25H2.5V4.1875C3.5625 2.85417 4.85938 1.82292 6.39062 1.09375C7.92188 0.364583 9.54167 0 11.25 0C12.8125 0 14.276 0.296875 15.6406 0.890625C17.0052 1.48438 18.1927 2.28646 19.2031 3.29688C20.2135 4.30729 21.0156 5.49479 21.6094 6.85938C22.2031 8.22396 22.5 9.6875 22.5 11.25C22.5 12.8125 22.2031 14.276 21.6094 15.6406C21.0156 17.0052 20.2135 18.1927 19.2031 19.2031C18.1927 20.2135 17.0052 21.0156 15.6406 21.6094C14.276 22.2031 12.8125 22.5 11.25 22.5ZM14.75 16.5L10 11.75V5H12.5V10.75L16.5 14.75L14.75 16.5Z" fill="#EF7F18"/>
+</svg>
+
+                    </div>
+
+                    <h3 class="ct_fs_30 ct_fw_600 mb-1">1983</h3>
+                    <p class="ct_fs_12 text-uppercase ct_text_707070 mb-0">
+                        Founded
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-6  mb-4">
+                <div class="ct_stats_card">
+                    <div class="ct_stats_icon">
+                       <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.1663 26.582V22.957C24.1663 19.5399 24.1663 17.8301 23.1042 16.7692C22.0433 15.707 20.3335 15.707 16.9163 15.707L14.4997 18.1237L12.083 15.707C8.66584 15.707 6.95605 15.707 5.89513 16.7692C4.83301 17.8301 4.83301 19.5399 4.83301 22.957V26.582M19.333 15.707V22.3529" stroke="#EF7F18" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.2702 15.7077V20.541M10.2702 20.541C10.9111 20.541 11.5258 20.7956 11.979 21.2488C12.4322 21.7021 12.6868 22.3167 12.6868 22.9577V24.166M10.2702 20.541C9.62924 20.541 9.01455 20.7956 8.56134 21.2488C8.10813 21.7021 7.85352 22.3167 7.85352 22.9577V24.166M18.7285 7.85352V6.64518C18.7285 6.0898 18.6191 5.53986 18.4066 5.02675C18.1941 4.51364 17.8825 4.04742 17.4898 3.65471C17.0971 3.262 16.6309 2.95048 16.1178 2.73794C15.6047 2.52541 15.0547 2.41602 14.4993 2.41602C13.944 2.41602 13.394 2.52541 12.8809 2.73794C12.3678 2.95048 11.9016 3.262 11.5089 3.65471C11.1162 4.04742 10.8046 4.51364 10.5921 5.02675C10.3796 5.53986 10.2702 6.0898 10.2702 6.64518V7.85352C10.2702 8.4089 10.3796 8.95884 10.5921 9.47195C10.8046 9.98505 11.1162 10.4513 11.5089 10.844C11.9016 11.2367 12.3678 11.5482 12.8809 11.7608C13.394 11.9733 13.944 12.0827 14.4993 12.0827C15.0547 12.0827 15.6047 11.9733 16.1178 11.7608C16.6309 11.5482 17.0971 11.2367 17.4898 10.844C17.8825 10.4513 18.1941 9.98505 18.4066 9.47195C18.6191 8.95884 18.7285 8.4089 18.7285 7.85352Z" stroke="#EF7F18" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.2393 23.2598C20.2393 23.5001 20.1438 23.7306 19.9738 23.9006C19.8039 24.0705 19.5734 24.166 19.333 24.166C19.0927 24.166 18.8621 24.0705 18.6922 23.9006C18.5222 23.7306 18.4268 23.5001 18.4268 23.2598C18.4268 23.0194 18.5222 22.7889 18.6922 22.6189C18.8621 22.449 19.0927 22.3535 19.333 22.3535C19.5734 22.3535 19.8039 22.449 19.9738 22.6189C20.1438 22.7889 20.2393 23.0194 20.2393 23.2598Z" stroke="#EF7F18" stroke-width="1.5"/>
+</svg>
+
+                    </div>
+
+                    <h3 class="ct_fs_30 ct_fw_600 mb-1">1983</h3>
+                    <p class="ct_fs_12 text-uppercase ct_text_707070 mb-0">
+                        Expert Doctors
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-6  mb-4">
+                <div class="ct_stats_card">
+                    <div class="ct_stats_icon">
+                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.0004 11.6673C16.5787 11.6673 18.6671 9.57898 18.6671 7.00065C18.6671 4.42232 16.5787 2.33398 14.0004 2.33398C11.4221 2.33398 9.33373 4.42232 9.33373 7.00065C9.33373 9.57898 11.4221 11.6673 14.0004 11.6673ZM14.0004 4.66732C15.2837 4.66732 16.3337 5.71732 16.3337 7.00065C16.3337 8.28398 15.2837 9.33398 14.0004 9.33398C12.7171 9.33398 11.6671 8.28398 11.6671 7.00065C11.6671 5.71732 12.7171 4.66732 14.0004 4.66732ZM21.4554 14.654C19.4954 13.6507 16.9521 12.834 14.0004 12.834C11.0487 12.834 8.5054 13.6507 6.5454 14.654C5.97614 14.9472 5.49925 15.3924 5.16768 15.9402C4.83612 16.488 4.66283 17.117 4.66707 17.7573V25.6673H7.0004V17.7573C7.0004 17.314 7.23373 16.9173 7.58373 16.7307C8.9954 16.019 11.2354 15.1673 14.0004 15.1673C14.8871 15.1673 15.7154 15.249 16.4854 15.4007L14.6771 19.2507H11.3754C9.60207 19.2507 8.16707 20.6857 8.16707 22.459C8.16707 24.2323 9.60207 25.6673 11.3754 25.6673H21.0004C22.2837 25.6673 23.3337 24.6173 23.3337 23.334V17.7573C23.3337 16.4507 22.6221 15.249 21.4554 14.654ZM12.7637 23.334H11.3754C10.8971 23.334 10.5004 22.9373 10.5004 22.459C10.5004 21.9807 10.8971 21.584 11.3754 21.584H13.5804L12.7637 23.334ZM21.0004 23.334H15.3421L18.7721 16.019C19.4021 16.2523 19.9504 16.4973 20.4171 16.7307C20.7671 16.9173 21.0004 17.314 21.0004 17.7573V23.334Z" fill="#EF7F18"/>
+</svg>
+
+                    </div>
+
+                    <h3 class="ct_fs_30 ct_fw_600 mb-1">1983</h3>
+                    <p class="ct_fs_12 text-uppercase ct_text_707070 mb-0">
+                        Patients
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-6  mb-4">
+                <div class="ct_stats_card">
+                    <div class="ct_stats_icon">
+                       <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 17.5V10C0 9.4375 0.114583 8.92708 0.34375 8.46875C0.572917 8.01042 0.875 7.60417 1.25 7.25V3.75C1.25 2.70833 1.61458 1.82292 2.34375 1.09375C3.07292 0.364583 3.95833 0 5 0H10C10.4792 0 10.9271 0.0885417 11.3438 0.265625C11.7604 0.442708 12.1458 0.6875 12.5 1C12.8542 0.6875 13.2396 0.442708 13.6562 0.265625C14.0729 0.0885417 14.5208 0 15 0H20C21.0417 0 21.9271 0.364583 22.6562 1.09375C23.3854 1.82292 23.75 2.70833 23.75 3.75V7.25C24.125 7.60417 24.4271 8.01042 24.6562 8.46875C24.8854 8.92708 25 9.4375 25 10V17.5H22.5V15H2.5V17.5H0ZM13.75 6.25H21.25V3.75C21.25 3.39583 21.1302 3.09896 20.8906 2.85938C20.651 2.61979 20.3542 2.5 20 2.5H15C14.6458 2.5 14.349 2.61979 14.1094 2.85938C13.8698 3.09896 13.75 3.39583 13.75 3.75V6.25ZM3.75 6.25H11.25V3.75C11.25 3.39583 11.1302 3.09896 10.8906 2.85938C10.651 2.61979 10.3542 2.5 10 2.5H5C4.64583 2.5 4.34896 2.61979 4.10938 2.85938C3.86979 3.09896 3.75 3.39583 3.75 3.75V6.25ZM2.5 12.5H22.5V10C22.5 9.64583 22.3802 9.34896 22.1406 9.10938C21.901 8.86979 21.6042 8.75 21.25 8.75H3.75C3.39583 8.75 3.09896 8.86979 2.85938 9.10938C2.61979 9.34896 2.5 9.64583 2.5 10V12.5ZM22.5 12.5H2.5C2.5 12.5 2.61979 12.5 2.85938 12.5C3.09896 12.5 3.39583 12.5 3.75 12.5H21.25C21.6042 12.5 21.901 12.5 22.1406 12.5C22.3802 12.5 22.5 12.5 22.5 12.5Z" fill="#EF7F18"/>
+</svg>
+
+                    </div>
+
+                    <h3 class="ct_fs_30 ct_fw_600 mb-1">1983</h3>
+                    <p class="ct_fs_12 text-uppercase ct_text_707070 mb-0">
+                        Beds
+                    </p>
+                </div>
+            </div>
+
+        </div>
+          <h4 class="ct_fs_20 ct_fw_600 ct_pe_30">About the Clinic</h4>
           <p class="ct_para_scroll ct_fs_14 mb-0 ct_pe_30">
-            This is a completely exterior property located on the seventh floor
-            with large windows which provides it with lots of natural light,
-            truly a privilege. The living room has a sofa bed and dining area
-            with seating for four people; the bedroom is also spacious and
-            comfortable. From both rooms you can enjoy magnificent views of the
-            Metropol Parasol, one of the most famous monuments in Seville,
-            popularly known as 'Las Setas'. Meanwhile, both the kitchen and the
-            bathroom are fully equipped. Everythin taken care to detail and with
-            first quality.
+           Established in 1983, Apollo Hospitals Chennai is a flagship institution of the Apollo Group,
+consistently ranked among the best hospitals in India. Recognized as a global healthcare
+destination, it combines world-class clinical expertise with state-of-the-art technology to
+provide comprehensive care across 60+ specialties.
           </p>
           <div class="ct_mt_30">
-            <h4 class="ct_fs_20 ct_fw_600 ct_pe_30">Ameneties</h4>
+            <h4 class="ct_fs_20 ct_fw_600 ct_pe_30">Facilities</h4>
             <ul
               class="ct_para_scroll ct_custom_scroll ct_amenties_list mt-4 ct_pe_30"
             >
               <li>
-                <img src="../assets/img/amenties_icon_1.svg" alt="" />
-                Kitchen
+                <img src="assets/img/facilities_icon_1.png" alt="" />
+                ICU
               </li>
               <li>
-                <img src="../assets/img/amenties_icon_2.svg" alt="" />
-                Air Conditioning
+                <img src="assets/img/facilities_icon_2.png" alt="" />
+               CT Scan
               </li>
               <li>
-                <img src="../assets/img/amenties_icon_3.svg" alt="" />
-                Free Parking On Premises
+                <img src="assets/img/facilities_icon_3.png" alt="" />
+                International Desk
               </li>
               <li>
-                <img src="../assets/img/amenties_icon_4.svg" alt="" />
-                Fridge
+                <img src="assets/img/facilities_icon_4.png" alt="" />
+                Emergency
               </li>
               <li>
-                <img src="../assets/img/amenties_icon_5.svg" alt="" />
-                Wifi
+                <img src="assets/img/facilities_icon_5.png" alt="" />
+                Blood Bank
               </li>
               <li>
-                <img src="../assets/img/amenties_icon_6.svg" alt="" />
-                Private Back Garden
+                <img src="assets/img/facilities_icon_6.png" alt="" />
+                Interpreter
               </li>
               <li>
-                <img src="../assets/img/amenties_icon_7.svg" alt="" />
-                TV
+                <img src="assets/img/facilities_icon_7.png" alt="" />
+               Laboratory
               </li>
               <li>
-                <img src="../assets/img/amenties_icon_8.svg" alt="" />
-                Swimming Pool
+                <img src="assets/img/facilities_icon_8.png" alt="" />
+               Private Rooms
+              </li>
+              <li>
+                <img src="assets/img/facilities_icon_9.png" alt="" />
+               Airport Pickup
+              </li>
+              <li>
+                <img src="assets/img/facilities_icon_2.png" alt="" />
+               MRI
+              </li>
+              <li>
+                <img src="assets/img/facilities_icon_10.png" alt="" />
+             Pharmacy
+              </li>
+              <li>
+                <img src="assets/img/facilities_icon_11.png" alt="" />
+             Cafeteria
               </li>
             </ul>
           </div>
           <div class="ct_mt_30">
-            <h4 class="ct_fs_20 ct_fw_600 ct_pe_30">Safety Ameneties</h4>
+            <h4 class="ct_fs_20 ct_fw_600 ct_pe_30">Specialized Treatments</h4>
             <ul
               class="ct_para_scroll ct_custom_scroll ct_amenties_list mt-4 ct_pe_30"
             >
               <li>
-                <img src="../assets/img/safety_amenties_icon_1.png" alt="" />
-                First Aid kit
+                <img src="assets/img/treatments_icon_1.png" alt="" />
+               Cardiology
               </li>
               <li>
-                <img src="../assets/img/safety_amenties_icon_2.png" alt="" />
-                Security Cameras
+                <img src="assets/img/treatments_icon_2.png" alt="" />
+               Orthopedics
               </li>
               <li>
-                <img src="../assets/img/safety_amenties_icon_3.png" alt="" />
-                Smoke Detector
+                <img src="assets/img/treatments_icon_3.png" alt="" />
+               Oncology
               </li>
               <li>
-                <img src="../assets/img/safety_amenties_icon_4.png" alt="" />
-                Carbon Monoxide Detector
+                <img src="assets/img/treatments_icon_4.png" alt="" />
+                Dental Care
               </li>
               <li>
-                <img src="../assets/img/safety_amenties_icon_5.png" alt="" />
-                Fire Extinguisher
+                <img src="assets/img/treatments_icon_5.png" alt="" />
+               Cosmetic Surgery
+              </li>
+              <li>
+                <img src="assets/img/treatments_icon_6.png" alt="" />
+              Ophthalmology 
+              </li>
+              <li>
+                <img src="assets/img/treatments_icon_7.png" alt="" />
+                Neurology
+              </li>
+              <li>
+                <img src="assets/img/treatments_icon_8.png" alt="" />
+                IVF & Fertility
               </li>
             </ul>
           </div>
@@ -314,129 +412,405 @@
 
             </div>
 
+            <div class="col-xl-4 col-lg-5 mb-4 mb-lg-0">
+    <div class="ct_booking_card">
+
+        <!-- Consultation Fee -->
+        <div class="d-flex justify-content-between align-items-start mb-4">
+            <div>
+                <p class="ct_fs_14 ct_fw_500 text-uppercase mb-1 ct_text_707070">
+                    Consultation Fee
+                </p>
+
+                <h4 class="ct_fw_600 mb-0 fs-5">
+                    €2,400 - €6,500
+                </h4>
+            </div>
+
+            <button class="ct_info_btn">
+                <i class="fa-solid fa-circle-info"></i>
+            </button>
         </div>
-        <div
-          class="ct_white_bg ct_box_shadow p-4 mt-4 pe-0"
-          id="rent-&-deposit"
-        >
-          <div class="row">
-            <div class="col-xl-5 col-lg-6 mb-4 mb-lg-0">
-              <div class="d-flex align-items-center gap-3 mb-5 flex-wrap">
-                <h4 class="ct_fs_20 ct_fw_600 mb-0">Rent & Deposit</h4>
-                <span class="ct_light_orange_badge">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.2126 6.66889C10.8599 6.3161 10.3814 6.1179 9.88247 6.1179C9.38355 6.1179 8.90507 6.3161 8.55227 6.66889C8.19948 7.02168 8.00128 7.50016 8.00128 7.99908C8.00128 8.498 8.19948 8.97648 8.55227 9.32927C8.72696 9.50393 8.93434 9.64256 9.16257 9.73706C9.39081 9.83165 9.63543 9.8803 9.88247 9.8803C10.1295 9.8803 10.3741 9.83165 10.6024 9.73706C10.8306 9.64256 11.0379 9.50393 11.2126 9.32927C11.3873 9.15459 11.5259 8.94721 11.6204 8.71898C11.715 8.49074 11.7637 8.24612 11.7637 7.99908C11.7637 7.75204 11.715 7.50742 11.6204 7.27918C11.5259 7.05095 11.3873 6.84357 11.2126 6.66889ZM4.86286 4.23438V11.7638H14.902V4.23438H4.86286ZM13.6472 9.25398C13.3147 9.25398 12.9947 9.38574 12.7625 9.62421C12.5241 9.8563 12.3923 10.1763 12.3923 10.5089H7.37266C7.37266 10.1763 7.2409 9.8563 7.00247 9.62421C6.77031 9.38574 6.45031 9.25398 6.11776 9.25398V6.74418C6.45031 6.74418 6.77031 6.61242 7.00247 6.37398C7.2409 6.14183 7.37266 5.82183 7.37266 5.48927H12.3923C12.3923 5.82183 12.5241 6.14183 12.7625 6.37398C12.9947 6.61242 13.3147 6.74418 13.6472 6.74418V9.25398ZM3.60795 5.48927H2.35306C2.00795 5.48927 1.7256 5.20692 1.7256 4.86183C1.7256 4.51673 2.00795 4.23438 2.35306 4.23438H3.60795V5.48927ZM3.60795 8.62653H1.7256C1.38051 8.62653 1.09815 8.34418 1.09815 7.99908C1.09815 7.65398 1.38051 7.37163 1.7256 7.37163H3.60795V8.62653ZM3.60795 11.7638H1.09815C0.751801 11.7638 0.470703 11.4814 0.470703 11.1363C0.470703 10.7913 0.751801 10.5089 1.09815 10.5089H3.60795V11.7638Z"
-                      fill="#0D0D0D"
-                    />
-                  </svg>
-                  Instant Deposit Refund
-                </span>
-              </div>
-              <div class="ct_rent_deposit_card ct_flex_col_575">
-                <div class="ct_rent_deposit_img position-relative">
-                  <img
-                    src="../assets/img/apartments/apartment_detail_small_2.png"
-                    alt=""
-                  />
-                  <span class="ct_available_tag">Available</span>
-                </div>
-                <div class="ct_rent_deposit_cnt ct_flex_1 text-white">
-                  <p class="mb-1">Available From</p>
-                  <p class="mb-1">21/05/2025</p>
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-3 mt-3 flex-wrap"
-                  >
-                    <div>
-                      <h6 class="ct_fs_14 ct_fw_600 mb-1">Rent</h6>
-                      <p class="mb-0 ct_fs_14">€28,000</p>
+
+        <!-- Treatment -->
+
+        <div class="mb-4">
+            <label class="ct_fw_500 mb-2">
+                Select Treatment
+            </label>
+
+            <select class="form-select ct_h_50">
+                <option>Cardiology Checkup</option>
+                <option>Neurology</option>
+                <option>Orthopedic</option>
+            </select>
+        </div>
+
+        <!-- Calendar -->
+
+        <div class="mb-4">
+
+            <label class="ct_fw_500 mb-2">
+                Preferred Date
+            </label>
+
+            <input
+                type="text"
+                id="appointmentCalendar"
+                class="form-control d-none">
+
+            <div id="calendarWrapper"></div>
+
+        </div>
+
+        <!-- Price -->
+
+        <div class="ct_price_box">
+
+            <span>Consultation Fee</span>
+
+            <strong>$2,500</strong>
+
+        </div>
+
+        <button class="ct_orange_btn w-100 mt-4">
+            Book Appointment
+        </button>
+
+    </div>
+</div>
+
+        </div>
+        <div class="ct_white_bg ct_box_shadow p-4 mt-4">
+             <h4 class="ct_fs_20 ct_fw_600 ct_pe_30 mb-4">Lead Specialists</h4>
+
+        <div class="row">
+
+            <!-- Doctor Card -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <div class="ct_doctor_card">
+
+                    <div class="d-flex align-items-center gap-3">
+
+                        <img src="assets/img/doctor_img.jpg"
+                            class="ct_doctor_img"
+                            alt="doctor">
+
+                        <div class="flex-grow-1">
+
+                            <h5 class="ct_orange_text ct_fw_600 mb-1">
+                                Dr. Vijay Kumar
+                            </h5>
+
+                            <p class="mb-0 ct_fw_400 ct_fs_12 ct_text_0D0D0D">
+                                Senior Interventional
+                            </p>
+
+                            <p class="ct_fs_12 mb-0 ct_fw_400 ct_text_0D0D0D">
+                                Cardiologist
+                            </p>
+
+                        </div>
+
                     </div>
-                    <div>
-                      <h6 class="ct_fs_14 ct_fw_600 mb-1">Deposit</h6>
-                      <p class="mb-0 ct_fs_14">1 Months</p>
+
+                    <div class="row mt-3">
+
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                 <p class="ct_fw_600 ct_text_5C727D mb-0">
+                                Experience
+                            </p>
+
+                            <p class="mb-0 ct_fw_400 ct_text_0D0D0D">
+                                25+ Years
+                            </p>
+
+                            </div>
+                              <div class="d-flex align-items-center justify-content-between">
+                                  <p class="ct_fw_600 ct_text_5C727D mb-0">
+                                Patients Treated
+                            </p>
+
+                            <p class="mb-0 ct_fw_400 ct_text_0D0D0D">
+                                15,000+
+                            </p>
+
+                            </div>
+                           
+                        </div>
+
+                    
+
                     </div>
-                  </div>
+
                 </div>
-              </div>
             </div>
-            <div class="col-xl-7 col-lg-6 mb-4 mb-lg-0">
-              <div class="ct_light_grey_bg">
-                <div
-                  class="d-flex align-items-center justify-content-between gap-3 flex-wrap pb-4 mb-4 ct_border_btm_1"
-                >
-                  <h5 class="ct_fs_18 ct_fw_600 mb-0">Monthly Rent</h5>
-                  <h5 class="ct_fs_18 ct_fw_700 mb-0 ct_white_nowrap">
-                    €28,000
-                  </h5>
+
+           
+               <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <div class="ct_doctor_card">
+
+                    <div class="d-flex align-items-center gap-3">
+
+                        <img src="assets/img/doctor_img.jpg"
+                            class="ct_doctor_img"
+                            alt="doctor">
+
+                        <div class="flex-grow-1">
+
+                            <h5 class="ct_orange_text ct_fw_600 mb-1">
+                                Dr. Vijay Kumar
+                            </h5>
+
+                            <p class="mb-0 ct_fw_400 ct_fs_12 ct_text_0D0D0D">
+                                Senior Interventional
+                            </p>
+
+                            <p class="ct_fs_12 mb-0 ct_fw_400 ct_text_0D0D0D">
+                                Cardiologist
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-3">
+
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                 <p class="ct_fw_600 ct_text_5C727D mb-0">
+                                Experience
+                            </p>
+
+                            <p class="mb-0 ct_fw_400 ct_text_0D0D0D">
+                                25+ Years
+                            </p>
+
+                            </div>
+                              <div class="d-flex align-items-center justify-content-between">
+                                  <p class="ct_fw_600 ct_text_5C727D mb-0">
+                                Patients Treated
+                            </p>
+
+                            <p class="mb-0 ct_fw_400 ct_text_0D0D0D">
+                                15,000+
+                            </p>
+
+                            </div>
+                           
+                        </div>
+
+                    
+
+                    </div>
+
                 </div>
-                <div class="pb-4 mb-4 ct_border_btm_1">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-3 flex-wrap"
-                  >
-                    <h5 class="ct_fs_18 ct_fw_600 mb-0">Security Deposit</h5>
-                    <h5 class="ct_fs_18 ct_fw_700 mb-0 ct_white_nowrap">
-                      €28,000
-                    </h5>
-                  </div>
-                  <p class="ct_fs_14 mt-2 mb-0">
-                    Fully refundable if vacated in original condition
-                  </p>
-                </div>
-                <div class="pb-4 mb-4 ct_border_btm_1">
-                  <h5 class="ct_fs_18 ct_fw_600 mb-0">Bills</h5>
-                  <ul class="mt-3">
-                    <li
-                      class="d-flex align-items-center justify-content-between gap-3 flex-wrap"
-                    >
-                      <p class="mb-0 ct_fs_14">Electricity</p>
-                      <p class="mb-0 ct_fs_14">Included</p>
-                    </li>
-                    <li
-                      class="mt-2 d-flex align-items-center justify-content-between gap-3 flex-wrap"
-                    >
-                      <p class="mb-0 ct_fs_14">Gas</p>
-                      <p class="mb-0 ct_fs_14">Included</p>
-                    </li>
-                    <li
-                      class="mt-2 d-flex align-items-center justify-content-between gap-3 flex-wrap"
-                    >
-                      <p class="mb-0 ct_fs_14">Water</p>
-                      <p class="mb-0 ct_fs_14">Included</p>
-                    </li>
-                    <li
-                      class="mt-2 d-flex align-items-center justify-content-between gap-3 flex-wrap"
-                    >
-                      <p class="mb-0 ct_fs_14">Wifi</p>
-                      <p class="mb-0 ct_fs_14">Included</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="">
-                  <div
-                    class="d-flex align-items-center justify-content-between gap-3"
-                  >
-                    <h5 class="ct_fs_18 ct_fw_600 mb-0 ct_orange_text">
-                      Total Payable Amount
-                    </h5>
-                    <h5
-                      class="ct_fs_18 ct_fw_700 mb-0 ct_orange_text ct_white_nowrap"
-                    >
-                      €70,000
-                    </h5>
-                  </div>
-                  <p class="ct_fs_14 mt-2 mb-0">
-                    Includes monthly rent, security deposit
-                  </p>
-                </div>
-              </div>
             </div>
-          </div>
+
+             <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <div class="ct_doctor_card">
+
+                    <div class="d-flex align-items-center gap-3">
+
+                        <img src="assets/img/doctor_img.jpg"
+                            class="ct_doctor_img"
+                            alt="doctor">
+
+                        <div class="flex-grow-1">
+
+                            <h5 class="ct_orange_text ct_fw_600 mb-1">
+                                Dr. Vijay Kumar
+                            </h5>
+
+                            <p class="mb-0 ct_fw_400 ct_fs_12 ct_text_0D0D0D">
+                                Senior Interventional
+                            </p>
+
+                            <p class="ct_fs_12 mb-0 ct_fw_400 ct_text_0D0D0D">
+                                Cardiologist
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-3">
+
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                 <p class="ct_fw_600 ct_text_5C727D mb-0">
+                                Experience
+                            </p>
+
+                            <p class="mb-0 ct_fw_400 ct_text_0D0D0D">
+                                25+ Years
+                            </p>
+
+                            </div>
+                              <div class="d-flex align-items-center justify-content-between">
+                                  <p class="ct_fw_600 ct_text_5C727D mb-0">
+                                Patients Treated
+                            </p>
+
+                            <p class="mb-0 ct_fw_400 ct_text_0D0D0D">
+                                15,000+
+                            </p>
+
+                            </div>
+                           
+                        </div>
+
+                    
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="ct_white_bg ct_box_shadow p-4 mt-4" id="Treatments">
+              <h4 class="ct_fs_20 ct_fw_600 ct_pe_30 mb-4">Treatments</h4>
+             <div class="row">
+
+            <!-- Card -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <div class="ct_treatment_card">
+
+                    <div class="ct_treatment_img">
+                        <img src="assets/img/Treatments_img.jpg" alt="Treatment">
+                    </div>
+
+                    <div class="ct_treatment_content">
+
+                        <h4 class="ct_fw_600 mb-3">
+                            Cardiology
+                        </h4>
+
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="ct_fw_600 ct_text_5C727D">
+                                Starting from
+                            </span>
+
+                            <span class="ct_orange_text ct_fw_500">
+                                $4,500
+                            </span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="ct_fw_600 ct_text_5C727D">
+                                Duration
+                            </span>
+
+                            <span>
+                                5–7 Days
+                            </span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-4">
+                            <span class="ct_fw_600 ct_text_5C727D">
+                                Recovery
+                            </span>
+
+                            <span>
+                                2–3 Weeks
+                            </span>
+                        </div>
+
+                        <a href="#" class="ct_treatment_btn">
+                            Book Treatment
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <div class="ct_treatment_card">
+
+                    <div class="ct_treatment_img">
+                        <img src="assets/img/Treatments_img.jpg" alt="">
+                    </div>
+
+                    <div class="ct_treatment_content">
+
+                        <h4 class="ct_fw_600 mb-3">
+                            Cardiology
+                        </h4>
+
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="ct_fw_500 ct_text_707070">Starting from</span>
+                            <span class="ct_orange_text">$4,500</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="ct_fw_500 ct_text_707070">Duration</span>
+                            <span>5–7 Days</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-4">
+                            <span class="ct_fw_500 ct_text_707070">Recovery</span>
+                            <span>2–3 Weeks</span>
+                        </div>
+
+                        <a href="#" class="ct_treatment_btn">
+                            Book Treatment
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Card -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <div class="ct_treatment_card">
+
+                    <div class="ct_treatment_img">
+                        <img src="assets/img/Treatments_img.jpg" alt="">
+                    </div>
+
+                    <div class="ct_treatment_content">
+
+                        <h4 class="ct_fw_600 mb-3">
+                            Cardiology
+                        </h4>
+
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="ct_fw_500 ct_text_707070">Starting from</span>
+                            <span class="ct_orange_text">$4,500</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="ct_fw_500 ct_text_707070">Duration</span>
+                            <span>5–7 Days</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between mb-4">
+                            <span class="ct_fw_500 ct_text_707070">Recovery</span>
+                            <span>2–3 Weeks</span>
+                        </div>
+
+                        <a href="#" class="ct_treatment_btn">
+                            Book Treatment
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="#" class="ct_view_more">
+                View more
+            </a>
+        </div>
+
         </div>
         <div
           class="ct_white_bg ct_box_shadow p-4 mt-4"
@@ -453,75 +827,27 @@
             </a>
           </div>
           <div class="mt-3">
-            <h6 class="ct_fs_16 ct_fw_600">Moderate</h6>
+          
             <p class="mb-0 ct_fs_14">
-              Cancel up to 30 days prior to arrival and get a 100% refund
+            Appointments cancelled 30 or more days before the scheduled treatment date are eligible for a 100% refund (excluding processing fees). Cancellations made 15–29 days prior receive a 50% refund, while cancellations within 14 days are non-refundable. Appointments may be rescheduled subject to doctor availability. If the clinic cancels or reschedules your appointment, you may choose a new appointment date or request a full refund.
             </p>
           </div>
         </div>
-        <div class="ct_white_bg ct_box_shadow p-4 mt-4 pe-0" id="house-rules">
-          <h4 class="ct_fs_20 ct_fw_600">House Rules</h4>
-          <div class="ct_mt_30">
-            <ul
-              class="ct_para_scroll ct_custom_scroll ct_amenties_list mt-4 ct_pe_30"
-            >
-              <li>
-                <img src="../assets/img/house_rule_icon_1.png" alt="" />
-                Check-In: 4PM-9PM
-              </li>
-              <li>
-                <img src="../assets/img/house_rule_icon_2.png" alt="" />
-                No Parties or Events
-              </li>
-              <li>
-                <img src="../assets/img/house_rule_icon_3.png" alt="" />
-                Quiet Hours: 10:00 PM – 8:00 AM
-              </li>
-              <li>
-                <img src="../assets/img/house_rule_icon_4.png" alt="" />
-                Pets Not Allowed
-              </li>
-              <li>
-                <img src="../assets/img/house_rule_icon_5.png" alt="" />
-                Keep Shared Spaces Clean
-              </li>
-              <li>
-                <img src="../assets/img/house_rule_icon_6.png" alt="" />
-                Max 2 Visitors Allowed During The Day
-              </li>
-              <li>
-                <img src="../assets/img/house_rule_icon_7.png" alt="" />
-                Report Any Damage Immediately
-              </li>
-            </ul>
-          </div>
-        </div>
+       
         <div class="ct_white_bg ct_box_shadow p-4 mt-4" id="landlord">
           <div class="d-flex align-items-center justify-content-between gap-3">
-            <h4 class="ct_fs_20 ct_fw_600">Professional Landlord</h4>
-            <a
-              href="javascript:void(0)"
-              data-bs-toggle="modal"
-              data-bs-target="#ct_contact_host"
-              class="ct_orange_link ct_white_nowrap"
-            >
-              Contact Host
-              <i class="fa-solid fa-arrow-right ms-1"></i>
-            </a>
+            <h4 class="ct_fs_20 ct_fw_600">Trusted Healthcare Provider</h4>
+           
           </div>
           <p class="mb-0 ct_fs_14 mt-2">
-            In Rentalaria as rental experts, we take our work extremely
-            seriously. We understand that only through daily effort can we
-            maintain our position as the undisputed leaders in the sector. Our
-            goal is to remain the most dynamic Rental Management Agency in
-            Málaga for many years to come.
+          At Apollo International Hospital, we are committed to delivering world-class healthcare with compassion, innovation, and clinical excellence. Our experienced specialists, advanced medical technology, and patient-first approach ensure every individual receives personalized treatment in a safe and comfortable environment. From consultation to recovery, we provide seamless support for both local and international patients.
           </p>
           <div class="row ct_mt_30 align-items-center">
             <div class="col-lg-3 mb-4 mb-lg-0">
               <div class="d-flex align-items-center gap-3">
                 <div class="ct_landloard_user">
-                  <img src="../assets/img/user_5.png" alt="" />
-                  <img src="../assets/img/verify_icon.png" alt="" />
+                  <img src="assets/img/trusted_client.png" alt="" />
+                  <img src="assets/img/trusted_icon.png" alt="" />
                 </div>
                 <h4 class="mb-0 ct_fs_22 ct_fw_600 ct_white_nowrap">
                   Retanlaria
@@ -531,19 +857,19 @@
             <div class="col-lg-9 mb-4 mb-lg-0">
               <ul class="ct_landloard_right_info">
                 <li class="ps-0">
-                  <h5 class="ct_fs_24 ct_fw_600 mb-1">86</h5>
-                  <p class="mb-0 ct_fs_14">Reviews</p>
+                  <h5 class="ct_fs_24 ct_fw_600 mb-1">25,000+</h5>
+                  <p class="mb-0 ct_fs_14">Patients Treated</p>
                 </li>
                 <li>
                   <h5 class="ct_fs_24 ct_fw_600 mb-1">
-                    4.97
+                   4.97
                     <i class="fa-solid fa-star ms-1"></i>
                   </h5>
-                  <p class="mb-0 ct_fs_14">Ratings</p>
+                  <p class="mb-0 ct_fs_14">Patient Ratings</p>
                 </li>
                 <li>
-                  <h5 class="ct_fs_24 ct_fw_600 mb-1">2</h5>
-                  <p class="mb-0 ct_fs_14">Years hosting</p>
+                  <h5 class="ct_fs_24 ct_fw_600 mb-1">15+</h5>
+                  <p class="mb-0 ct_fs_14">Years Serving  Patients</p>
                 </li>
               </ul>
             </div>
@@ -552,29 +878,29 @@
         <div class="ct_white_bg ct_box_shadow p-4 mt-4" id="availabilities">
           <h4 class="ct_fs_20 ct_fw_600">Availabilities</h4>
           <div class="row">
-            <div class="col-xl-5 mb-4 mb-xl-0">
+            <div class="col-xl-12 ">
               <table class="table mt-4 ct_avalable_table">
                 <tr>
                   <thead>
                     <tr>
-                      <td class="ct_fw_600 py-2">Available From</td>
-                      <td class="text-end py-2">Available Now!</td>
+                      <td class="ct_fw_300 ct_text_0D0D0D py-2">Consultation Availability</td>
+                      <td class="text-end ct_fw_300 ct_text_0D0D0D py-2">Available Today</td>
                     </tr>
                     <tr>
-                      <td class="ct_fw_600 py-2">Min. Stay</td>
-                      <td class="text-end py-2">1 Month (30 Days).</td>
+                      <td class="ct_fw_300 ct_text_0D0D0D py-2">Min. Stay</td>
+                      <td class="text-end ct_fw_300 ct_text_0D0D0D py-2">1 Month (30 Days).</td>
                     </tr>
                     <tr>
-                      <td class="ct_fw_600 py-2">Max. Stay</td>
-                      <td class="text-end py-2">No Maximum Stay</td>
+                      <td class="ct_fw_300 ct_text_0D0D0D py-2">Max. Stay</td>
+                      <td class="text-end ct_fw_300 ct_text_0D0D0D py-2">No Maximum Stay</td>
                     </tr>
                     <tr>
-                      <td class="ct_fw_600 py-2">Calendar Updated</td>
-                      <td class="text-end py-2">(Calendar Updated 14 Days)</td>
+                      <td class="ct_fw_300 ct_text_0D0D0D py-2">Calendar Updated</td>
+                      <td class="text-end ct_fw_300 ct_text_0D0D0D py-2">(Calendar Updated 14 Days)</td>
                     </tr>
                     <tr>
-                      <td class="ct_fw_600 py-2">Booking window</td>
-                      <td class="text-end py-2">
+                      <td class="ct_fw_300 ct_text_0D0D0D py-2">Booking window</td>
+                      <td class="text-end ct_fw_300 ct_text_0D0D0D py-2">
                         Landlord only accepts check- ins within 60 days
                       </td>
                     </tr>
@@ -582,267 +908,302 @@
                 </tr>
               </table>
             </div>
-            <div class="col-xl-7 mb-4 mb-xl-0">
-              <div class="ct_multidate_containerForm_main">
-                <div class="ct_multidate_containerForm">
-                  <div class="row">
-                    <div class="col-md-6 mb-3 mb-md-0">
-                      <label for="" class="mb-2 ct_fw_600">From</label>
-                      <input
-                        type="text"
-                        id="from"
-                        class="from form-control ct_input ct_input_h_50"
-                        size="10"
-                      />
-                    </div>
-                    <div class="col-md-6 mb-3 mb-md-0">
-                      <label for="" class="mb-2 ct_fw_600">To</label>
-                      <input
-                        type="text"
-                        id="to"
-                        class="to form-control ct_input ct_input_h_50"
-                        size="10"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="ct_datepicker ll-skin-melon"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="ct_white_bg ct_box_shadow p-4 mt-4" id="getting-around">
-          <h4 class="ct_fs_20 ct_fw_600">Getting Around</h4>
-          <h6 class="mb-0 ct_fs_16 ct_fw_600 mt-3">
-            Stay connected to transport, shops, and city essentials with ease.
-          </h6>
-          <div class="row mt-4">
-            <div class="col-md-5">
-              <div>
-                <p>
-                  <span class="ct_fw_600">Bus Stop:</span>
-                  2 Min Walk
-                </p>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <div>
-                <p>
-                  <span class="ct_fw_600">Nearby University:</span>
-                  10 Min Walk
-                </p>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <div>
-                <p>
-                  <span class="ct_fw_600">Metro Station:</span>
-                  5 Min Walk
-                </p>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <div>
-                <p>
-                  <span class="ct_fw_600">Supermarket:</span>
-                  200m
-                </p>
-              </div>
-            </div>
+           
           </div>
         </div>
         <div class="ct_white_bg ct_box_shadow p-4 mt-4">
-          <h4 class="ct_fs_20 ct_fw_600">User Reviews</h4>
-          <div class="owl-carousel owl-theme ct_user_slider mt-4">
-            <div class="item">
-              <div class="ct_testimonial_slide_card">
-                <div
-                  class="d-flex align-items-center gap-2 mb-3 justify-content-center"
-                >
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                </div>
-                <p class="">
-                  "I stayed here for three months during my Erasmus program, and
-                  it felt just like home. The apartment was clean,
-                  well-equipped, and the landlord was super responsive and
-                  friendly. The Wi-Fi was fast enough for my online classes, and
-                  the kitchen had everything I needed to cook daily. The metro
-                  station was just a short walk away, and there were grocery
-                  stores, cafés, and a gym nearby, which made life super
-                  convenient. The neighborhood felt safe and quiet, especially
-                  at night. I didn’t face any issues during my stay, and the
-                  move-in process was smooth and stress-free. Highly recommend
-                  it for students or anyone staying mid-term!"
-                </p>
-                <p class="">
-                  "I stayed here for three months during my Erasmus program, and
-                  it felt just like home.
-                </p>
-                <div
-                  class="d-flex align-items-center gap-2 justify-content-center pt-4"
-                >
-                  <div class="ct_client_user_img">
-                    <img src="../assets/img/user_1.jpg" alt="" />
-                  </div>
-                  <div>
-                    <h5 class="ct_fs_18 ct_fw_600 mb-1">Kristin Watson</h5>
-                    <p class="mb-0">New Mexico 31134</p>
-                  </div>
-                </div>
-              </div>
+              <h4 class="ct_fs_20 ct_fw_600 mb-4">
+            Related Clinics in Chennai
+        </h4>
+
+        <div class="row">
+
+            <!-- Clinic Card -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <a href="#" class="ct_related_clinic_card">
+
+                    <div class="ct_related_clinic_img">
+                        <img src="assets/img/related_img_1.jpg" alt="">
+                    </div>
+
+                    <div class="pt-3">
+
+                        <h5 class="ct_fw_600 mb-2">
+                            MIOT International
+                        </h5>
+
+                        <p class="ct_text_707070 mb-2 d-flex align-items-center gap-2">
+                          <svg width="12" height="16" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 5C4.275 5 4.51042 4.90208 4.70625 4.70625C4.90208 4.51042 5 4.275 5 4C5 3.725 4.90208 3.48958 4.70625 3.29375C4.51042 3.09792 4.275 3 4 3C3.725 3 3.48958 3.09792 3.29375 3.29375C3.09792 3.48958 3 3.725 3 4C3 4.275 3.09792 4.51042 3.29375 4.70625C3.48958 4.90208 3.725 5 4 5ZM4 8.675C5.01667 7.74167 5.77083 6.89375 6.2625 6.13125C6.75417 5.36875 7 4.69167 7 4.1C7 3.19167 6.71042 2.44792 6.13125 1.86875C5.55208 1.28958 4.84167 1 4 1C3.15833 1 2.44792 1.28958 1.86875 1.86875C1.28958 2.44792 1 3.19167 1 4.1C1 4.69167 1.24583 5.36875 1.7375 6.13125C2.22917 6.89375 2.98333 7.74167 4 8.675ZM4 10C2.65833 8.85833 1.65625 7.79792 0.99375 6.81875C0.33125 5.83958 0 4.93333 0 4.1C0 2.85 0.402083 1.85417 1.20625 1.1125C2.01042 0.370833 2.94167 0 4 0C5.05833 0 5.98958 0.370833 6.79375 1.1125C7.59792 1.85417 8 2.85 8 4.1C8 4.93333 7.66875 5.83958 7.00625 6.81875C6.34375 7.79792 5.34167 8.85833 4 10Z" fill="#3D4947"/>
+</svg>
+
+                            Chennai, India
+                            <span>• 4.7 Stars</span>
+                        </p>
+
+                        <p class="ct_orange_text mb-0 ct_fw_500">
+                            Specialty: Multi-organ Transplant
+                        </p>
+
+                    </div>
+
+                </a>
             </div>
-            <div class="item">
-              <div class="ct_testimonial_slide_card">
-                <div
-                  class="d-flex align-items-center gap-2 mb-3 justify-content-center"
-                >
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                </div>
-                <p class="">
-                  "I stayed here for three months during my Erasmus program, and
-                  it felt just like home. The apartment was clean,
-                  well-equipped, and the landlord was super responsive and
-                  friendly. The Wi-Fi was fast enough for my online classes, and
-                  the kitchen had everything I needed to cook daily. The metro
-                  station was just a short walk away, and there were grocery
-                  stores, cafés, and a gym nearby, which made life super
-                  convenient. The neighborhood felt safe and quiet, especially
-                  at night. I didn’t face any issues during my stay, and the
-                  move-in process was smooth and stress-free. Highly recommend
-                  it for students or anyone staying mid-term!"
-                </p>
-                <p class="">
-                  "I stayed here for three months during my Erasmus program, and
-                  it felt just like home.
-                </p>
-                <div
-                  class="d-flex align-items-center gap-2 justify-content-center pt-4"
-                >
-                  <div class="ct_client_user_img">
-                    <img src="../assets/img/user_1.jpg" alt="" />
-                  </div>
-                  <div>
-                    <h5 class="ct_fs_18 ct_fw_600 mb-1">Kristin Watson</h5>
-                    <p class="mb-0">New Mexico 31134</p>
-                  </div>
-                </div>
-              </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <a href="#" class="ct_related_clinic_card">
+
+                    <div class="ct_related_clinic_img">
+                        <img src="assets/img/related_img_2.jpg" alt="">
+                    </div>
+
+                    <div class="pt-3">
+
+                        <h5 class="ct_fw_600 mb-2">
+                            Fortis Malar Hospital
+                        </h5>
+
+                        <p class="ct_text_707070 mb-2 d-flex align-items-center gap-2">
+                          <svg width="12" height="16" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 5C4.275 5 4.51042 4.90208 4.70625 4.70625C4.90208 4.51042 5 4.275 5 4C5 3.725 4.90208 3.48958 4.70625 3.29375C4.51042 3.09792 4.275 3 4 3C3.725 3 3.48958 3.09792 3.29375 3.29375C3.09792 3.48958 3 3.725 3 4C3 4.275 3.09792 4.51042 3.29375 4.70625C3.48958 4.90208 3.725 5 4 5ZM4 8.675C5.01667 7.74167 5.77083 6.89375 6.2625 6.13125C6.75417 5.36875 7 4.69167 7 4.1C7 3.19167 6.71042 2.44792 6.13125 1.86875C5.55208 1.28958 4.84167 1 4 1C3.15833 1 2.44792 1.28958 1.86875 1.86875C1.28958 2.44792 1 3.19167 1 4.1C1 4.69167 1.24583 5.36875 1.7375 6.13125C2.22917 6.89375 2.98333 7.74167 4 8.675ZM4 10C2.65833 8.85833 1.65625 7.79792 0.99375 6.81875C0.33125 5.83958 0 4.93333 0 4.1C0 2.85 0.402083 1.85417 1.20625 1.1125C2.01042 0.370833 2.94167 0 4 0C5.05833 0 5.98958 0.370833 6.79375 1.1125C7.59792 1.85417 8 2.85 8 4.1C8 4.93333 7.66875 5.83958 7.00625 6.81875C6.34375 7.79792 5.34167 8.85833 4 10Z" fill="#3D4947"/>
+</svg>
+
+                            Chennai, India
+                            <span>• 4.7 Stars</span>
+                        </p>
+
+                        <p class="ct_orange_text mb-0 ct_fw_500">
+                            Specialty: Heart Science
+                        </p>
+
+                    </div>
+
+                </a>
             </div>
-            <div class="item">
-              <div class="ct_testimonial_slide_card">
-                <div
-                  class="d-flex align-items-center gap-2 mb-3 justify-content-center"
-                >
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                </div>
-                <p class="">
-                  "I stayed here for three months during my Erasmus program, and
-                  it felt just like home. The apartment was clean,
-                  well-equipped, and the landlord was super responsive and
-                  friendly. The Wi-Fi was fast enough for my online classes, and
-                  the kitchen had everything I needed to cook daily. The metro
-                  station was just a short walk away, and there were grocery
-                  stores, cafés, and a gym nearby, which made life super
-                  convenient. The neighborhood felt safe and quiet, especially
-                  at night. I didn’t face any issues during my stay, and the
-                  move-in process was smooth and stress-free. Highly recommend
-                  it for students or anyone staying mid-term!"
-                </p>
-                <p class="">
-                  "I stayed here for three months during my Erasmus program, and
-                  it felt just like home.
-                </p>
-                <div
-                  class="d-flex align-items-center gap-2 justify-content-center pt-4"
-                >
-                  <div class="ct_client_user_img">
-                    <img src="../assets/img/user_1.jpg" alt="" />
-                  </div>
-                  <div>
-                    <h5 class="ct_fs_18 ct_fw_600 mb-1">Kristin Watson</h5>
-                    <p class="mb-0">New Mexico 31134</p>
-                  </div>
-                </div>
-              </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                <a href="#" class="ct_related_clinic_card">
+
+                    <div class="ct_related_clinic_img">
+                        <img src="assets/img/related_img_3.jpg" alt="">
+                    </div>
+
+                    <div class="pt-3">
+
+                        <h5 class="ct_fw_600 mb-2">
+                            Gleneagles Global
+                        </h5>
+
+                         <p class="ct_text_5C739A mb-2 d-flex align-items-center gap-2">
+                          <svg width="12" height="16" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 5C4.275 5 4.51042 4.90208 4.70625 4.70625C4.90208 4.51042 5 4.275 5 4C5 3.725 4.90208 3.48958 4.70625 3.29375C4.51042 3.09792 4.275 3 4 3C3.725 3 3.48958 3.09792 3.29375 3.29375C3.09792 3.48958 3 3.725 3 4C3 4.275 3.09792 4.51042 3.29375 4.70625C3.48958 4.90208 3.725 5 4 5ZM4 8.675C5.01667 7.74167 5.77083 6.89375 6.2625 6.13125C6.75417 5.36875 7 4.69167 7 4.1C7 3.19167 6.71042 2.44792 6.13125 1.86875C5.55208 1.28958 4.84167 1 4 1C3.15833 1 2.44792 1.28958 1.86875 1.86875C1.28958 2.44792 1 3.19167 1 4.1C1 4.69167 1.24583 5.36875 1.7375 6.13125C2.22917 6.89375 2.98333 7.74167 4 8.675ZM4 10C2.65833 8.85833 1.65625 7.79792 0.99375 6.81875C0.33125 5.83958 0 4.93333 0 4.1C0 2.85 0.402083 1.85417 1.20625 1.1125C2.01042 0.370833 2.94167 0 4 0C5.05833 0 5.98958 0.370833 6.79375 1.1125C7.59792 1.85417 8 2.85 8 4.1C8 4.93333 7.66875 5.83958 7.00625 6.81875C6.34375 7.79792 5.34167 8.85833 4 10Z" fill="#3D4947"/>
+</svg>
+
+                            Chennai, India
+                            <span>• 4.7 Stars</span>
+                        </p>
+
+                        <p class="ct_orange_text mb-0 ct_fw_500">
+                            Specialty: Gastroenterology
+                        </p>
+
+                    </div>
+
+                </a>
             </div>
-            <div class="item">
-              <div class="ct_testimonial_slide_card">
-                <div
-                  class="d-flex align-items-center gap-2 mb-3 justify-content-center"
-                >
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                  <i class="fa-solid fa-star ct_star_active"></i>
-                </div>
-                <p class="">
-                  "I stayed here for three months during my Erasmus program, and
-                  it felt just like home. The apartment was clean,
-                  well-equipped, and the landlord was super responsive and
-                  friendly. The Wi-Fi was fast enough for my online classes, and
-                  the kitchen had everything I needed to cook daily. The metro
-                  station was just a short walk away, and there were grocery
-                  stores, cafés, and a gym nearby, which made life super
-                  convenient. The neighborhood felt safe and quiet, especially
-                  at night. I didn’t face any issues during my stay, and the
-                  move-in process was smooth and stress-free. Highly recommend
-                  it for students or anyone staying mid-term!"
-                </p>
-                <p class="">
-                  "I stayed here for three months during my Erasmus program, and
-                  it felt just like home.
-                </p>
-                <div
-                  class="d-flex align-items-center gap-2 justify-content-center pt-4"
-                >
-                  <div class="ct_client_user_img">
-                    <img src="../assets/img/user_1.jpg" alt="" />
-                  </div>
-                  <div>
-                    <h5 class="ct_fs_18 ct_fw_600 mb-1">Kristin Watson</h5>
-                    <p class="mb-0">New Mexico 31134</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+        </div>
         </div>
         <div class="ct_white_bg ct_box_shadow p-4 mt-4">
-          <h4 class="ct_fs_20 ct_fw_600">Rate Your Experience</h4>
-          <div class="d-flex align-items-center gap-2 mb-3 mt-4">
-            <i class="fa-solid fa-star ct_fs_24 ct_star_active"></i>
-            <i class="fa-solid fa-star ct_text_clr_ccc ct_fs_24"></i>
-            <i class="fa-solid fa-star ct_text_clr_ccc ct_fs_24"></i>
-            <i class="fa-solid fa-star ct_text_clr_ccc ct_fs_24"></i>
-            <i class="fa-solid fa-star ct_text_clr_ccc ct_fs_24"></i>
-          </div>
-          <form action="" class="mt-4">
-            <div class="form-group">
-              <label for="" class="mb-2 ct_fw_600">Comments</label>
-              <textarea
-                class="form-control ct_input h-auto ct_input_grey"
-                placeholder="Tell Us What You Liked...Or Didn’t"
-                rows="6"
-              ></textarea>
+          <h4 class="ct_fs_20 ct_fw_600 mb-4">Patient Reviews</h4>
+         
+
+        <div class="position-relative">
+
+            <div class="swiper ct_review_slider">
+
+                <div class="swiper-wrapper">
+
+                    <!-- Slide -->
+
+                    <div class="swiper-slide">
+
+                        <div class="ct_review_card">
+
+                            <div class="d-flex align-items-center gap-3 mb-3">
+
+                                <img src="assets/img/review_user.png" alt="">
+
+                                <div>
+
+                                    <h6 class="mb-1 ct_fw_600">
+                                        Kristin Watson
+                                    </h6>
+
+                                    <p class="mb-0 ct_text_707070 ct_fs_14">
+                                        New Mexico 31134
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="ct_star_wrap mb-3">
+
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                            </div>
+
+                            <p class="ct_text_707070 mb-0">
+
+                                I stayed here for three months during my
+                                Erasmus program, and it has just felt like
+                                home.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                  
+
+                    <div class="swiper-slide">
+                        <div class="ct_review_card">
+
+                            <div class="d-flex align-items-center gap-3 mb-3">
+
+                                <img src="assets/img/review_user.png" alt="">
+
+                                <div>
+
+                                    <h6 class="mb-1 ct_fw_600">
+                                        Kristin Watson
+                                    </h6>
+
+                                    <p class="mb-0 ct_text_707070 ct_fs_14">
+                                        New Mexico 31134
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="ct_star_wrap mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="ct_text_707070 mb-0">
+                                I stayed here for three months during my Erasmus
+                                program, and it has just felt like home.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="ct_review_card">
+
+                            <div class="d-flex align-items-center gap-3 mb-3">
+
+                                <img src="assets/img/review_user.png" alt="">
+
+                                <div>
+
+                                    <h6 class="mb-1 ct_fw_600">
+                                        Kristin Watson
+                                    </h6>
+
+                                    <p class="mb-0 ct_text_707070 ct_fs_14">
+                                        New Mexico 31134
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="ct_star_wrap mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="ct_text_707070 mb-0">
+                                I stayed here for three months during my Erasmus
+                                program, and it has just felt like home.
+                            </p>
+
+                        </div>
+                    </div>
+                       <div class="swiper-slide">
+                        <div class="ct_review_card">
+
+                            <div class="d-flex align-items-center gap-3 mb-3">
+
+                                <img src="assets/img/review_user.png" alt="">
+
+                                <div>
+
+                                    <h6 class="mb-1 ct_fw_600">
+                                        Kristin Watson
+                                    </h6>
+
+                                    <p class="mb-0 ct_text_707070 ct_fs_14">
+                                        New Mexico 31134
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="ct_star_wrap mb-3">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="ct_text_707070 mb-0">
+                                I stayed here for three months during my Erasmus
+                                program, and it has just felt like home.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-            <div class="mt-4">
-              <button class="ct_orange_btn">Submit</button>
+
+            <!-- Navigation -->
+
+            <div class="ct_responsive_nav">
+                <div class="ct_review_prev">
+                <i class="fa-solid fa-arrow-left"></i>
             </div>
-          </form>
+
+            <div class="ct_review_next">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            </div>
+
         </div>
+
+        </div>
+       
       </div>
     </section>
 
@@ -853,7 +1214,7 @@
           <div class="col-md-12">
             <div class="ct_newsletter_bg">
               <img
-                src="../assets/img/newletter_left_img.png"
+                src="assets/img/newletter_left_img.png"
                 alt=""
                 class="ct_flex_shrink_0"
               />
@@ -887,7 +1248,7 @@
           <div class="col-lg-5 col-md-5 mb-4 mb-lg-0">
             <div class="ct_footer_left_info">
               <a href="index.html" class="ct_footer_logo">
-                <img src="../assets/img/logo.svg" alt="" />
+                <img src="assets/img/logo.svg" alt="" />
               </a>
               <p class="my-4 text-white">
                 Mid‑term homes for students & nomads—direct from hosts. Verified
@@ -933,6 +1294,8 @@
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

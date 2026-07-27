@@ -272,6 +272,7 @@ input[type="number"] {
 
 .ct_h_50 {
   min-height: 50px;
+  height: 50px;
 }
 
 /* all font size css E */
@@ -3606,6 +3607,9 @@ ul.ct_landloard_right_info li {
   padding-inline: 40px;
   border-right: 1px solid #dddddd;
 }
+ul.ct_landloard_right_info li:last-child{
+  border-right: 0px;
+}
 
 .ct_client_user_img {
   -ms-flex-negative: 0;
@@ -4727,6 +4731,166 @@ button.ct_show_all_images_btn:hover {
 }
 
 
+.ct_stats_card{
+    background: #fff;
+    border: 1px solid #D8DDE3;
+    border-radius: 18px;
+    padding: 22px 15px;
+    text-align: center;
+    height: 100%;
+    transition: .3s ease;
+}
+
+.ct_stats_card:hover{
+    border-color: var(--orange);
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transform: translateY(-4px);
+}
+
+.ct_stats_icon{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 22px;
+}
+
+.ct_stats_card h3{
+    color: #191C1D;
+    line-height: 1.1;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.ct_stats_card p{
+    letter-spacing: 1;
+    font-weight: 400;
+    color: #3D4947;
+    font-size: 12px;
+}
+
+
+
+.ct_booking_card{
+    background:#fff;
+    border-radius:18px;
+    padding:24px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.ct_info_btn{
+    border:none;
+    background:transparent;
+    color:var(--orange);
+    font-size:22px;
+}
+
+.ct_price_box{
+    background:#F6F6F6;
+    border-radius:10px;
+    padding:15px 18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+}
+
+.ct_price_box span{
+    color:#666;
+}
+
+.ct_price_box strong{
+    font-size:22px;
+}
+
+
+/* Flatpickr */
+
+.flatpickr-calendar{
+    width:100% !important;
+    box-shadow:none;
+    border:1px solid #e5e5e5;
+    border-radius:14px;
+}
+
+.flatpickr-month{
+    background:#f7f7f7;
+}
+
+.flatpickr-current-month{
+    font-size:16px;
+}
+
+.flatpickr-day.selected{
+    background:var(--orange);
+    border-color:var(--orange);
+}
+
+.flatpickr-day.selected:hover{
+    background:var(--orange);
+}
+
+.flatpickr-day.today{
+    border-color:var(--orange);
+}
+
+.flatpickr-rContainer{
+    width:100%;
+}
+
+.dayContainer{
+    width:100%;
+    min-width:100%;
+    max-width:100%;
+}
+
+.flatpickr-days{
+    width:100%;
+}
+
+
+
+.ct_doctor_card{
+    background:#fff;
+    border:1px solid #D8DDE3;
+    border-radius:18px;
+    padding:18px 20px;
+    transition:.3s ease;
+    height:100%;
+}
+
+.ct_doctor_card:hover{
+    border-color:var(--orange);
+
+}
+
+.ct_doctor_img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+.ct_doctor_card h5{
+    font-size:20px;
+    line-height:1.2;
+}
+
+.ct_doctor_card small{
+    color:#000;
+    display:block;
+    margin-top:2px;
+}
+
+.ct_doctor_card h6{
+    font-size:16px;
+    font-weight:600;
+}
+
 .clinic_facility_select_box{
   background: #FFFFFF08;
 border: 1px solid #D3DCE8;
@@ -4761,7 +4925,201 @@ color: #475569;
   font-size: 14px;
   color: #374151;
 }
+.ct_text_0D0D0D{
+  color: #0D0D0D;
+}
 
+
+
+.ct_treatment_card{
+    background:#fff;
+    border:1px solid #D9DDE3;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.35s;
+    height:100%;
+}
+
+.ct_treatment_card:hover{
+
+    border-color:var(--orange);
+}
+
+.ct_treatment_img{
+    overflow:hidden;
+}
+
+.ct_treatment_img img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.ct_treatment_card:hover img{
+    transform:scale(1.08);
+}
+
+.ct_treatment_content{
+    padding:24px;
+}
+
+.ct_treatment_content h4{
+    font-size:24px;
+    color:#191C1D;
+}
+
+.ct_treatment_btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:48px;
+    background:#F4F4F4;
+    border-radius:10px;
+    color:#007B73;
+    font-weight:500;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.ct_treatment_btn:hover{
+    background:var(--orange);
+    color:#fff;
+}
+
+.ct_view_more{
+    font-size:20px;
+    font-weight:600;
+    color:#0D0D0D;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.ct_view_more:hover{
+    color:var(--orange);
+}
+
+
+
+.ct_related_clinic_card{
+    display:block;
+    text-decoration:none;
+    color:#222;
+    transition:.35s ease;
+}
+
+.ct_related_clinic_img{
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.ct_related_clinic_img img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+    transition:.4s;
+    display:block;
+}
+
+.ct_related_clinic_card:hover .ct_related_clinic_img img{
+    transform:scale(1.08);
+}
+
+.ct_related_clinic_card h5{
+    font-size:18px;
+    transition:.3s;
+}
+
+.ct_related_clinic_card:hover h5{
+    color:var(--orange);
+}
+
+.ct_related_clinic_card p{
+    font-size:16px;
+    line-height:1.6;
+    color: #5C727D;
+}
+
+.ct_related_clinic_card .ct_orange_text{
+    font-weight:500;
+    color: var(--orange);
+}
+
+
+.ct_review_slider {
+    width: calc(100% - 140px);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.ct_review_card{
+    background:#F8F8F8;
+    border-radius:18px;
+    padding:22px;
+    height:100%;
+    transition:.35s;
+}
+
+.ct_review_card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.ct_review_card img{
+    width:56px;
+    height:56px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.ct_star_wrap{
+    display:flex;
+    gap:4px;
+}
+
+.ct_star_wrap i{
+    color:#FDB813;
+    font-size:14px;
+}
+
+.ct_review_card p{
+    font-size:14px;
+    line-height:1.7;
+}
+
+/* Navigation */
+
+.ct_review_prev,
+.ct_review_next{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:var(--orange);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:10;
+    transition:.3s;
+}
+
+.ct_review_prev{
+    left:0;
+}
+
+.ct_review_next{
+    right:0;
+}
+
+.ct_review_prev:hover,
+.ct_review_next:hover{
+    background:#000;
+}
 .why_host_confi_img img{
   max-height: 56px;
   max-width: 56px;
@@ -4782,4 +5140,69 @@ color: #475569;
   justify-content: space-between;
   gap: 16px;
   font-size: 20px;
+}
+/* Responsive */
+
+
+.ct_booking_summary{
+    background:#fff;
+    border-radius:16px;
+}
+
+.ct_summary_item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    padding:18px 0;
+    border-bottom:1px solid #D9DDE3;
+}
+
+.ct_summary_icon{
+    width:36px;
+    height:36px;
+    border-radius:8px;
+    background:#EF7F1833;
+    color:var(--orange);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    font-size:16px;
+}
+
+.ct_summary_doctor{
+    width:40px !important;
+    height:40px !important;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+.ct_summary_item h5{
+    font-size:16px;
+    color:#222;
+}
+
+.ct_summary_item p{
+    font-size:15px;
+    margin-top:2px;
+}
+
+@media(max-width:767px){
+
+    .ct_summary_item{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .ct_summary_item .text-end{
+        text-align:left !important;
+    }
+
+    .ct_summary_item h5{
+        font-size:18px;
+    }
+
 }
