@@ -1,0 +1,2574 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="assets/img/fav_icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="assets/img/fav_icon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Flexsirent Medical Tourism</title>
+  </head>
+  <body>
+    <header class="ct_header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="ct_navbr_main">
+              <div class="ct_logo">
+                <a href="home.html"
+                  ><img loading="lazy" src="assets/img/logo.svg" alt=""
+                /></a>
+              </div>
+              <div class="ct_navbar">
+                <ul>
+                  <div class="ct_close_menu">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a class="active" href="clinics.html">Clinics</a></li>
+                  <li>
+                    <a class="" href="join-us-clinic.html">Join as Clinic</a>
+                  </li>
+                  <li><a href="blog.html" class="">Blogs</a></li>
+                  <li><a href="help.html" class="">Help</a></li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <li class="d-flex align-items-center">
+                  <div
+                    class="mb-0"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="d-flex align-items-center gap-1">
+                      <div class="dropdown ct_login_dropdown ct_cursor_pointer">
+                        <span
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          data-bs-target="#ct_login_modal"
+                          class=""
+                          ><span>Sign Up</span> |</span
+                        >
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Sign up as Patient</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Sign up as Clinic</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown ct_login_dropdown ct_cursor_pointer">
+                        <span
+                          id="dropdownMenuButton2"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          ><span>Login</span></span
+                        >
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton2"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Login as Patient</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Login as Clinic</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <div class="ct_menu_bar">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="ct_inner_banner_bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="ct_fs_35 ct_fw_700">Clinics</h2>
+            <p class="mb-0">
+              Explore leading hospitals and specialty clinics offering advanced
+              treatments, expert doctors, and exceptional patient care.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div>
+              <ul
+                class="d-flex align-items-center gap-3 flex-wrap mb-4 ct_flex_col_767 ct_multifilter_main"
+              >
+                <li class="ct_custom_drop_mega ct_w_100_767">
+                  <a
+                    href="javascript:void(0)"
+                    id="Amenities"
+                    class="form-control ct_custom_price_select_dropdown ct_input ct_input_h_50 ct_w_100_575 d-flex align-items-center gap-1 justify-content-between"
+                  >
+                    Treatment
+
+                    <i class="fa-solid fa-angle-down ms-1"></i>
+                  </a>
+                  <ul class="ct_custom_drop_mega_menus" id="ct_Amenities_drop">
+                    <div>
+                      <h4 class="ct_fs_20 ct_fw_600">Availability</h4>
+                      <p class="mb-0 ct_fs_14">
+                        Rent a property from months to years
+                      </p>
+                    </div>
+
+                    <div class="mt-3 row">
+                      <div class="col-md-6 mb-2 mb-md-0">
+                        <div class="form-group">
+                          <label class="mb-0 ct_fw_600 mb-2"
+                            >Move in date</label
+                          >
+                          <input
+                            type="date"
+                            class="form-control ct_input_h_50"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-2 mb-md-0">
+                        <div class="form-group">
+                          <label class="mb-0 ct_fw_600 mb-2"
+                            >Move Out date</label
+                          >
+                          <input
+                            type="date"
+                            class="form-control ct_input_h_50"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="ct_orange_btn mt-3 mx-auto">
+                      View 859 results
+                    </button>
+                    <!-- <div class="ct_filter_scroll ct_custom_scroll ct_pe_30">
+                                            <div class="d-flex align-items-center gap-2 justify-content-between ">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div class="form-check ct_custom_check2">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            value=""
+                                                            id="flexCheckDefault"
+                                                        >
+                                                    </div>
+                                                    <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6">Dishwasher</label>
+                                                </div>
+                                                <p class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14">3,924</p>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2 justify-content-between mt-2 ">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div class="form-check ct_custom_check2">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            value=""
+                                                            id="flexCheckDefault"
+                                                        >
+                                                    </div>
+                                                    <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6">
+                                                        Washing
+                                                    Machine
+                                                    </label>
+                                                </div>
+                                                <p class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14">24</p>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2 justify-content-between mt-2 ">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div class="form-check ct_custom_check2">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            value=""
+                                                            id="flexCheckDefault"
+                                                        >
+                                                    </div>
+                                                    <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6">
+                                                        Air Conditioning
+                                                    </label>
+                                                </div>
+                                                <p class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14">994</p>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2 justify-content-between mt-2 ">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div class="form-check ct_custom_check2">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            value=""
+                                                            id="flexCheckDefault"
+                                                        >
+                                                    </div>
+                                                    <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6">
+                                                        TV / Streaming
+                                                    Access
+                                                    </label>
+                                                </div>
+                                                <p class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14">3,924</p>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2 justify-content-between mt-2 ">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div class="form-check ct_custom_check2">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            value=""
+                                                            id="flexCheckDefault"
+                                                        >
+                                                    </div>
+                                                    <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6">
+                                                        Pet
+                                                    Friendly
+                                                    </label>
+                                                </div>
+                                                <p class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14">3,924</p>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2 justify-content-between mt-2 ">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div class="form-check ct_custom_check2">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            value=""
+                                                            id="flexCheckDefault"
+                                                        >
+                                                    </div>
+                                                    <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6">
+                                                        Weekly
+                                                    Cleaning
+                                                    </label>
+                                                </div>
+                                                <p class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14">224</p>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2 justify-content-between mt-2 ">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div class="form-check ct_custom_check2">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            value=""
+                                                            id="flexCheckDefault"
+                                                        >
+                                                    </div>
+                                                    <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6">Balcony</label>
+                                                </div>
+                                                <p class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14">224</p>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2 justify-content-between mt-2 ">
+                                                <div class="d-flex align-items-center gap-1">
+                                                    <div class="form-check ct_custom_check2">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="checkbox"
+                                                            value=""
+                                                            id="flexCheckDefault"
+                                                        >
+                                                    </div>
+                                                    <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6">
+                                                        Equipped
+                                                    Kitchen
+                                                    </label>
+                                                </div>
+                                                <p class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14">224</p>
+                                            </div>
+                                        </div> -->
+                  </ul>
+                </li>
+                <li class="ct_custom_drop_mega ct_w_100_767">
+                  <a
+                    href="javascript:void(0)"
+                    id="price_range"
+                    class="form-control ct_custom_price_select_dropdown ct_input ct_input_h_50 ct_w_100_575 d-flex align-items-center gap-1 justify-content-between"
+                  >
+                    Country
+                    <i class="fa-solid fa-angle-down ms-1"></i>
+                  </a>
+                  <ul
+                    class="ct_custom_drop_mega_menus"
+                    id="ct_price_range_drop"
+                  >
+                    <div class="">
+                      <div>
+                        <h4 class="ct_fs_20 ct_fw_600">Property type</h4>
+                        <p class="mb-0 ct_fs_14">Select a property type</p>
+                      </div>
+
+                      <div
+                        class="ct_filter_scroll ct_custom_scroll ct_pe_30 mt-3"
+                      >
+                        <div
+                          class="d-flex align-items-center gap-2 justify-content-between"
+                        >
+                          <div class="d-flex align-items-center gap-1">
+                            <div class="form-check ct_custom_check2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                            </div>
+                            <label
+                              for=""
+                              class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                              >Apartments</label
+                            >
+                          </div>
+                          <p
+                            class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                          >
+                            3,924
+                          </p>
+                        </div>
+                        <div
+                          class="d-flex align-items-center gap-2 justify-content-between mt-2"
+                        >
+                          <div class="d-flex align-items-center gap-1">
+                            <div class="form-check ct_custom_check2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                            </div>
+                            <label
+                              for=""
+                              class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                              >Studios</label
+                            >
+                          </div>
+                          <p
+                            class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                          >
+                            3,924
+                          </p>
+                        </div>
+                        <div
+                          class="d-flex align-items-center gap-2 justify-content-between mt-2"
+                        >
+                          <div class="d-flex align-items-center gap-1">
+                            <div class="form-check ct_custom_check2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                            </div>
+                            <label
+                              for=""
+                              class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                              >Rooms in shared apartment</label
+                            >
+                          </div>
+                          <p
+                            class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                          >
+                            3,924
+                          </p>
+                        </div>
+                        <div
+                          class="d-flex align-items-center gap-2 justify-content-between mt-2"
+                        >
+                          <div class="d-flex align-items-center gap-1">
+                            <div class="form-check ct_custom_check2">
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault"
+                              />
+                            </div>
+                            <label
+                              for=""
+                              class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                              >Student residences</label
+                            >
+                          </div>
+                          <p
+                            class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                          >
+                            3,924
+                          </p>
+                        </div>
+                      </div>
+                      <button class="ct_orange_btn mx-auto mt-3">
+                        View 8216 results
+                      </button>
+                    </div>
+                  </ul>
+                </li>
+                <li class="ct_custom_drop_mega ct_w_100_767">
+                  <a
+                    href="javascript:void(0)"
+                    id="Speciality"
+                    class="form-control ct_custom_price_select_dropdown ct_input ct_input_h_50 ct_w_100_575 d-flex align-items-center gap-1 justify-content-between"
+                  >
+                    Speciality
+                    <i class="fa-solid fa-angle-down ms-1"></i>
+                  </a>
+                </li>
+                <li class="ct_custom_drop_mega ct_w_100_767">
+                  <a
+                    href="javascript:void(0)"
+                    id="filter_price"
+                    class="form-control ct_custom_price_select_dropdown ct_input ct_input_h_50 ct_w_100_767 d-flex align-items-center gap-1 justify-content-between"
+                  >
+                    Price Range
+                    <i class="fa-solid fa-angle-down ms-1"></i>
+                  </a>
+                  <ul
+                    class="ct_custom_drop_mega_menus"
+                    id="ct_filter_price_drop"
+                  >
+                    <div class="ct_multirange_wrapper mb-4">
+                      <!-- <h4 class="ct_fs_20 ct_fw_600 mb-0"> Filter by Price</h4> -->
+                      <div class="ct_price-input">
+                        <div class="ct_price_field">
+                          <span class="d-block mb-2 ct_fw_600">Min</span>
+                          <input
+                            type="number"
+                            class="input-min form-control ct_input_ct_input_h_50"
+                            value="2500"
+                          />
+                        </div>
+                        <div class="separator">-</div>
+                        <div class="ct_price_field">
+                          <span class="d-block mb-2 ct_fw_600">Max</span>
+                          <input
+                            type="number"
+                            class="input-max form-control ct_input_ct_input_h_50"
+                            value="7500"
+                          />
+                        </div>
+                      </div>
+                      <div class="ct_range_slider1">
+                        <div class="ct_range_progress"></div>
+                      </div>
+                      <div class="range-input">
+                        <input
+                          type="range"
+                          class="range-min"
+                          min="0"
+                          max="10000"
+                          value="2500"
+                          step="100"
+                        />
+                        <input
+                          type="range"
+                          class="range-max"
+                          min="0"
+                          max="10000"
+                          value="7500"
+                          step="100"
+                        />
+                      </div>
+                    </div>
+                    <button class="ct_orange_btn mx-auto mt-3">
+                      View 8216 results
+                    </button>
+                  </ul>
+                </li>
+                <li class="ct_custom_drop_mega ct_w_100_767">
+                  <a
+                    href="javascript:void(0)"
+                    id="bed_bath"
+                    class="form-control ct_custom_price_select_dropdown ct_input ct_input_h_50 ct_w_100_767 d-flex align-items-center gap-1 justify-content-between"
+                  >
+                    Rating
+                    <i class="fa-solid fa-angle-down ms-1"></i>
+                  </a>
+                  <ul class="ct_custom_drop_mega_menus" id="ct_bed_bath_drop">
+                    <div class="ct_filter_scroll ct_custom_scroll ct_pe_30">
+                      <div
+                        class="d-flex align-items-center gap-2 justify-content-between"
+                      >
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="form-check ct_custom_check2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                          </div>
+                          <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                            >Air conditioning</label
+                          >
+                        </div>
+                        <p
+                          class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                        >
+                          3,924
+                        </p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center gap-2 justify-content-between mt-2"
+                      >
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="form-check ct_custom_check2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                          </div>
+                          <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                            >Kitchen</label
+                          >
+                        </div>
+                        <p
+                          class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                        >
+                          3,924
+                        </p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center gap-2 justify-content-between mt-2"
+                      >
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="form-check ct_custom_check2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                          </div>
+                          <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                            >Free Parking On Premises</label
+                          >
+                        </div>
+                        <p
+                          class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                        >
+                          3,924
+                        </p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center gap-2 justify-content-between mt-2"
+                      >
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="form-check ct_custom_check2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                          </div>
+                          <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                            >Fridge</label
+                          >
+                        </div>
+                        <p
+                          class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                        >
+                          3,924
+                        </p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center gap-2 justify-content-between mt-2"
+                      >
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="form-check ct_custom_check2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                          </div>
+                          <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                            >Wifi</label
+                          >
+                        </div>
+                        <p
+                          class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                        >
+                          3,924
+                        </p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center gap-2 justify-content-between mt-2"
+                      >
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="form-check ct_custom_check2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                          </div>
+                          <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6">
+                            Private Back Garden</label
+                          >
+                        </div>
+                        <p
+                          class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                        >
+                          3,924
+                        </p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center gap-2 justify-content-between mt-2"
+                      >
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="form-check ct_custom_check2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                          </div>
+                          <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                            >TV</label
+                          >
+                        </div>
+                        <p
+                          class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                        >
+                          3,924
+                        </p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center gap-2 justify-content-between mt-2"
+                      >
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="form-check ct_custom_check2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                          </div>
+                          <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6">
+                            Swimming Pool</label
+                          >
+                        </div>
+                        <p
+                          class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                        >
+                          3,924
+                        </p>
+                      </div>
+                    </div>
+                    <button class="ct_orange_btn mx-auto mt-3">
+                      View 8216 results
+                    </button>
+                  </ul>
+                </li>
+                <li class="ct_custom_drop_mega ct_w_100_767">
+                  <a
+                    href="javascript:void(0)"
+                    id="bhk"
+                    class="form-control ct_custom_price_select_dropdown ct_input ct_input_h_50 ct_w_100_767 d-flex align-items-center gap-1 justify-content-between"
+                  >
+                    Insurance Accepted
+                    <i class="fa-solid fa-angle-down ms-1"></i>
+                  </a>
+                  <ul class="ct_custom_drop_mega_menus" id="ct_bhk_drop">
+                    <div class="ct_filter_scroll ct_custom_scroll ct_pe_30">
+                      <div
+                        class="d-flex align-items-center gap-2 justify-content-between"
+                      >
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="form-check ct_custom_check2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                          </div>
+                          <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                            >Perfect for couples</label
+                          >
+                        </div>
+                        <p
+                          class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                        >
+                          3,924
+                        </p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center gap-2 justify-content-between mt-2"
+                      >
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="form-check ct_custom_check2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                          </div>
+                          <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                            >Pet-friendly</label
+                          >
+                        </div>
+                        <p
+                          class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                        >
+                          3,924
+                        </p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center gap-2 justify-content-between mt-2"
+                      >
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="form-check ct_custom_check2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                          </div>
+                          <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                            >Perfect for students</label
+                          >
+                        </div>
+                        <p
+                          class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                        >
+                          3,924
+                        </p>
+                      </div>
+                      <div
+                        class="d-flex align-items-center gap-2 justify-content-between mt-2"
+                      >
+                        <div class="d-flex align-items-center gap-1">
+                          <div class="form-check ct_custom_check2">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value=""
+                              id="flexCheckDefault"
+                            />
+                          </div>
+                          <label for="" class="ct_fs_14 ct_fw_500 ct_text_op_6"
+                            >Professionals</label
+                          >
+                        </div>
+                        <p
+                          class="mb-0 ct_fw_500 ct_text_op_6 ct_fs_14 ct_white_nowrap"
+                        >
+                          3,924
+                        </p>
+                      </div>
+                    </div>
+                    <button class="ct_orange_btn mx-auto mt-3">
+                      View 8216 results
+                    </button>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <div class="position-relative">
+                <input
+                  type="search"
+                  class="form-control ct_input_h_50 ct_pe_60"
+                  style="background-color: #f2f6f7"
+                  placeholder="Search by Location"
+                />
+                <div class="ct_search_bg_icon ct_show_eye">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                  <div class="ct_hospital_card">
+                    <div class="position-relative">
+                      <img
+                        src="assets/img/Clinics_img_1.png"
+                        class="img-fluid w-100 ct_hospital_img"
+                        alt=""
+                      />
+
+                      <span class="ct_rating_badge">
+                        ⭐ 4.7 (980 Reviews)
+                      </span>
+
+                      <button class="ct_wishlist_btn">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+
+                    <div class="p-4">
+                      <h5 class="ct_fw_600 mb-2 text-truncate">Fortis Hospital Bangalore</h5>
+
+                      <p class="ct_text_5C727D ct_fs_14 mb-3">
+                        <i class="fa-solid fa-location-dot ct_orange_text"></i>
+                        Bangalore, India
+                      </p>
+
+                      <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="ct_tag">Cardiology</span>
+                        <span class="ct_tag">Neurology</span>
+                        <span class="ct_tag">Urology</span>
+                      </div>
+
+                      <div class="row g-3">
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.332V15.832C16.6663 13.4754 16.6663 12.2962 15.9338 11.5645C15.2022 10.832 14.023 10.832 11.6663 10.832L9.99967 12.4987L8.33301 10.832C5.97634 10.832 4.79717 10.832 4.06551 11.5645C3.33301 12.2962 3.33301 13.4754 3.33301 15.832V18.332M13.333 10.832V15.4154"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M7.08268 10.8327V14.166M7.08268 14.166C7.52471 14.166 7.94863 14.3416 8.26119 14.6542C8.57375 14.9667 8.74935 15.3907 8.74935 15.8327V16.666M7.08268 14.166C6.64065 14.166 6.21673 14.3416 5.90417 14.6542C5.59161 14.9667 5.41602 15.3907 5.41602 15.8327V16.666M12.916 5.41602V4.58268C12.916 4.19966 12.8406 3.82039 12.694 3.46652C12.5474 3.11266 12.3326 2.79113 12.0617 2.52029C11.7909 2.24945 11.4694 2.03461 11.1155 1.88803C10.7616 1.74146 10.3824 1.66602 9.99935 1.66602C9.61633 1.66602 9.23706 1.74146 8.88319 1.88803C8.52932 2.03461 8.20779 2.24945 7.93695 2.52029C7.66612 2.79113 7.45128 3.11266 7.3047 3.46652C7.15812 3.82039 7.08268 4.19966 7.08268 4.58268V5.41602C7.08268 5.79904 7.15812 6.17831 7.3047 6.53218C7.45128 6.88604 7.66612 7.20757 7.93695 7.47841C8.20779 7.74925 8.52932 7.96409 8.88319 8.11066C9.23706 8.25724 9.61633 8.33268 9.99935 8.33268C10.3824 8.33268 10.7616 8.25724 11.1155 8.11066C11.4694 7.96409 11.7909 7.74925 12.0617 7.47841C12.3326 7.20757 12.5474 6.88604 12.694 6.53218C12.8406 6.17831 12.916 5.79904 12.916 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M13.958 16.041C13.958 16.2068 13.8922 16.3657 13.775 16.483C13.6577 16.6002 13.4988 16.666 13.333 16.666C13.1672 16.666 13.0083 16.6002 12.8911 16.483C12.7739 16.3657 12.708 16.2068 12.708 16.041C12.708 15.8753 12.7739 15.7163 12.8911 15.5991C13.0083 15.4819 13.1672 15.416 13.333 15.416C13.4988 15.416 13.6577 15.4819 13.775 15.5991C13.8922 15.7163 13.958 15.8753 13.958 16.041Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">98+</h6>
+                              <small class="ct_text_5C727D">Specialists</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.66699 14.9993V10.8327C1.66699 10.4577 1.74338 10.1174 1.89616 9.81185C2.04894 9.50629 2.25033 9.23546 2.50033 8.99935V6.66602C2.50033 5.97157 2.74338 5.38129 3.22949 4.89518C3.7156 4.40907 4.30588 4.16602 5.00033 4.16602H8.33366C8.6531 4.16602 8.95171 4.22518 9.22949 4.34352C9.50727 4.46185 9.76421 4.6249 10.0003 4.83268C10.2364 4.62435 10.4934 4.46129 10.7712 4.34352C11.0489 4.22574 11.3475 4.16657 11.667 4.16602H15.0003C15.6948 4.16602 16.285 4.40907 16.7712 4.89518C17.2573 5.38129 17.5003 5.97157 17.5003 6.66602V8.99935C17.7503 9.23546 17.9517 9.50629 18.1045 9.81185C18.2573 10.1174 18.3337 10.4577 18.3337 10.8327V14.9993C18.3337 15.2355 18.2537 15.4335 18.0937 15.5935C17.9337 15.7535 17.7359 15.8332 17.5003 15.8327C17.2648 15.8321 17.067 15.7521 16.907 15.5927C16.747 15.4332 16.667 15.2355 16.667 14.9993V14.166H3.33366V14.9993C3.33366 15.2355 3.25366 15.4335 3.09366 15.5935C2.93366 15.7535 2.73588 15.8332 2.50033 15.8327C2.26477 15.8321 2.06699 15.7521 1.90699 15.5927C1.74699 15.4332 1.66699 15.2355 1.66699 14.9993ZM10.8337 8.33268H15.8337V6.66602C15.8337 6.4299 15.7537 6.23213 15.5937 6.07268C15.4337 5.91324 15.2359 5.83324 15.0003 5.83268H11.667C11.4309 5.83268 11.2331 5.91268 11.0737 6.07268C10.9142 6.23268 10.8342 6.43046 10.8337 6.66602V8.33268ZM4.16699 8.33268H9.16699V6.66602C9.16699 6.4299 9.08699 6.23213 8.92699 6.07268C8.76699 5.91324 8.56921 5.83324 8.33366 5.83268H5.00033C4.76421 5.83268 4.56644 5.91268 4.40699 6.07268C4.24755 6.23268 4.16755 6.43046 4.16699 6.66602V8.33268ZM3.33366 12.4993H16.667V10.8327C16.667 10.5966 16.587 10.3988 16.427 10.2393C16.267 10.0799 16.0692 9.9999 15.8337 9.99935H4.16699C3.93088 9.99935 3.7331 10.0793 3.57366 10.2393C3.41421 10.3993 3.33421 10.5971 3.33366 10.8327V12.4993Z"
+                                fill="#5C727D"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">700</h6>
+                              <small class="ct_text_5C727D">Beds</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.3329V15.8329C16.6663 13.4762 16.6663 12.297 15.9338 11.5654C15.2022 10.832 14.023 10.832 11.6663 10.832H8.33301C5.97634 10.832 4.79717 10.832 4.06551 11.5654C3.33301 12.297 3.33301 13.4762 3.33301 15.832C3.33301 16.6095 3.33301 16.9979 3.45967 17.3037C3.54344 17.506 3.66625 17.6899 3.82111 17.8448C3.97597 17.9996 4.15983 18.1224 4.36217 18.2062C4.66801 18.3329 5.05634 18.3329 5.83301 18.3329V11.2495M7.91634 10.8329L10.4163 18.3329"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.99967 15.8327H12.083C12.4145 15.8327 12.7325 15.9644 12.9669 16.1988C13.2013 16.4332 13.333 16.7512 13.333 17.0827C13.333 17.4142 13.2013 17.7321 12.9669 17.9666C12.7325 18.201 12.4145 18.3327 12.083 18.3327H10.4163M12.9163 5.41602V4.58268C12.9163 4.19966 12.8409 3.82039 12.6943 3.46652C12.5477 3.11266 12.3329 2.79113 12.0621 2.52029C11.7912 2.24945 11.4697 2.03461 11.1158 1.88803C10.762 1.74146 10.3827 1.66602 9.99967 1.66602C9.61665 1.66602 9.23738 1.74146 8.88351 1.88803C8.52965 2.03461 8.20812 2.24945 7.93728 2.52029C7.66644 2.79113 7.4516 3.11266 7.30503 3.46652C7.15845 3.82039 7.08301 4.19966 7.08301 4.58268V5.41602C7.08301 5.79904 7.15845 6.17831 7.30503 6.53218C7.4516 6.88604 7.66644 7.20757 7.93728 7.47841C8.20812 7.74925 8.52965 7.96409 8.88351 8.11066C9.23738 8.25724 9.61665 8.33268 9.99967 8.33268C10.3827 8.33268 10.762 8.25724 11.1158 8.11066C11.4697 7.96409 11.7912 7.74925 12.0621 7.47841C12.3329 7.20757 12.5477 6.88604 12.6943 6.53218C12.8409 6.17831 12.9163 5.79904 12.9163 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">18,000+</h6>
+                              <small class="ct_text_5C727D">Patients</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M21 22V19C21 16.172 21 14.757 20.121 13.879C19.243 13 17.828 13 15 13L13 15L11 13C8.172 13 6.757 13 5.879 13.879C5 14.757 5 16.172 5 19V22M17 13V18.5"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.5 13V17M9.5 17C10.0304 17 10.5391 17.2107 10.9142 17.5858C11.2893 17.9609 11.5 18.4696 11.5 19V20M9.5 17C8.96957 17 8.46086 17.2107 8.08579 17.5858C7.71071 17.9609 7.5 18.4696 7.5 19V20M16.5 6.5V5.5C16.5 5.04037 16.4095 4.58525 16.2336 4.16061C16.0577 3.73597 15.7999 3.35013 15.4749 3.02513C15.1499 2.70012 14.764 2.44231 14.3394 2.26642C13.9148 2.09053 13.4596 2 13 2C12.5404 2 12.0852 2.09053 11.6606 2.26642C11.236 2.44231 10.8501 2.70012 10.5251 3.02513C10.2001 3.35013 9.94231 3.73597 9.76642 4.16061C9.59053 4.58525 9.5 5.04037 9.5 5.5V6.5C9.5 6.95963 9.59053 7.41475 9.76642 7.83939C9.94231 8.26403 10.2001 8.64987 10.5251 8.97487C10.8501 9.29988 11.236 9.55769 11.6606 9.73358C12.0852 9.90947 12.5404 10 13 10C13.4596 10 13.9148 9.90947 14.3394 9.73358C14.764 9.55769 15.1499 9.29988 15.4749 8.97487C15.7999 8.64987 16.0577 8.26403 16.2336 7.83939C16.4095 7.41475 16.5 6.95963 16.5 6.5Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.75 19.25C17.75 19.4489 17.671 19.6397 17.5303 19.7803C17.3897 19.921 17.1989 20 17 20C16.8011 20 16.6103 19.921 16.4697 19.7803C16.329 19.6397 16.25 19.4489 16.25 19.25C16.25 19.0511 16.329 18.8603 16.4697 18.7197C16.6103 18.579 16.8011 18.5 17 18.5C17.1989 18.5 17.3897 18.579 17.5303 18.7197C17.671 18.8603 17.75 19.0511 17.75 19.25Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">Neurology</h6>
+                              <small class="ct_text_5C727D">Speciality</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ct_price_area">
+                      <div>
+                        <small
+                          class="text-uppercase ct_text_9CA3AF fw-semibold mb-1 d-block"
+                        >
+                          Starting From
+                        </small>
+
+                        <h4 class="mb-0 ct_fw_700">
+                          ₹34,900
+                          <span class="ct_fs_16 ct_fw_400">/Month</span>
+                        </h4>
+                      </div>
+
+                      <a href="clinics-details.html" class="ct_fw_600 ct_orange_text">
+                        VIEW DETAILS
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                  <div class="ct_hospital_card">
+                    <div class="position-relative">
+                      <img
+                        src="assets/img/Clinics_img_2.png"
+                        class="img-fluid w-100 ct_hospital_img"
+                        alt=""
+                      />
+
+                      <span class="ct_rating_badge">
+                        ⭐ 4.7 (980 Reviews)
+                      </span>
+
+                      <button class="ct_wishlist_btn">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+
+                    <div class="p-4">
+                      <h5 class="ct_fw_600 mb-2 text-truncate">Fortis Hospital Bangalore</h5>
+
+                      <p class="ct_text_5C727D ct_fs_14 mb-3">
+                        <i class="fa-solid fa-location-dot ct_orange_text"></i>
+                        Bangalore, India
+                      </p>
+
+                      <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="ct_tag">Cardiology</span>
+                        <span class="ct_tag">Neurology</span>
+                        <span class="ct_tag">Urology</span>
+                      </div>
+
+                      <div class="row g-3">
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.332V15.832C16.6663 13.4754 16.6663 12.2962 15.9338 11.5645C15.2022 10.832 14.023 10.832 11.6663 10.832L9.99967 12.4987L8.33301 10.832C5.97634 10.832 4.79717 10.832 4.06551 11.5645C3.33301 12.2962 3.33301 13.4754 3.33301 15.832V18.332M13.333 10.832V15.4154"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M7.08268 10.8327V14.166M7.08268 14.166C7.52471 14.166 7.94863 14.3416 8.26119 14.6542C8.57375 14.9667 8.74935 15.3907 8.74935 15.8327V16.666M7.08268 14.166C6.64065 14.166 6.21673 14.3416 5.90417 14.6542C5.59161 14.9667 5.41602 15.3907 5.41602 15.8327V16.666M12.916 5.41602V4.58268C12.916 4.19966 12.8406 3.82039 12.694 3.46652C12.5474 3.11266 12.3326 2.79113 12.0617 2.52029C11.7909 2.24945 11.4694 2.03461 11.1155 1.88803C10.7616 1.74146 10.3824 1.66602 9.99935 1.66602C9.61633 1.66602 9.23706 1.74146 8.88319 1.88803C8.52932 2.03461 8.20779 2.24945 7.93695 2.52029C7.66612 2.79113 7.45128 3.11266 7.3047 3.46652C7.15812 3.82039 7.08268 4.19966 7.08268 4.58268V5.41602C7.08268 5.79904 7.15812 6.17831 7.3047 6.53218C7.45128 6.88604 7.66612 7.20757 7.93695 7.47841C8.20779 7.74925 8.52932 7.96409 8.88319 8.11066C9.23706 8.25724 9.61633 8.33268 9.99935 8.33268C10.3824 8.33268 10.7616 8.25724 11.1155 8.11066C11.4694 7.96409 11.7909 7.74925 12.0617 7.47841C12.3326 7.20757 12.5474 6.88604 12.694 6.53218C12.8406 6.17831 12.916 5.79904 12.916 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M13.958 16.041C13.958 16.2068 13.8922 16.3657 13.775 16.483C13.6577 16.6002 13.4988 16.666 13.333 16.666C13.1672 16.666 13.0083 16.6002 12.8911 16.483C12.7739 16.3657 12.708 16.2068 12.708 16.041C12.708 15.8753 12.7739 15.7163 12.8911 15.5991C13.0083 15.4819 13.1672 15.416 13.333 15.416C13.4988 15.416 13.6577 15.4819 13.775 15.5991C13.8922 15.7163 13.958 15.8753 13.958 16.041Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">98+</h6>
+                              <small class="ct_text_5C727D">Specialists</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.66699 14.9993V10.8327C1.66699 10.4577 1.74338 10.1174 1.89616 9.81185C2.04894 9.50629 2.25033 9.23546 2.50033 8.99935V6.66602C2.50033 5.97157 2.74338 5.38129 3.22949 4.89518C3.7156 4.40907 4.30588 4.16602 5.00033 4.16602H8.33366C8.6531 4.16602 8.95171 4.22518 9.22949 4.34352C9.50727 4.46185 9.76421 4.6249 10.0003 4.83268C10.2364 4.62435 10.4934 4.46129 10.7712 4.34352C11.0489 4.22574 11.3475 4.16657 11.667 4.16602H15.0003C15.6948 4.16602 16.285 4.40907 16.7712 4.89518C17.2573 5.38129 17.5003 5.97157 17.5003 6.66602V8.99935C17.7503 9.23546 17.9517 9.50629 18.1045 9.81185C18.2573 10.1174 18.3337 10.4577 18.3337 10.8327V14.9993C18.3337 15.2355 18.2537 15.4335 18.0937 15.5935C17.9337 15.7535 17.7359 15.8332 17.5003 15.8327C17.2648 15.8321 17.067 15.7521 16.907 15.5927C16.747 15.4332 16.667 15.2355 16.667 14.9993V14.166H3.33366V14.9993C3.33366 15.2355 3.25366 15.4335 3.09366 15.5935C2.93366 15.7535 2.73588 15.8332 2.50033 15.8327C2.26477 15.8321 2.06699 15.7521 1.90699 15.5927C1.74699 15.4332 1.66699 15.2355 1.66699 14.9993ZM10.8337 8.33268H15.8337V6.66602C15.8337 6.4299 15.7537 6.23213 15.5937 6.07268C15.4337 5.91324 15.2359 5.83324 15.0003 5.83268H11.667C11.4309 5.83268 11.2331 5.91268 11.0737 6.07268C10.9142 6.23268 10.8342 6.43046 10.8337 6.66602V8.33268ZM4.16699 8.33268H9.16699V6.66602C9.16699 6.4299 9.08699 6.23213 8.92699 6.07268C8.76699 5.91324 8.56921 5.83324 8.33366 5.83268H5.00033C4.76421 5.83268 4.56644 5.91268 4.40699 6.07268C4.24755 6.23268 4.16755 6.43046 4.16699 6.66602V8.33268ZM3.33366 12.4993H16.667V10.8327C16.667 10.5966 16.587 10.3988 16.427 10.2393C16.267 10.0799 16.0692 9.9999 15.8337 9.99935H4.16699C3.93088 9.99935 3.7331 10.0793 3.57366 10.2393C3.41421 10.3993 3.33421 10.5971 3.33366 10.8327V12.4993Z"
+                                fill="#5C727D"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">700</h6>
+                              <small class="ct_text_5C727D">Beds</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.3329V15.8329C16.6663 13.4762 16.6663 12.297 15.9338 11.5654C15.2022 10.832 14.023 10.832 11.6663 10.832H8.33301C5.97634 10.832 4.79717 10.832 4.06551 11.5654C3.33301 12.297 3.33301 13.4762 3.33301 15.832C3.33301 16.6095 3.33301 16.9979 3.45967 17.3037C3.54344 17.506 3.66625 17.6899 3.82111 17.8448C3.97597 17.9996 4.15983 18.1224 4.36217 18.2062C4.66801 18.3329 5.05634 18.3329 5.83301 18.3329V11.2495M7.91634 10.8329L10.4163 18.3329"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.99967 15.8327H12.083C12.4145 15.8327 12.7325 15.9644 12.9669 16.1988C13.2013 16.4332 13.333 16.7512 13.333 17.0827C13.333 17.4142 13.2013 17.7321 12.9669 17.9666C12.7325 18.201 12.4145 18.3327 12.083 18.3327H10.4163M12.9163 5.41602V4.58268C12.9163 4.19966 12.8409 3.82039 12.6943 3.46652C12.5477 3.11266 12.3329 2.79113 12.0621 2.52029C11.7912 2.24945 11.4697 2.03461 11.1158 1.88803C10.762 1.74146 10.3827 1.66602 9.99967 1.66602C9.61665 1.66602 9.23738 1.74146 8.88351 1.88803C8.52965 2.03461 8.20812 2.24945 7.93728 2.52029C7.66644 2.79113 7.4516 3.11266 7.30503 3.46652C7.15845 3.82039 7.08301 4.19966 7.08301 4.58268V5.41602C7.08301 5.79904 7.15845 6.17831 7.30503 6.53218C7.4516 6.88604 7.66644 7.20757 7.93728 7.47841C8.20812 7.74925 8.52965 7.96409 8.88351 8.11066C9.23738 8.25724 9.61665 8.33268 9.99967 8.33268C10.3827 8.33268 10.762 8.25724 11.1158 8.11066C11.4697 7.96409 11.7912 7.74925 12.0621 7.47841C12.3329 7.20757 12.5477 6.88604 12.6943 6.53218C12.8409 6.17831 12.9163 5.79904 12.9163 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">18,000+</h6>
+                              <small class="ct_text_5C727D">Patients</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M21 22V19C21 16.172 21 14.757 20.121 13.879C19.243 13 17.828 13 15 13L13 15L11 13C8.172 13 6.757 13 5.879 13.879C5 14.757 5 16.172 5 19V22M17 13V18.5"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.5 13V17M9.5 17C10.0304 17 10.5391 17.2107 10.9142 17.5858C11.2893 17.9609 11.5 18.4696 11.5 19V20M9.5 17C8.96957 17 8.46086 17.2107 8.08579 17.5858C7.71071 17.9609 7.5 18.4696 7.5 19V20M16.5 6.5V5.5C16.5 5.04037 16.4095 4.58525 16.2336 4.16061C16.0577 3.73597 15.7999 3.35013 15.4749 3.02513C15.1499 2.70012 14.764 2.44231 14.3394 2.26642C13.9148 2.09053 13.4596 2 13 2C12.5404 2 12.0852 2.09053 11.6606 2.26642C11.236 2.44231 10.8501 2.70012 10.5251 3.02513C10.2001 3.35013 9.94231 3.73597 9.76642 4.16061C9.59053 4.58525 9.5 5.04037 9.5 5.5V6.5C9.5 6.95963 9.59053 7.41475 9.76642 7.83939C9.94231 8.26403 10.2001 8.64987 10.5251 8.97487C10.8501 9.29988 11.236 9.55769 11.6606 9.73358C12.0852 9.90947 12.5404 10 13 10C13.4596 10 13.9148 9.90947 14.3394 9.73358C14.764 9.55769 15.1499 9.29988 15.4749 8.97487C15.7999 8.64987 16.0577 8.26403 16.2336 7.83939C16.4095 7.41475 16.5 6.95963 16.5 6.5Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.75 19.25C17.75 19.4489 17.671 19.6397 17.5303 19.7803C17.3897 19.921 17.1989 20 17 20C16.8011 20 16.6103 19.921 16.4697 19.7803C16.329 19.6397 16.25 19.4489 16.25 19.25C16.25 19.0511 16.329 18.8603 16.4697 18.7197C16.6103 18.579 16.8011 18.5 17 18.5C17.1989 18.5 17.3897 18.579 17.5303 18.7197C17.671 18.8603 17.75 19.0511 17.75 19.25Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">Neurology</h6>
+                              <small class="ct_text_5C727D">Speciality</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ct_price_area">
+                      <div>
+                        <small
+                          class="text-uppercase ct_text_9CA3AF fw-semibold mb-1 d-block"
+                        >
+                          Starting From
+                        </small>
+
+                        <h4 class="mb-0 ct_fw_700">
+                          ₹34,900
+                          <span class="ct_fs_16 ct_fw_400">/Month</span>
+                        </h4>
+                      </div>
+
+                      <a href="clinics-details.html" class="ct_fw_600 ct_orange_text">
+                        VIEW DETAILS
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                  <div class="ct_hospital_card">
+                    <div class="position-relative">
+                      <img
+                        src="assets/img/Clinics_img_3.png"
+                        class="img-fluid w-100 ct_hospital_img"
+                        alt=""
+                      />
+
+                      <span class="ct_rating_badge">
+                        ⭐ 4.7 (980 Reviews)
+                      </span>
+
+                      <button class="ct_wishlist_btn">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+
+                    <div class="p-4">
+                      <h5 class="ct_fw_600 mb-2 text-truncate">Fortis Hospital Bangalore</h5>
+
+                      <p class="ct_text_5C727D ct_fs_14 mb-3">
+                        <i class="fa-solid fa-location-dot ct_orange_text"></i>
+                        Bangalore, India
+                      </p>
+
+                      <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="ct_tag">Cardiology</span>
+                        <span class="ct_tag">Neurology</span>
+                        <span class="ct_tag">Urology</span>
+                      </div>
+
+                      <div class="row g-3">
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.332V15.832C16.6663 13.4754 16.6663 12.2962 15.9338 11.5645C15.2022 10.832 14.023 10.832 11.6663 10.832L9.99967 12.4987L8.33301 10.832C5.97634 10.832 4.79717 10.832 4.06551 11.5645C3.33301 12.2962 3.33301 13.4754 3.33301 15.832V18.332M13.333 10.832V15.4154"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M7.08268 10.8327V14.166M7.08268 14.166C7.52471 14.166 7.94863 14.3416 8.26119 14.6542C8.57375 14.9667 8.74935 15.3907 8.74935 15.8327V16.666M7.08268 14.166C6.64065 14.166 6.21673 14.3416 5.90417 14.6542C5.59161 14.9667 5.41602 15.3907 5.41602 15.8327V16.666M12.916 5.41602V4.58268C12.916 4.19966 12.8406 3.82039 12.694 3.46652C12.5474 3.11266 12.3326 2.79113 12.0617 2.52029C11.7909 2.24945 11.4694 2.03461 11.1155 1.88803C10.7616 1.74146 10.3824 1.66602 9.99935 1.66602C9.61633 1.66602 9.23706 1.74146 8.88319 1.88803C8.52932 2.03461 8.20779 2.24945 7.93695 2.52029C7.66612 2.79113 7.45128 3.11266 7.3047 3.46652C7.15812 3.82039 7.08268 4.19966 7.08268 4.58268V5.41602C7.08268 5.79904 7.15812 6.17831 7.3047 6.53218C7.45128 6.88604 7.66612 7.20757 7.93695 7.47841C8.20779 7.74925 8.52932 7.96409 8.88319 8.11066C9.23706 8.25724 9.61633 8.33268 9.99935 8.33268C10.3824 8.33268 10.7616 8.25724 11.1155 8.11066C11.4694 7.96409 11.7909 7.74925 12.0617 7.47841C12.3326 7.20757 12.5474 6.88604 12.694 6.53218C12.8406 6.17831 12.916 5.79904 12.916 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M13.958 16.041C13.958 16.2068 13.8922 16.3657 13.775 16.483C13.6577 16.6002 13.4988 16.666 13.333 16.666C13.1672 16.666 13.0083 16.6002 12.8911 16.483C12.7739 16.3657 12.708 16.2068 12.708 16.041C12.708 15.8753 12.7739 15.7163 12.8911 15.5991C13.0083 15.4819 13.1672 15.416 13.333 15.416C13.4988 15.416 13.6577 15.4819 13.775 15.5991C13.8922 15.7163 13.958 15.8753 13.958 16.041Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">98+</h6>
+                              <small class="ct_text_5C727D">Specialists</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.66699 14.9993V10.8327C1.66699 10.4577 1.74338 10.1174 1.89616 9.81185C2.04894 9.50629 2.25033 9.23546 2.50033 8.99935V6.66602C2.50033 5.97157 2.74338 5.38129 3.22949 4.89518C3.7156 4.40907 4.30588 4.16602 5.00033 4.16602H8.33366C8.6531 4.16602 8.95171 4.22518 9.22949 4.34352C9.50727 4.46185 9.76421 4.6249 10.0003 4.83268C10.2364 4.62435 10.4934 4.46129 10.7712 4.34352C11.0489 4.22574 11.3475 4.16657 11.667 4.16602H15.0003C15.6948 4.16602 16.285 4.40907 16.7712 4.89518C17.2573 5.38129 17.5003 5.97157 17.5003 6.66602V8.99935C17.7503 9.23546 17.9517 9.50629 18.1045 9.81185C18.2573 10.1174 18.3337 10.4577 18.3337 10.8327V14.9993C18.3337 15.2355 18.2537 15.4335 18.0937 15.5935C17.9337 15.7535 17.7359 15.8332 17.5003 15.8327C17.2648 15.8321 17.067 15.7521 16.907 15.5927C16.747 15.4332 16.667 15.2355 16.667 14.9993V14.166H3.33366V14.9993C3.33366 15.2355 3.25366 15.4335 3.09366 15.5935C2.93366 15.7535 2.73588 15.8332 2.50033 15.8327C2.26477 15.8321 2.06699 15.7521 1.90699 15.5927C1.74699 15.4332 1.66699 15.2355 1.66699 14.9993ZM10.8337 8.33268H15.8337V6.66602C15.8337 6.4299 15.7537 6.23213 15.5937 6.07268C15.4337 5.91324 15.2359 5.83324 15.0003 5.83268H11.667C11.4309 5.83268 11.2331 5.91268 11.0737 6.07268C10.9142 6.23268 10.8342 6.43046 10.8337 6.66602V8.33268ZM4.16699 8.33268H9.16699V6.66602C9.16699 6.4299 9.08699 6.23213 8.92699 6.07268C8.76699 5.91324 8.56921 5.83324 8.33366 5.83268H5.00033C4.76421 5.83268 4.56644 5.91268 4.40699 6.07268C4.24755 6.23268 4.16755 6.43046 4.16699 6.66602V8.33268ZM3.33366 12.4993H16.667V10.8327C16.667 10.5966 16.587 10.3988 16.427 10.2393C16.267 10.0799 16.0692 9.9999 15.8337 9.99935H4.16699C3.93088 9.99935 3.7331 10.0793 3.57366 10.2393C3.41421 10.3993 3.33421 10.5971 3.33366 10.8327V12.4993Z"
+                                fill="#5C727D"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">700</h6>
+                              <small class="ct_text_5C727D">Beds</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.3329V15.8329C16.6663 13.4762 16.6663 12.297 15.9338 11.5654C15.2022 10.832 14.023 10.832 11.6663 10.832H8.33301C5.97634 10.832 4.79717 10.832 4.06551 11.5654C3.33301 12.297 3.33301 13.4762 3.33301 15.832C3.33301 16.6095 3.33301 16.9979 3.45967 17.3037C3.54344 17.506 3.66625 17.6899 3.82111 17.8448C3.97597 17.9996 4.15983 18.1224 4.36217 18.2062C4.66801 18.3329 5.05634 18.3329 5.83301 18.3329V11.2495M7.91634 10.8329L10.4163 18.3329"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.99967 15.8327H12.083C12.4145 15.8327 12.7325 15.9644 12.9669 16.1988C13.2013 16.4332 13.333 16.7512 13.333 17.0827C13.333 17.4142 13.2013 17.7321 12.9669 17.9666C12.7325 18.201 12.4145 18.3327 12.083 18.3327H10.4163M12.9163 5.41602V4.58268C12.9163 4.19966 12.8409 3.82039 12.6943 3.46652C12.5477 3.11266 12.3329 2.79113 12.0621 2.52029C11.7912 2.24945 11.4697 2.03461 11.1158 1.88803C10.762 1.74146 10.3827 1.66602 9.99967 1.66602C9.61665 1.66602 9.23738 1.74146 8.88351 1.88803C8.52965 2.03461 8.20812 2.24945 7.93728 2.52029C7.66644 2.79113 7.4516 3.11266 7.30503 3.46652C7.15845 3.82039 7.08301 4.19966 7.08301 4.58268V5.41602C7.08301 5.79904 7.15845 6.17831 7.30503 6.53218C7.4516 6.88604 7.66644 7.20757 7.93728 7.47841C8.20812 7.74925 8.52965 7.96409 8.88351 8.11066C9.23738 8.25724 9.61665 8.33268 9.99967 8.33268C10.3827 8.33268 10.762 8.25724 11.1158 8.11066C11.4697 7.96409 11.7912 7.74925 12.0621 7.47841C12.3329 7.20757 12.5477 6.88604 12.6943 6.53218C12.8409 6.17831 12.9163 5.79904 12.9163 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">18,000+</h6>
+                              <small class="ct_text_5C727D">Patients</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M21 22V19C21 16.172 21 14.757 20.121 13.879C19.243 13 17.828 13 15 13L13 15L11 13C8.172 13 6.757 13 5.879 13.879C5 14.757 5 16.172 5 19V22M17 13V18.5"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.5 13V17M9.5 17C10.0304 17 10.5391 17.2107 10.9142 17.5858C11.2893 17.9609 11.5 18.4696 11.5 19V20M9.5 17C8.96957 17 8.46086 17.2107 8.08579 17.5858C7.71071 17.9609 7.5 18.4696 7.5 19V20M16.5 6.5V5.5C16.5 5.04037 16.4095 4.58525 16.2336 4.16061C16.0577 3.73597 15.7999 3.35013 15.4749 3.02513C15.1499 2.70012 14.764 2.44231 14.3394 2.26642C13.9148 2.09053 13.4596 2 13 2C12.5404 2 12.0852 2.09053 11.6606 2.26642C11.236 2.44231 10.8501 2.70012 10.5251 3.02513C10.2001 3.35013 9.94231 3.73597 9.76642 4.16061C9.59053 4.58525 9.5 5.04037 9.5 5.5V6.5C9.5 6.95963 9.59053 7.41475 9.76642 7.83939C9.94231 8.26403 10.2001 8.64987 10.5251 8.97487C10.8501 9.29988 11.236 9.55769 11.6606 9.73358C12.0852 9.90947 12.5404 10 13 10C13.4596 10 13.9148 9.90947 14.3394 9.73358C14.764 9.55769 15.1499 9.29988 15.4749 8.97487C15.7999 8.64987 16.0577 8.26403 16.2336 7.83939C16.4095 7.41475 16.5 6.95963 16.5 6.5Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.75 19.25C17.75 19.4489 17.671 19.6397 17.5303 19.7803C17.3897 19.921 17.1989 20 17 20C16.8011 20 16.6103 19.921 16.4697 19.7803C16.329 19.6397 16.25 19.4489 16.25 19.25C16.25 19.0511 16.329 18.8603 16.4697 18.7197C16.6103 18.579 16.8011 18.5 17 18.5C17.1989 18.5 17.3897 18.579 17.5303 18.7197C17.671 18.8603 17.75 19.0511 17.75 19.25Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">Neurology</h6>
+                              <small class="ct_text_5C727D">Speciality</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ct_price_area">
+                      <div>
+                        <small
+                          class="text-uppercase ct_text_9CA3AF fw-semibold mb-1 d-block"
+                        >
+                          Starting From
+                        </small>
+
+                        <h4 class="mb-0 ct_fw_700">
+                          ₹34,900
+                          <span class="ct_fs_16 ct_fw_400">/Month</span>
+                        </h4>
+                      </div>
+
+                      <a href="clinics-details.html" class="ct_fw_600 ct_orange_text">
+                        VIEW DETAILS
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                  <div class="ct_hospital_card">
+                    <div class="position-relative">
+                      <img
+                        src="assets/img/Clinics_img_4.png"
+                        class="img-fluid w-100 ct_hospital_img"
+                        alt=""
+                      />
+
+                      <span class="ct_rating_badge">
+                        ⭐ 4.7 (980 Reviews)
+                      </span>
+
+                      <button class="ct_wishlist_btn">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+
+                    <div class="p-4">
+                      <h5 class="ct_fw_600 mb-2 text-truncate">Fortis Hospital Bangalore</h5>
+
+                      <p class="ct_text_5C727D ct_fs_14 mb-3">
+                        <i class="fa-solid fa-location-dot ct_orange_text"></i>
+                        Bangalore, India
+                      </p>
+
+                      <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="ct_tag">Cardiology</span>
+                        <span class="ct_tag">Neurology</span>
+                        <span class="ct_tag">Urology</span>
+                      </div>
+
+                      <div class="row g-3">
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.332V15.832C16.6663 13.4754 16.6663 12.2962 15.9338 11.5645C15.2022 10.832 14.023 10.832 11.6663 10.832L9.99967 12.4987L8.33301 10.832C5.97634 10.832 4.79717 10.832 4.06551 11.5645C3.33301 12.2962 3.33301 13.4754 3.33301 15.832V18.332M13.333 10.832V15.4154"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M7.08268 10.8327V14.166M7.08268 14.166C7.52471 14.166 7.94863 14.3416 8.26119 14.6542C8.57375 14.9667 8.74935 15.3907 8.74935 15.8327V16.666M7.08268 14.166C6.64065 14.166 6.21673 14.3416 5.90417 14.6542C5.59161 14.9667 5.41602 15.3907 5.41602 15.8327V16.666M12.916 5.41602V4.58268C12.916 4.19966 12.8406 3.82039 12.694 3.46652C12.5474 3.11266 12.3326 2.79113 12.0617 2.52029C11.7909 2.24945 11.4694 2.03461 11.1155 1.88803C10.7616 1.74146 10.3824 1.66602 9.99935 1.66602C9.61633 1.66602 9.23706 1.74146 8.88319 1.88803C8.52932 2.03461 8.20779 2.24945 7.93695 2.52029C7.66612 2.79113 7.45128 3.11266 7.3047 3.46652C7.15812 3.82039 7.08268 4.19966 7.08268 4.58268V5.41602C7.08268 5.79904 7.15812 6.17831 7.3047 6.53218C7.45128 6.88604 7.66612 7.20757 7.93695 7.47841C8.20779 7.74925 8.52932 7.96409 8.88319 8.11066C9.23706 8.25724 9.61633 8.33268 9.99935 8.33268C10.3824 8.33268 10.7616 8.25724 11.1155 8.11066C11.4694 7.96409 11.7909 7.74925 12.0617 7.47841C12.3326 7.20757 12.5474 6.88604 12.694 6.53218C12.8406 6.17831 12.916 5.79904 12.916 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M13.958 16.041C13.958 16.2068 13.8922 16.3657 13.775 16.483C13.6577 16.6002 13.4988 16.666 13.333 16.666C13.1672 16.666 13.0083 16.6002 12.8911 16.483C12.7739 16.3657 12.708 16.2068 12.708 16.041C12.708 15.8753 12.7739 15.7163 12.8911 15.5991C13.0083 15.4819 13.1672 15.416 13.333 15.416C13.4988 15.416 13.6577 15.4819 13.775 15.5991C13.8922 15.7163 13.958 15.8753 13.958 16.041Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">98+</h6>
+                              <small class="ct_text_5C727D">Specialists</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.66699 14.9993V10.8327C1.66699 10.4577 1.74338 10.1174 1.89616 9.81185C2.04894 9.50629 2.25033 9.23546 2.50033 8.99935V6.66602C2.50033 5.97157 2.74338 5.38129 3.22949 4.89518C3.7156 4.40907 4.30588 4.16602 5.00033 4.16602H8.33366C8.6531 4.16602 8.95171 4.22518 9.22949 4.34352C9.50727 4.46185 9.76421 4.6249 10.0003 4.83268C10.2364 4.62435 10.4934 4.46129 10.7712 4.34352C11.0489 4.22574 11.3475 4.16657 11.667 4.16602H15.0003C15.6948 4.16602 16.285 4.40907 16.7712 4.89518C17.2573 5.38129 17.5003 5.97157 17.5003 6.66602V8.99935C17.7503 9.23546 17.9517 9.50629 18.1045 9.81185C18.2573 10.1174 18.3337 10.4577 18.3337 10.8327V14.9993C18.3337 15.2355 18.2537 15.4335 18.0937 15.5935C17.9337 15.7535 17.7359 15.8332 17.5003 15.8327C17.2648 15.8321 17.067 15.7521 16.907 15.5927C16.747 15.4332 16.667 15.2355 16.667 14.9993V14.166H3.33366V14.9993C3.33366 15.2355 3.25366 15.4335 3.09366 15.5935C2.93366 15.7535 2.73588 15.8332 2.50033 15.8327C2.26477 15.8321 2.06699 15.7521 1.90699 15.5927C1.74699 15.4332 1.66699 15.2355 1.66699 14.9993ZM10.8337 8.33268H15.8337V6.66602C15.8337 6.4299 15.7537 6.23213 15.5937 6.07268C15.4337 5.91324 15.2359 5.83324 15.0003 5.83268H11.667C11.4309 5.83268 11.2331 5.91268 11.0737 6.07268C10.9142 6.23268 10.8342 6.43046 10.8337 6.66602V8.33268ZM4.16699 8.33268H9.16699V6.66602C9.16699 6.4299 9.08699 6.23213 8.92699 6.07268C8.76699 5.91324 8.56921 5.83324 8.33366 5.83268H5.00033C4.76421 5.83268 4.56644 5.91268 4.40699 6.07268C4.24755 6.23268 4.16755 6.43046 4.16699 6.66602V8.33268ZM3.33366 12.4993H16.667V10.8327C16.667 10.5966 16.587 10.3988 16.427 10.2393C16.267 10.0799 16.0692 9.9999 15.8337 9.99935H4.16699C3.93088 9.99935 3.7331 10.0793 3.57366 10.2393C3.41421 10.3993 3.33421 10.5971 3.33366 10.8327V12.4993Z"
+                                fill="#5C727D"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">700</h6>
+                              <small class="ct_text_5C727D">Beds</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.3329V15.8329C16.6663 13.4762 16.6663 12.297 15.9338 11.5654C15.2022 10.832 14.023 10.832 11.6663 10.832H8.33301C5.97634 10.832 4.79717 10.832 4.06551 11.5654C3.33301 12.297 3.33301 13.4762 3.33301 15.832C3.33301 16.6095 3.33301 16.9979 3.45967 17.3037C3.54344 17.506 3.66625 17.6899 3.82111 17.8448C3.97597 17.9996 4.15983 18.1224 4.36217 18.2062C4.66801 18.3329 5.05634 18.3329 5.83301 18.3329V11.2495M7.91634 10.8329L10.4163 18.3329"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.99967 15.8327H12.083C12.4145 15.8327 12.7325 15.9644 12.9669 16.1988C13.2013 16.4332 13.333 16.7512 13.333 17.0827C13.333 17.4142 13.2013 17.7321 12.9669 17.9666C12.7325 18.201 12.4145 18.3327 12.083 18.3327H10.4163M12.9163 5.41602V4.58268C12.9163 4.19966 12.8409 3.82039 12.6943 3.46652C12.5477 3.11266 12.3329 2.79113 12.0621 2.52029C11.7912 2.24945 11.4697 2.03461 11.1158 1.88803C10.762 1.74146 10.3827 1.66602 9.99967 1.66602C9.61665 1.66602 9.23738 1.74146 8.88351 1.88803C8.52965 2.03461 8.20812 2.24945 7.93728 2.52029C7.66644 2.79113 7.4516 3.11266 7.30503 3.46652C7.15845 3.82039 7.08301 4.19966 7.08301 4.58268V5.41602C7.08301 5.79904 7.15845 6.17831 7.30503 6.53218C7.4516 6.88604 7.66644 7.20757 7.93728 7.47841C8.20812 7.74925 8.52965 7.96409 8.88351 8.11066C9.23738 8.25724 9.61665 8.33268 9.99967 8.33268C10.3827 8.33268 10.762 8.25724 11.1158 8.11066C11.4697 7.96409 11.7912 7.74925 12.0621 7.47841C12.3329 7.20757 12.5477 6.88604 12.6943 6.53218C12.8409 6.17831 12.9163 5.79904 12.9163 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">18,000+</h6>
+                              <small class="ct_text_5C727D">Patients</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M21 22V19C21 16.172 21 14.757 20.121 13.879C19.243 13 17.828 13 15 13L13 15L11 13C8.172 13 6.757 13 5.879 13.879C5 14.757 5 16.172 5 19V22M17 13V18.5"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.5 13V17M9.5 17C10.0304 17 10.5391 17.2107 10.9142 17.5858C11.2893 17.9609 11.5 18.4696 11.5 19V20M9.5 17C8.96957 17 8.46086 17.2107 8.08579 17.5858C7.71071 17.9609 7.5 18.4696 7.5 19V20M16.5 6.5V5.5C16.5 5.04037 16.4095 4.58525 16.2336 4.16061C16.0577 3.73597 15.7999 3.35013 15.4749 3.02513C15.1499 2.70012 14.764 2.44231 14.3394 2.26642C13.9148 2.09053 13.4596 2 13 2C12.5404 2 12.0852 2.09053 11.6606 2.26642C11.236 2.44231 10.8501 2.70012 10.5251 3.02513C10.2001 3.35013 9.94231 3.73597 9.76642 4.16061C9.59053 4.58525 9.5 5.04037 9.5 5.5V6.5C9.5 6.95963 9.59053 7.41475 9.76642 7.83939C9.94231 8.26403 10.2001 8.64987 10.5251 8.97487C10.8501 9.29988 11.236 9.55769 11.6606 9.73358C12.0852 9.90947 12.5404 10 13 10C13.4596 10 13.9148 9.90947 14.3394 9.73358C14.764 9.55769 15.1499 9.29988 15.4749 8.97487C15.7999 8.64987 16.0577 8.26403 16.2336 7.83939C16.4095 7.41475 16.5 6.95963 16.5 6.5Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.75 19.25C17.75 19.4489 17.671 19.6397 17.5303 19.7803C17.3897 19.921 17.1989 20 17 20C16.8011 20 16.6103 19.921 16.4697 19.7803C16.329 19.6397 16.25 19.4489 16.25 19.25C16.25 19.0511 16.329 18.8603 16.4697 18.7197C16.6103 18.579 16.8011 18.5 17 18.5C17.1989 18.5 17.3897 18.579 17.5303 18.7197C17.671 18.8603 17.75 19.0511 17.75 19.25Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">Neurology</h6>
+                              <small class="ct_text_5C727D">Speciality</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ct_price_area">
+                      <div>
+                        <small
+                          class="text-uppercase ct_text_9CA3AF fw-semibold mb-1 d-block"
+                        >
+                          Starting From
+                        </small>
+
+                        <h4 class="mb-0 ct_fw_700">
+                          ₹34,900
+                          <span class="ct_fs_16 ct_fw_400">/Month</span>
+                        </h4>
+                      </div>
+
+                      <a href="clinics-details.html" class="ct_fw_600 ct_orange_text">
+                        VIEW DETAILS
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                  <div class="ct_hospital_card">
+                    <div class="position-relative">
+                      <img
+                        src="assets/img/Clinics_img_5.png"
+                        class="img-fluid w-100 ct_hospital_img"
+                        alt=""
+                      />
+
+                      <span class="ct_rating_badge">
+                        ⭐ 4.7 (980 Reviews)
+                      </span>
+
+                      <button class="ct_wishlist_btn">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+
+                    <div class="p-4">
+                      <h5 class="ct_fw_600 mb-2 text-truncate">Fortis Hospital Bangalore</h5>
+
+                      <p class="ct_text_5C727D ct_fs_14 mb-3">
+                        <i class="fa-solid fa-location-dot ct_orange_text"></i>
+                        Bangalore, India
+                      </p>
+
+                      <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="ct_tag">Cardiology</span>
+                        <span class="ct_tag">Neurology</span>
+                        <span class="ct_tag">Urology</span>
+                      </div>
+
+                      <div class="row g-3">
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.332V15.832C16.6663 13.4754 16.6663 12.2962 15.9338 11.5645C15.2022 10.832 14.023 10.832 11.6663 10.832L9.99967 12.4987L8.33301 10.832C5.97634 10.832 4.79717 10.832 4.06551 11.5645C3.33301 12.2962 3.33301 13.4754 3.33301 15.832V18.332M13.333 10.832V15.4154"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M7.08268 10.8327V14.166M7.08268 14.166C7.52471 14.166 7.94863 14.3416 8.26119 14.6542C8.57375 14.9667 8.74935 15.3907 8.74935 15.8327V16.666M7.08268 14.166C6.64065 14.166 6.21673 14.3416 5.90417 14.6542C5.59161 14.9667 5.41602 15.3907 5.41602 15.8327V16.666M12.916 5.41602V4.58268C12.916 4.19966 12.8406 3.82039 12.694 3.46652C12.5474 3.11266 12.3326 2.79113 12.0617 2.52029C11.7909 2.24945 11.4694 2.03461 11.1155 1.88803C10.7616 1.74146 10.3824 1.66602 9.99935 1.66602C9.61633 1.66602 9.23706 1.74146 8.88319 1.88803C8.52932 2.03461 8.20779 2.24945 7.93695 2.52029C7.66612 2.79113 7.45128 3.11266 7.3047 3.46652C7.15812 3.82039 7.08268 4.19966 7.08268 4.58268V5.41602C7.08268 5.79904 7.15812 6.17831 7.3047 6.53218C7.45128 6.88604 7.66612 7.20757 7.93695 7.47841C8.20779 7.74925 8.52932 7.96409 8.88319 8.11066C9.23706 8.25724 9.61633 8.33268 9.99935 8.33268C10.3824 8.33268 10.7616 8.25724 11.1155 8.11066C11.4694 7.96409 11.7909 7.74925 12.0617 7.47841C12.3326 7.20757 12.5474 6.88604 12.694 6.53218C12.8406 6.17831 12.916 5.79904 12.916 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M13.958 16.041C13.958 16.2068 13.8922 16.3657 13.775 16.483C13.6577 16.6002 13.4988 16.666 13.333 16.666C13.1672 16.666 13.0083 16.6002 12.8911 16.483C12.7739 16.3657 12.708 16.2068 12.708 16.041C12.708 15.8753 12.7739 15.7163 12.8911 15.5991C13.0083 15.4819 13.1672 15.416 13.333 15.416C13.4988 15.416 13.6577 15.4819 13.775 15.5991C13.8922 15.7163 13.958 15.8753 13.958 16.041Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">98+</h6>
+                              <small class="ct_text_5C727D">Specialists</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.66699 14.9993V10.8327C1.66699 10.4577 1.74338 10.1174 1.89616 9.81185C2.04894 9.50629 2.25033 9.23546 2.50033 8.99935V6.66602C2.50033 5.97157 2.74338 5.38129 3.22949 4.89518C3.7156 4.40907 4.30588 4.16602 5.00033 4.16602H8.33366C8.6531 4.16602 8.95171 4.22518 9.22949 4.34352C9.50727 4.46185 9.76421 4.6249 10.0003 4.83268C10.2364 4.62435 10.4934 4.46129 10.7712 4.34352C11.0489 4.22574 11.3475 4.16657 11.667 4.16602H15.0003C15.6948 4.16602 16.285 4.40907 16.7712 4.89518C17.2573 5.38129 17.5003 5.97157 17.5003 6.66602V8.99935C17.7503 9.23546 17.9517 9.50629 18.1045 9.81185C18.2573 10.1174 18.3337 10.4577 18.3337 10.8327V14.9993C18.3337 15.2355 18.2537 15.4335 18.0937 15.5935C17.9337 15.7535 17.7359 15.8332 17.5003 15.8327C17.2648 15.8321 17.067 15.7521 16.907 15.5927C16.747 15.4332 16.667 15.2355 16.667 14.9993V14.166H3.33366V14.9993C3.33366 15.2355 3.25366 15.4335 3.09366 15.5935C2.93366 15.7535 2.73588 15.8332 2.50033 15.8327C2.26477 15.8321 2.06699 15.7521 1.90699 15.5927C1.74699 15.4332 1.66699 15.2355 1.66699 14.9993ZM10.8337 8.33268H15.8337V6.66602C15.8337 6.4299 15.7537 6.23213 15.5937 6.07268C15.4337 5.91324 15.2359 5.83324 15.0003 5.83268H11.667C11.4309 5.83268 11.2331 5.91268 11.0737 6.07268C10.9142 6.23268 10.8342 6.43046 10.8337 6.66602V8.33268ZM4.16699 8.33268H9.16699V6.66602C9.16699 6.4299 9.08699 6.23213 8.92699 6.07268C8.76699 5.91324 8.56921 5.83324 8.33366 5.83268H5.00033C4.76421 5.83268 4.56644 5.91268 4.40699 6.07268C4.24755 6.23268 4.16755 6.43046 4.16699 6.66602V8.33268ZM3.33366 12.4993H16.667V10.8327C16.667 10.5966 16.587 10.3988 16.427 10.2393C16.267 10.0799 16.0692 9.9999 15.8337 9.99935H4.16699C3.93088 9.99935 3.7331 10.0793 3.57366 10.2393C3.41421 10.3993 3.33421 10.5971 3.33366 10.8327V12.4993Z"
+                                fill="#5C727D"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">700</h6>
+                              <small class="ct_text_5C727D">Beds</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.3329V15.8329C16.6663 13.4762 16.6663 12.297 15.9338 11.5654C15.2022 10.832 14.023 10.832 11.6663 10.832H8.33301C5.97634 10.832 4.79717 10.832 4.06551 11.5654C3.33301 12.297 3.33301 13.4762 3.33301 15.832C3.33301 16.6095 3.33301 16.9979 3.45967 17.3037C3.54344 17.506 3.66625 17.6899 3.82111 17.8448C3.97597 17.9996 4.15983 18.1224 4.36217 18.2062C4.66801 18.3329 5.05634 18.3329 5.83301 18.3329V11.2495M7.91634 10.8329L10.4163 18.3329"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.99967 15.8327H12.083C12.4145 15.8327 12.7325 15.9644 12.9669 16.1988C13.2013 16.4332 13.333 16.7512 13.333 17.0827C13.333 17.4142 13.2013 17.7321 12.9669 17.9666C12.7325 18.201 12.4145 18.3327 12.083 18.3327H10.4163M12.9163 5.41602V4.58268C12.9163 4.19966 12.8409 3.82039 12.6943 3.46652C12.5477 3.11266 12.3329 2.79113 12.0621 2.52029C11.7912 2.24945 11.4697 2.03461 11.1158 1.88803C10.762 1.74146 10.3827 1.66602 9.99967 1.66602C9.61665 1.66602 9.23738 1.74146 8.88351 1.88803C8.52965 2.03461 8.20812 2.24945 7.93728 2.52029C7.66644 2.79113 7.4516 3.11266 7.30503 3.46652C7.15845 3.82039 7.08301 4.19966 7.08301 4.58268V5.41602C7.08301 5.79904 7.15845 6.17831 7.30503 6.53218C7.4516 6.88604 7.66644 7.20757 7.93728 7.47841C8.20812 7.74925 8.52965 7.96409 8.88351 8.11066C9.23738 8.25724 9.61665 8.33268 9.99967 8.33268C10.3827 8.33268 10.762 8.25724 11.1158 8.11066C11.4697 7.96409 11.7912 7.74925 12.0621 7.47841C12.3329 7.20757 12.5477 6.88604 12.6943 6.53218C12.8409 6.17831 12.9163 5.79904 12.9163 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">18,000+</h6>
+                              <small class="ct_text_5C727D">Patients</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M21 22V19C21 16.172 21 14.757 20.121 13.879C19.243 13 17.828 13 15 13L13 15L11 13C8.172 13 6.757 13 5.879 13.879C5 14.757 5 16.172 5 19V22M17 13V18.5"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.5 13V17M9.5 17C10.0304 17 10.5391 17.2107 10.9142 17.5858C11.2893 17.9609 11.5 18.4696 11.5 19V20M9.5 17C8.96957 17 8.46086 17.2107 8.08579 17.5858C7.71071 17.9609 7.5 18.4696 7.5 19V20M16.5 6.5V5.5C16.5 5.04037 16.4095 4.58525 16.2336 4.16061C16.0577 3.73597 15.7999 3.35013 15.4749 3.02513C15.1499 2.70012 14.764 2.44231 14.3394 2.26642C13.9148 2.09053 13.4596 2 13 2C12.5404 2 12.0852 2.09053 11.6606 2.26642C11.236 2.44231 10.8501 2.70012 10.5251 3.02513C10.2001 3.35013 9.94231 3.73597 9.76642 4.16061C9.59053 4.58525 9.5 5.04037 9.5 5.5V6.5C9.5 6.95963 9.59053 7.41475 9.76642 7.83939C9.94231 8.26403 10.2001 8.64987 10.5251 8.97487C10.8501 9.29988 11.236 9.55769 11.6606 9.73358C12.0852 9.90947 12.5404 10 13 10C13.4596 10 13.9148 9.90947 14.3394 9.73358C14.764 9.55769 15.1499 9.29988 15.4749 8.97487C15.7999 8.64987 16.0577 8.26403 16.2336 7.83939C16.4095 7.41475 16.5 6.95963 16.5 6.5Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.75 19.25C17.75 19.4489 17.671 19.6397 17.5303 19.7803C17.3897 19.921 17.1989 20 17 20C16.8011 20 16.6103 19.921 16.4697 19.7803C16.329 19.6397 16.25 19.4489 16.25 19.25C16.25 19.0511 16.329 18.8603 16.4697 18.7197C16.6103 18.579 16.8011 18.5 17 18.5C17.1989 18.5 17.3897 18.579 17.5303 18.7197C17.671 18.8603 17.75 19.0511 17.75 19.25Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">Neurology</h6>
+                              <small class="ct_text_5C727D">Speciality</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ct_price_area">
+                      <div>
+                        <small
+                          class="text-uppercase ct_text_9CA3AF fw-semibold mb-1 d-block"
+                        >
+                          Starting From
+                        </small>
+
+                        <h4 class="mb-0 ct_fw_700">
+                          ₹34,900
+                          <span class="ct_fs_16 ct_fw_400">/Month</span>
+                        </h4>
+                      </div>
+
+                      <a href="clinics-details.html" class="ct_fw_600 ct_orange_text">
+                        VIEW DETAILS
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                  <div class="ct_hospital_card">
+                    <div class="position-relative">
+                      <img
+                        src="assets/img/Clinics_img_6.png"
+                        class="img-fluid w-100 ct_hospital_img"
+                        alt=""
+                      />
+
+                      <span class="ct_rating_badge">
+                        ⭐ 4.7 (980 Reviews)
+                      </span>
+
+                      <button class="ct_wishlist_btn">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+
+                    <div class="p-4">
+                      <h5 class="ct_fw_600 mb-2 text-truncate">Fortis Hospital Bangalore</h5>
+
+                      <p class="ct_text_5C727D ct_fs_14 mb-3">
+                        <i class="fa-solid fa-location-dot ct_orange_text"></i>
+                        Bangalore, India
+                      </p>
+
+                      <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="ct_tag">Cardiology</span>
+                        <span class="ct_tag">Neurology</span>
+                        <span class="ct_tag">Urology</span>
+                      </div>
+
+                      <div class="row g-3">
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.332V15.832C16.6663 13.4754 16.6663 12.2962 15.9338 11.5645C15.2022 10.832 14.023 10.832 11.6663 10.832L9.99967 12.4987L8.33301 10.832C5.97634 10.832 4.79717 10.832 4.06551 11.5645C3.33301 12.2962 3.33301 13.4754 3.33301 15.832V18.332M13.333 10.832V15.4154"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M7.08268 10.8327V14.166M7.08268 14.166C7.52471 14.166 7.94863 14.3416 8.26119 14.6542C8.57375 14.9667 8.74935 15.3907 8.74935 15.8327V16.666M7.08268 14.166C6.64065 14.166 6.21673 14.3416 5.90417 14.6542C5.59161 14.9667 5.41602 15.3907 5.41602 15.8327V16.666M12.916 5.41602V4.58268C12.916 4.19966 12.8406 3.82039 12.694 3.46652C12.5474 3.11266 12.3326 2.79113 12.0617 2.52029C11.7909 2.24945 11.4694 2.03461 11.1155 1.88803C10.7616 1.74146 10.3824 1.66602 9.99935 1.66602C9.61633 1.66602 9.23706 1.74146 8.88319 1.88803C8.52932 2.03461 8.20779 2.24945 7.93695 2.52029C7.66612 2.79113 7.45128 3.11266 7.3047 3.46652C7.15812 3.82039 7.08268 4.19966 7.08268 4.58268V5.41602C7.08268 5.79904 7.15812 6.17831 7.3047 6.53218C7.45128 6.88604 7.66612 7.20757 7.93695 7.47841C8.20779 7.74925 8.52932 7.96409 8.88319 8.11066C9.23706 8.25724 9.61633 8.33268 9.99935 8.33268C10.3824 8.33268 10.7616 8.25724 11.1155 8.11066C11.4694 7.96409 11.7909 7.74925 12.0617 7.47841C12.3326 7.20757 12.5474 6.88604 12.694 6.53218C12.8406 6.17831 12.916 5.79904 12.916 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M13.958 16.041C13.958 16.2068 13.8922 16.3657 13.775 16.483C13.6577 16.6002 13.4988 16.666 13.333 16.666C13.1672 16.666 13.0083 16.6002 12.8911 16.483C12.7739 16.3657 12.708 16.2068 12.708 16.041C12.708 15.8753 12.7739 15.7163 12.8911 15.5991C13.0083 15.4819 13.1672 15.416 13.333 15.416C13.4988 15.416 13.6577 15.4819 13.775 15.5991C13.8922 15.7163 13.958 15.8753 13.958 16.041Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">98+</h6>
+                              <small class="ct_text_5C727D">Specialists</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.66699 14.9993V10.8327C1.66699 10.4577 1.74338 10.1174 1.89616 9.81185C2.04894 9.50629 2.25033 9.23546 2.50033 8.99935V6.66602C2.50033 5.97157 2.74338 5.38129 3.22949 4.89518C3.7156 4.40907 4.30588 4.16602 5.00033 4.16602H8.33366C8.6531 4.16602 8.95171 4.22518 9.22949 4.34352C9.50727 4.46185 9.76421 4.6249 10.0003 4.83268C10.2364 4.62435 10.4934 4.46129 10.7712 4.34352C11.0489 4.22574 11.3475 4.16657 11.667 4.16602H15.0003C15.6948 4.16602 16.285 4.40907 16.7712 4.89518C17.2573 5.38129 17.5003 5.97157 17.5003 6.66602V8.99935C17.7503 9.23546 17.9517 9.50629 18.1045 9.81185C18.2573 10.1174 18.3337 10.4577 18.3337 10.8327V14.9993C18.3337 15.2355 18.2537 15.4335 18.0937 15.5935C17.9337 15.7535 17.7359 15.8332 17.5003 15.8327C17.2648 15.8321 17.067 15.7521 16.907 15.5927C16.747 15.4332 16.667 15.2355 16.667 14.9993V14.166H3.33366V14.9993C3.33366 15.2355 3.25366 15.4335 3.09366 15.5935C2.93366 15.7535 2.73588 15.8332 2.50033 15.8327C2.26477 15.8321 2.06699 15.7521 1.90699 15.5927C1.74699 15.4332 1.66699 15.2355 1.66699 14.9993ZM10.8337 8.33268H15.8337V6.66602C15.8337 6.4299 15.7537 6.23213 15.5937 6.07268C15.4337 5.91324 15.2359 5.83324 15.0003 5.83268H11.667C11.4309 5.83268 11.2331 5.91268 11.0737 6.07268C10.9142 6.23268 10.8342 6.43046 10.8337 6.66602V8.33268ZM4.16699 8.33268H9.16699V6.66602C9.16699 6.4299 9.08699 6.23213 8.92699 6.07268C8.76699 5.91324 8.56921 5.83324 8.33366 5.83268H5.00033C4.76421 5.83268 4.56644 5.91268 4.40699 6.07268C4.24755 6.23268 4.16755 6.43046 4.16699 6.66602V8.33268ZM3.33366 12.4993H16.667V10.8327C16.667 10.5966 16.587 10.3988 16.427 10.2393C16.267 10.0799 16.0692 9.9999 15.8337 9.99935H4.16699C3.93088 9.99935 3.7331 10.0793 3.57366 10.2393C3.41421 10.3993 3.33421 10.5971 3.33366 10.8327V12.4993Z"
+                                fill="#5C727D"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">700</h6>
+                              <small class="ct_text_5C727D">Beds</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.3329V15.8329C16.6663 13.4762 16.6663 12.297 15.9338 11.5654C15.2022 10.832 14.023 10.832 11.6663 10.832H8.33301C5.97634 10.832 4.79717 10.832 4.06551 11.5654C3.33301 12.297 3.33301 13.4762 3.33301 15.832C3.33301 16.6095 3.33301 16.9979 3.45967 17.3037C3.54344 17.506 3.66625 17.6899 3.82111 17.8448C3.97597 17.9996 4.15983 18.1224 4.36217 18.2062C4.66801 18.3329 5.05634 18.3329 5.83301 18.3329V11.2495M7.91634 10.8329L10.4163 18.3329"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.99967 15.8327H12.083C12.4145 15.8327 12.7325 15.9644 12.9669 16.1988C13.2013 16.4332 13.333 16.7512 13.333 17.0827C13.333 17.4142 13.2013 17.7321 12.9669 17.9666C12.7325 18.201 12.4145 18.3327 12.083 18.3327H10.4163M12.9163 5.41602V4.58268C12.9163 4.19966 12.8409 3.82039 12.6943 3.46652C12.5477 3.11266 12.3329 2.79113 12.0621 2.52029C11.7912 2.24945 11.4697 2.03461 11.1158 1.88803C10.762 1.74146 10.3827 1.66602 9.99967 1.66602C9.61665 1.66602 9.23738 1.74146 8.88351 1.88803C8.52965 2.03461 8.20812 2.24945 7.93728 2.52029C7.66644 2.79113 7.4516 3.11266 7.30503 3.46652C7.15845 3.82039 7.08301 4.19966 7.08301 4.58268V5.41602C7.08301 5.79904 7.15845 6.17831 7.30503 6.53218C7.4516 6.88604 7.66644 7.20757 7.93728 7.47841C8.20812 7.74925 8.52965 7.96409 8.88351 8.11066C9.23738 8.25724 9.61665 8.33268 9.99967 8.33268C10.3827 8.33268 10.762 8.25724 11.1158 8.11066C11.4697 7.96409 11.7912 7.74925 12.0621 7.47841C12.3329 7.20757 12.5477 6.88604 12.6943 6.53218C12.8409 6.17831 12.9163 5.79904 12.9163 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">18,000+</h6>
+                              <small class="ct_text_5C727D">Patients</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M21 22V19C21 16.172 21 14.757 20.121 13.879C19.243 13 17.828 13 15 13L13 15L11 13C8.172 13 6.757 13 5.879 13.879C5 14.757 5 16.172 5 19V22M17 13V18.5"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.5 13V17M9.5 17C10.0304 17 10.5391 17.2107 10.9142 17.5858C11.2893 17.9609 11.5 18.4696 11.5 19V20M9.5 17C8.96957 17 8.46086 17.2107 8.08579 17.5858C7.71071 17.9609 7.5 18.4696 7.5 19V20M16.5 6.5V5.5C16.5 5.04037 16.4095 4.58525 16.2336 4.16061C16.0577 3.73597 15.7999 3.35013 15.4749 3.02513C15.1499 2.70012 14.764 2.44231 14.3394 2.26642C13.9148 2.09053 13.4596 2 13 2C12.5404 2 12.0852 2.09053 11.6606 2.26642C11.236 2.44231 10.8501 2.70012 10.5251 3.02513C10.2001 3.35013 9.94231 3.73597 9.76642 4.16061C9.59053 4.58525 9.5 5.04037 9.5 5.5V6.5C9.5 6.95963 9.59053 7.41475 9.76642 7.83939C9.94231 8.26403 10.2001 8.64987 10.5251 8.97487C10.8501 9.29988 11.236 9.55769 11.6606 9.73358C12.0852 9.90947 12.5404 10 13 10C13.4596 10 13.9148 9.90947 14.3394 9.73358C14.764 9.55769 15.1499 9.29988 15.4749 8.97487C15.7999 8.64987 16.0577 8.26403 16.2336 7.83939C16.4095 7.41475 16.5 6.95963 16.5 6.5Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.75 19.25C17.75 19.4489 17.671 19.6397 17.5303 19.7803C17.3897 19.921 17.1989 20 17 20C16.8011 20 16.6103 19.921 16.4697 19.7803C16.329 19.6397 16.25 19.4489 16.25 19.25C16.25 19.0511 16.329 18.8603 16.4697 18.7197C16.6103 18.579 16.8011 18.5 17 18.5C17.1989 18.5 17.3897 18.579 17.5303 18.7197C17.671 18.8603 17.75 19.0511 17.75 19.25Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">Neurology</h6>
+                              <small class="ct_text_5C727D">Speciality</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ct_price_area">
+                      <div>
+                        <small
+                          class="text-uppercase ct_text_9CA3AF fw-semibold mb-1 d-block"
+                        >
+                          Starting From
+                        </small>
+
+                        <h4 class="mb-0 ct_fw_700">
+                          ₹34,900
+                          <span class="ct_fs_16 ct_fw_400">/Month</span>
+                        </h4>
+                      </div>
+
+                      <a href="clinics-details.html" class="ct_fw_600 ct_orange_text">
+                        VIEW DETAILS
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                  <div class="ct_hospital_card">
+                    <div class="position-relative">
+                      <img
+                        src="assets/img/Clinics_img_1.png"
+                        class="img-fluid w-100 ct_hospital_img"
+                        alt=""
+                      />
+
+                      <span class="ct_rating_badge">
+                        ⭐ 4.7 (980 Reviews)
+                      </span>
+
+                      <button class="ct_wishlist_btn">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+
+                    <div class="p-4">
+                      <h5 class="ct_fw_600 mb-2 text-truncate">Fortis Hospital Bangalore</h5>
+
+                      <p class="ct_text_5C727D ct_fs_14 mb-3">
+                        <i class="fa-solid fa-location-dot ct_orange_text"></i>
+                        Bangalore, India
+                      </p>
+
+                      <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="ct_tag">Cardiology</span>
+                        <span class="ct_tag">Neurology</span>
+                        <span class="ct_tag">Urology</span>
+                      </div>
+
+                      <div class="row g-3">
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.332V15.832C16.6663 13.4754 16.6663 12.2962 15.9338 11.5645C15.2022 10.832 14.023 10.832 11.6663 10.832L9.99967 12.4987L8.33301 10.832C5.97634 10.832 4.79717 10.832 4.06551 11.5645C3.33301 12.2962 3.33301 13.4754 3.33301 15.832V18.332M13.333 10.832V15.4154"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M7.08268 10.8327V14.166M7.08268 14.166C7.52471 14.166 7.94863 14.3416 8.26119 14.6542C8.57375 14.9667 8.74935 15.3907 8.74935 15.8327V16.666M7.08268 14.166C6.64065 14.166 6.21673 14.3416 5.90417 14.6542C5.59161 14.9667 5.41602 15.3907 5.41602 15.8327V16.666M12.916 5.41602V4.58268C12.916 4.19966 12.8406 3.82039 12.694 3.46652C12.5474 3.11266 12.3326 2.79113 12.0617 2.52029C11.7909 2.24945 11.4694 2.03461 11.1155 1.88803C10.7616 1.74146 10.3824 1.66602 9.99935 1.66602C9.61633 1.66602 9.23706 1.74146 8.88319 1.88803C8.52932 2.03461 8.20779 2.24945 7.93695 2.52029C7.66612 2.79113 7.45128 3.11266 7.3047 3.46652C7.15812 3.82039 7.08268 4.19966 7.08268 4.58268V5.41602C7.08268 5.79904 7.15812 6.17831 7.3047 6.53218C7.45128 6.88604 7.66612 7.20757 7.93695 7.47841C8.20779 7.74925 8.52932 7.96409 8.88319 8.11066C9.23706 8.25724 9.61633 8.33268 9.99935 8.33268C10.3824 8.33268 10.7616 8.25724 11.1155 8.11066C11.4694 7.96409 11.7909 7.74925 12.0617 7.47841C12.3326 7.20757 12.5474 6.88604 12.694 6.53218C12.8406 6.17831 12.916 5.79904 12.916 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M13.958 16.041C13.958 16.2068 13.8922 16.3657 13.775 16.483C13.6577 16.6002 13.4988 16.666 13.333 16.666C13.1672 16.666 13.0083 16.6002 12.8911 16.483C12.7739 16.3657 12.708 16.2068 12.708 16.041C12.708 15.8753 12.7739 15.7163 12.8911 15.5991C13.0083 15.4819 13.1672 15.416 13.333 15.416C13.4988 15.416 13.6577 15.4819 13.775 15.5991C13.8922 15.7163 13.958 15.8753 13.958 16.041Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">98+</h6>
+                              <small class="ct_text_5C727D">Specialists</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.66699 14.9993V10.8327C1.66699 10.4577 1.74338 10.1174 1.89616 9.81185C2.04894 9.50629 2.25033 9.23546 2.50033 8.99935V6.66602C2.50033 5.97157 2.74338 5.38129 3.22949 4.89518C3.7156 4.40907 4.30588 4.16602 5.00033 4.16602H8.33366C8.6531 4.16602 8.95171 4.22518 9.22949 4.34352C9.50727 4.46185 9.76421 4.6249 10.0003 4.83268C10.2364 4.62435 10.4934 4.46129 10.7712 4.34352C11.0489 4.22574 11.3475 4.16657 11.667 4.16602H15.0003C15.6948 4.16602 16.285 4.40907 16.7712 4.89518C17.2573 5.38129 17.5003 5.97157 17.5003 6.66602V8.99935C17.7503 9.23546 17.9517 9.50629 18.1045 9.81185C18.2573 10.1174 18.3337 10.4577 18.3337 10.8327V14.9993C18.3337 15.2355 18.2537 15.4335 18.0937 15.5935C17.9337 15.7535 17.7359 15.8332 17.5003 15.8327C17.2648 15.8321 17.067 15.7521 16.907 15.5927C16.747 15.4332 16.667 15.2355 16.667 14.9993V14.166H3.33366V14.9993C3.33366 15.2355 3.25366 15.4335 3.09366 15.5935C2.93366 15.7535 2.73588 15.8332 2.50033 15.8327C2.26477 15.8321 2.06699 15.7521 1.90699 15.5927C1.74699 15.4332 1.66699 15.2355 1.66699 14.9993ZM10.8337 8.33268H15.8337V6.66602C15.8337 6.4299 15.7537 6.23213 15.5937 6.07268C15.4337 5.91324 15.2359 5.83324 15.0003 5.83268H11.667C11.4309 5.83268 11.2331 5.91268 11.0737 6.07268C10.9142 6.23268 10.8342 6.43046 10.8337 6.66602V8.33268ZM4.16699 8.33268H9.16699V6.66602C9.16699 6.4299 9.08699 6.23213 8.92699 6.07268C8.76699 5.91324 8.56921 5.83324 8.33366 5.83268H5.00033C4.76421 5.83268 4.56644 5.91268 4.40699 6.07268C4.24755 6.23268 4.16755 6.43046 4.16699 6.66602V8.33268ZM3.33366 12.4993H16.667V10.8327C16.667 10.5966 16.587 10.3988 16.427 10.2393C16.267 10.0799 16.0692 9.9999 15.8337 9.99935H4.16699C3.93088 9.99935 3.7331 10.0793 3.57366 10.2393C3.41421 10.3993 3.33421 10.5971 3.33366 10.8327V12.4993Z"
+                                fill="#5C727D"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">700</h6>
+                              <small class="ct_text_5C727D">Beds</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.3329V15.8329C16.6663 13.4762 16.6663 12.297 15.9338 11.5654C15.2022 10.832 14.023 10.832 11.6663 10.832H8.33301C5.97634 10.832 4.79717 10.832 4.06551 11.5654C3.33301 12.297 3.33301 13.4762 3.33301 15.832C3.33301 16.6095 3.33301 16.9979 3.45967 17.3037C3.54344 17.506 3.66625 17.6899 3.82111 17.8448C3.97597 17.9996 4.15983 18.1224 4.36217 18.2062C4.66801 18.3329 5.05634 18.3329 5.83301 18.3329V11.2495M7.91634 10.8329L10.4163 18.3329"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.99967 15.8327H12.083C12.4145 15.8327 12.7325 15.9644 12.9669 16.1988C13.2013 16.4332 13.333 16.7512 13.333 17.0827C13.333 17.4142 13.2013 17.7321 12.9669 17.9666C12.7325 18.201 12.4145 18.3327 12.083 18.3327H10.4163M12.9163 5.41602V4.58268C12.9163 4.19966 12.8409 3.82039 12.6943 3.46652C12.5477 3.11266 12.3329 2.79113 12.0621 2.52029C11.7912 2.24945 11.4697 2.03461 11.1158 1.88803C10.762 1.74146 10.3827 1.66602 9.99967 1.66602C9.61665 1.66602 9.23738 1.74146 8.88351 1.88803C8.52965 2.03461 8.20812 2.24945 7.93728 2.52029C7.66644 2.79113 7.4516 3.11266 7.30503 3.46652C7.15845 3.82039 7.08301 4.19966 7.08301 4.58268V5.41602C7.08301 5.79904 7.15845 6.17831 7.30503 6.53218C7.4516 6.88604 7.66644 7.20757 7.93728 7.47841C8.20812 7.74925 8.52965 7.96409 8.88351 8.11066C9.23738 8.25724 9.61665 8.33268 9.99967 8.33268C10.3827 8.33268 10.762 8.25724 11.1158 8.11066C11.4697 7.96409 11.7912 7.74925 12.0621 7.47841C12.3329 7.20757 12.5477 6.88604 12.6943 6.53218C12.8409 6.17831 12.9163 5.79904 12.9163 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">18,000+</h6>
+                              <small class="ct_text_5C727D">Patients</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M21 22V19C21 16.172 21 14.757 20.121 13.879C19.243 13 17.828 13 15 13L13 15L11 13C8.172 13 6.757 13 5.879 13.879C5 14.757 5 16.172 5 19V22M17 13V18.5"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.5 13V17M9.5 17C10.0304 17 10.5391 17.2107 10.9142 17.5858C11.2893 17.9609 11.5 18.4696 11.5 19V20M9.5 17C8.96957 17 8.46086 17.2107 8.08579 17.5858C7.71071 17.9609 7.5 18.4696 7.5 19V20M16.5 6.5V5.5C16.5 5.04037 16.4095 4.58525 16.2336 4.16061C16.0577 3.73597 15.7999 3.35013 15.4749 3.02513C15.1499 2.70012 14.764 2.44231 14.3394 2.26642C13.9148 2.09053 13.4596 2 13 2C12.5404 2 12.0852 2.09053 11.6606 2.26642C11.236 2.44231 10.8501 2.70012 10.5251 3.02513C10.2001 3.35013 9.94231 3.73597 9.76642 4.16061C9.59053 4.58525 9.5 5.04037 9.5 5.5V6.5C9.5 6.95963 9.59053 7.41475 9.76642 7.83939C9.94231 8.26403 10.2001 8.64987 10.5251 8.97487C10.8501 9.29988 11.236 9.55769 11.6606 9.73358C12.0852 9.90947 12.5404 10 13 10C13.4596 10 13.9148 9.90947 14.3394 9.73358C14.764 9.55769 15.1499 9.29988 15.4749 8.97487C15.7999 8.64987 16.0577 8.26403 16.2336 7.83939C16.4095 7.41475 16.5 6.95963 16.5 6.5Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.75 19.25C17.75 19.4489 17.671 19.6397 17.5303 19.7803C17.3897 19.921 17.1989 20 17 20C16.8011 20 16.6103 19.921 16.4697 19.7803C16.329 19.6397 16.25 19.4489 16.25 19.25C16.25 19.0511 16.329 18.8603 16.4697 18.7197C16.6103 18.579 16.8011 18.5 17 18.5C17.1989 18.5 17.3897 18.579 17.5303 18.7197C17.671 18.8603 17.75 19.0511 17.75 19.25Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">Neurology</h6>
+                              <small class="ct_text_5C727D">Speciality</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ct_price_area">
+                      <div>
+                        <small
+                          class="text-uppercase ct_text_9CA3AF fw-semibold mb-1 d-block"
+                        >
+                          Starting From
+                        </small>
+
+                        <h4 class="mb-0 ct_fw_700">
+                          ₹34,900
+                          <span class="ct_fs_16 ct_fw_400">/Month</span>
+                        </h4>
+                      </div>
+
+                      <a href="clinics-details.html" class="ct_fw_600 ct_orange_text">
+                        VIEW DETAILS
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                  <div class="ct_hospital_card">
+                    <div class="position-relative">
+                      <img
+                        src="assets/img/Clinics_img_1.png"
+                        class="img-fluid w-100 ct_hospital_img"
+                        alt=""
+                      />
+
+                      <span class="ct_rating_badge">
+                        ⭐ 4.7 (980 Reviews)
+                      </span>
+
+                      <button class="ct_wishlist_btn">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+
+                    <div class="p-4">
+                      <h5 class="ct_fw_600 mb-2 text-truncate">Fortis Hospital Bangalore</h5>
+
+                      <p class="ct_text_5C727D ct_fs_14 mb-3">
+                        <i class="fa-solid fa-location-dot ct_orange_text"></i>
+                        Bangalore, India
+                      </p>
+
+                      <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="ct_tag">Cardiology</span>
+                        <span class="ct_tag">Neurology</span>
+                        <span class="ct_tag">Urology</span>
+                      </div>
+
+                      <div class="row g-3">
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.332V15.832C16.6663 13.4754 16.6663 12.2962 15.9338 11.5645C15.2022 10.832 14.023 10.832 11.6663 10.832L9.99967 12.4987L8.33301 10.832C5.97634 10.832 4.79717 10.832 4.06551 11.5645C3.33301 12.2962 3.33301 13.4754 3.33301 15.832V18.332M13.333 10.832V15.4154"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M7.08268 10.8327V14.166M7.08268 14.166C7.52471 14.166 7.94863 14.3416 8.26119 14.6542C8.57375 14.9667 8.74935 15.3907 8.74935 15.8327V16.666M7.08268 14.166C6.64065 14.166 6.21673 14.3416 5.90417 14.6542C5.59161 14.9667 5.41602 15.3907 5.41602 15.8327V16.666M12.916 5.41602V4.58268C12.916 4.19966 12.8406 3.82039 12.694 3.46652C12.5474 3.11266 12.3326 2.79113 12.0617 2.52029C11.7909 2.24945 11.4694 2.03461 11.1155 1.88803C10.7616 1.74146 10.3824 1.66602 9.99935 1.66602C9.61633 1.66602 9.23706 1.74146 8.88319 1.88803C8.52932 2.03461 8.20779 2.24945 7.93695 2.52029C7.66612 2.79113 7.45128 3.11266 7.3047 3.46652C7.15812 3.82039 7.08268 4.19966 7.08268 4.58268V5.41602C7.08268 5.79904 7.15812 6.17831 7.3047 6.53218C7.45128 6.88604 7.66612 7.20757 7.93695 7.47841C8.20779 7.74925 8.52932 7.96409 8.88319 8.11066C9.23706 8.25724 9.61633 8.33268 9.99935 8.33268C10.3824 8.33268 10.7616 8.25724 11.1155 8.11066C11.4694 7.96409 11.7909 7.74925 12.0617 7.47841C12.3326 7.20757 12.5474 6.88604 12.694 6.53218C12.8406 6.17831 12.916 5.79904 12.916 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M13.958 16.041C13.958 16.2068 13.8922 16.3657 13.775 16.483C13.6577 16.6002 13.4988 16.666 13.333 16.666C13.1672 16.666 13.0083 16.6002 12.8911 16.483C12.7739 16.3657 12.708 16.2068 12.708 16.041C12.708 15.8753 12.7739 15.7163 12.8911 15.5991C13.0083 15.4819 13.1672 15.416 13.333 15.416C13.4988 15.416 13.6577 15.4819 13.775 15.5991C13.8922 15.7163 13.958 15.8753 13.958 16.041Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">98+</h6>
+                              <small class="ct_text_5C727D">Specialists</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.66699 14.9993V10.8327C1.66699 10.4577 1.74338 10.1174 1.89616 9.81185C2.04894 9.50629 2.25033 9.23546 2.50033 8.99935V6.66602C2.50033 5.97157 2.74338 5.38129 3.22949 4.89518C3.7156 4.40907 4.30588 4.16602 5.00033 4.16602H8.33366C8.6531 4.16602 8.95171 4.22518 9.22949 4.34352C9.50727 4.46185 9.76421 4.6249 10.0003 4.83268C10.2364 4.62435 10.4934 4.46129 10.7712 4.34352C11.0489 4.22574 11.3475 4.16657 11.667 4.16602H15.0003C15.6948 4.16602 16.285 4.40907 16.7712 4.89518C17.2573 5.38129 17.5003 5.97157 17.5003 6.66602V8.99935C17.7503 9.23546 17.9517 9.50629 18.1045 9.81185C18.2573 10.1174 18.3337 10.4577 18.3337 10.8327V14.9993C18.3337 15.2355 18.2537 15.4335 18.0937 15.5935C17.9337 15.7535 17.7359 15.8332 17.5003 15.8327C17.2648 15.8321 17.067 15.7521 16.907 15.5927C16.747 15.4332 16.667 15.2355 16.667 14.9993V14.166H3.33366V14.9993C3.33366 15.2355 3.25366 15.4335 3.09366 15.5935C2.93366 15.7535 2.73588 15.8332 2.50033 15.8327C2.26477 15.8321 2.06699 15.7521 1.90699 15.5927C1.74699 15.4332 1.66699 15.2355 1.66699 14.9993ZM10.8337 8.33268H15.8337V6.66602C15.8337 6.4299 15.7537 6.23213 15.5937 6.07268C15.4337 5.91324 15.2359 5.83324 15.0003 5.83268H11.667C11.4309 5.83268 11.2331 5.91268 11.0737 6.07268C10.9142 6.23268 10.8342 6.43046 10.8337 6.66602V8.33268ZM4.16699 8.33268H9.16699V6.66602C9.16699 6.4299 9.08699 6.23213 8.92699 6.07268C8.76699 5.91324 8.56921 5.83324 8.33366 5.83268H5.00033C4.76421 5.83268 4.56644 5.91268 4.40699 6.07268C4.24755 6.23268 4.16755 6.43046 4.16699 6.66602V8.33268ZM3.33366 12.4993H16.667V10.8327C16.667 10.5966 16.587 10.3988 16.427 10.2393C16.267 10.0799 16.0692 9.9999 15.8337 9.99935H4.16699C3.93088 9.99935 3.7331 10.0793 3.57366 10.2393C3.41421 10.3993 3.33421 10.5971 3.33366 10.8327V12.4993Z"
+                                fill="#5C727D"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">700</h6>
+                              <small class="ct_text_5C727D">Beds</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.3329V15.8329C16.6663 13.4762 16.6663 12.297 15.9338 11.5654C15.2022 10.832 14.023 10.832 11.6663 10.832H8.33301C5.97634 10.832 4.79717 10.832 4.06551 11.5654C3.33301 12.297 3.33301 13.4762 3.33301 15.832C3.33301 16.6095 3.33301 16.9979 3.45967 17.3037C3.54344 17.506 3.66625 17.6899 3.82111 17.8448C3.97597 17.9996 4.15983 18.1224 4.36217 18.2062C4.66801 18.3329 5.05634 18.3329 5.83301 18.3329V11.2495M7.91634 10.8329L10.4163 18.3329"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.99967 15.8327H12.083C12.4145 15.8327 12.7325 15.9644 12.9669 16.1988C13.2013 16.4332 13.333 16.7512 13.333 17.0827C13.333 17.4142 13.2013 17.7321 12.9669 17.9666C12.7325 18.201 12.4145 18.3327 12.083 18.3327H10.4163M12.9163 5.41602V4.58268C12.9163 4.19966 12.8409 3.82039 12.6943 3.46652C12.5477 3.11266 12.3329 2.79113 12.0621 2.52029C11.7912 2.24945 11.4697 2.03461 11.1158 1.88803C10.762 1.74146 10.3827 1.66602 9.99967 1.66602C9.61665 1.66602 9.23738 1.74146 8.88351 1.88803C8.52965 2.03461 8.20812 2.24945 7.93728 2.52029C7.66644 2.79113 7.4516 3.11266 7.30503 3.46652C7.15845 3.82039 7.08301 4.19966 7.08301 4.58268V5.41602C7.08301 5.79904 7.15845 6.17831 7.30503 6.53218C7.4516 6.88604 7.66644 7.20757 7.93728 7.47841C8.20812 7.74925 8.52965 7.96409 8.88351 8.11066C9.23738 8.25724 9.61665 8.33268 9.99967 8.33268C10.3827 8.33268 10.762 8.25724 11.1158 8.11066C11.4697 7.96409 11.7912 7.74925 12.0621 7.47841C12.3329 7.20757 12.5477 6.88604 12.6943 6.53218C12.8409 6.17831 12.9163 5.79904 12.9163 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">18,000+</h6>
+                              <small class="ct_text_5C727D">Patients</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M21 22V19C21 16.172 21 14.757 20.121 13.879C19.243 13 17.828 13 15 13L13 15L11 13C8.172 13 6.757 13 5.879 13.879C5 14.757 5 16.172 5 19V22M17 13V18.5"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.5 13V17M9.5 17C10.0304 17 10.5391 17.2107 10.9142 17.5858C11.2893 17.9609 11.5 18.4696 11.5 19V20M9.5 17C8.96957 17 8.46086 17.2107 8.08579 17.5858C7.71071 17.9609 7.5 18.4696 7.5 19V20M16.5 6.5V5.5C16.5 5.04037 16.4095 4.58525 16.2336 4.16061C16.0577 3.73597 15.7999 3.35013 15.4749 3.02513C15.1499 2.70012 14.764 2.44231 14.3394 2.26642C13.9148 2.09053 13.4596 2 13 2C12.5404 2 12.0852 2.09053 11.6606 2.26642C11.236 2.44231 10.8501 2.70012 10.5251 3.02513C10.2001 3.35013 9.94231 3.73597 9.76642 4.16061C9.59053 4.58525 9.5 5.04037 9.5 5.5V6.5C9.5 6.95963 9.59053 7.41475 9.76642 7.83939C9.94231 8.26403 10.2001 8.64987 10.5251 8.97487C10.8501 9.29988 11.236 9.55769 11.6606 9.73358C12.0852 9.90947 12.5404 10 13 10C13.4596 10 13.9148 9.90947 14.3394 9.73358C14.764 9.55769 15.1499 9.29988 15.4749 8.97487C15.7999 8.64987 16.0577 8.26403 16.2336 7.83939C16.4095 7.41475 16.5 6.95963 16.5 6.5Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.75 19.25C17.75 19.4489 17.671 19.6397 17.5303 19.7803C17.3897 19.921 17.1989 20 17 20C16.8011 20 16.6103 19.921 16.4697 19.7803C16.329 19.6397 16.25 19.4489 16.25 19.25C16.25 19.0511 16.329 18.8603 16.4697 18.7197C16.6103 18.579 16.8011 18.5 17 18.5C17.1989 18.5 17.3897 18.579 17.5303 18.7197C17.671 18.8603 17.75 19.0511 17.75 19.25Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">Neurology</h6>
+                              <small class="ct_text_5C727D">Speciality</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ct_price_area">
+                      <div>
+                        <small
+                          class="text-uppercase ct_text_9CA3AF fw-semibold mb-1 d-block"
+                        >
+                          Starting From
+                        </small>
+
+                        <h4 class="mb-0 ct_fw_700">
+                          ₹34,900
+                          <span class="ct_fs_16 ct_fw_400">/Month</span>
+                        </h4>
+                      </div>
+
+                      <a href="clinics-details.html" class="ct_fw_600 ct_orange_text">
+                        VIEW DETAILS
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                  <div class="ct_hospital_card">
+                    <div class="position-relative">
+                      <img
+                        src="assets/img/Clinics_img_1.png"
+                        class="img-fluid w-100 ct_hospital_img"
+                        alt=""
+                      />
+
+                      <span class="ct_rating_badge">
+                        ⭐ 4.7 (980 Reviews)
+                      </span>
+
+                      <button class="ct_wishlist_btn">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </div>
+
+                    <div class="p-4">
+                      <h5 class="ct_fw_600 mb-2 text-truncate">Fortis Hospital Bangalore</h5>
+
+                      <p class="ct_text_5C727D ct_fs_14 mb-3">
+                        <i class="fa-solid fa-location-dot ct_orange_text"></i>
+                        Bangalore, India
+                      </p>
+
+                      <div class="d-flex flex-wrap gap-2 mb-4">
+                        <span class="ct_tag">Cardiology</span>
+                        <span class="ct_tag">Neurology</span>
+                        <span class="ct_tag">Urology</span>
+                      </div>
+
+                      <div class="row g-3">
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.332V15.832C16.6663 13.4754 16.6663 12.2962 15.9338 11.5645C15.2022 10.832 14.023 10.832 11.6663 10.832L9.99967 12.4987L8.33301 10.832C5.97634 10.832 4.79717 10.832 4.06551 11.5645C3.33301 12.2962 3.33301 13.4754 3.33301 15.832V18.332M13.333 10.832V15.4154"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M7.08268 10.8327V14.166M7.08268 14.166C7.52471 14.166 7.94863 14.3416 8.26119 14.6542C8.57375 14.9667 8.74935 15.3907 8.74935 15.8327V16.666M7.08268 14.166C6.64065 14.166 6.21673 14.3416 5.90417 14.6542C5.59161 14.9667 5.41602 15.3907 5.41602 15.8327V16.666M12.916 5.41602V4.58268C12.916 4.19966 12.8406 3.82039 12.694 3.46652C12.5474 3.11266 12.3326 2.79113 12.0617 2.52029C11.7909 2.24945 11.4694 2.03461 11.1155 1.88803C10.7616 1.74146 10.3824 1.66602 9.99935 1.66602C9.61633 1.66602 9.23706 1.74146 8.88319 1.88803C8.52932 2.03461 8.20779 2.24945 7.93695 2.52029C7.66612 2.79113 7.45128 3.11266 7.3047 3.46652C7.15812 3.82039 7.08268 4.19966 7.08268 4.58268V5.41602C7.08268 5.79904 7.15812 6.17831 7.3047 6.53218C7.45128 6.88604 7.66612 7.20757 7.93695 7.47841C8.20779 7.74925 8.52932 7.96409 8.88319 8.11066C9.23706 8.25724 9.61633 8.33268 9.99935 8.33268C10.3824 8.33268 10.7616 8.25724 11.1155 8.11066C11.4694 7.96409 11.7909 7.74925 12.0617 7.47841C12.3326 7.20757 12.5474 6.88604 12.694 6.53218C12.8406 6.17831 12.916 5.79904 12.916 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M13.958 16.041C13.958 16.2068 13.8922 16.3657 13.775 16.483C13.6577 16.6002 13.4988 16.666 13.333 16.666C13.1672 16.666 13.0083 16.6002 12.8911 16.483C12.7739 16.3657 12.708 16.2068 12.708 16.041C12.708 15.8753 12.7739 15.7163 12.8911 15.5991C13.0083 15.4819 13.1672 15.416 13.333 15.416C13.4988 15.416 13.6577 15.4819 13.775 15.5991C13.8922 15.7163 13.958 15.8753 13.958 16.041Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">98+</h6>
+                              <small class="ct_text_5C727D">Specialists</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M1.66699 14.9993V10.8327C1.66699 10.4577 1.74338 10.1174 1.89616 9.81185C2.04894 9.50629 2.25033 9.23546 2.50033 8.99935V6.66602C2.50033 5.97157 2.74338 5.38129 3.22949 4.89518C3.7156 4.40907 4.30588 4.16602 5.00033 4.16602H8.33366C8.6531 4.16602 8.95171 4.22518 9.22949 4.34352C9.50727 4.46185 9.76421 4.6249 10.0003 4.83268C10.2364 4.62435 10.4934 4.46129 10.7712 4.34352C11.0489 4.22574 11.3475 4.16657 11.667 4.16602H15.0003C15.6948 4.16602 16.285 4.40907 16.7712 4.89518C17.2573 5.38129 17.5003 5.97157 17.5003 6.66602V8.99935C17.7503 9.23546 17.9517 9.50629 18.1045 9.81185C18.2573 10.1174 18.3337 10.4577 18.3337 10.8327V14.9993C18.3337 15.2355 18.2537 15.4335 18.0937 15.5935C17.9337 15.7535 17.7359 15.8332 17.5003 15.8327C17.2648 15.8321 17.067 15.7521 16.907 15.5927C16.747 15.4332 16.667 15.2355 16.667 14.9993V14.166H3.33366V14.9993C3.33366 15.2355 3.25366 15.4335 3.09366 15.5935C2.93366 15.7535 2.73588 15.8332 2.50033 15.8327C2.26477 15.8321 2.06699 15.7521 1.90699 15.5927C1.74699 15.4332 1.66699 15.2355 1.66699 14.9993ZM10.8337 8.33268H15.8337V6.66602C15.8337 6.4299 15.7537 6.23213 15.5937 6.07268C15.4337 5.91324 15.2359 5.83324 15.0003 5.83268H11.667C11.4309 5.83268 11.2331 5.91268 11.0737 6.07268C10.9142 6.23268 10.8342 6.43046 10.8337 6.66602V8.33268ZM4.16699 8.33268H9.16699V6.66602C9.16699 6.4299 9.08699 6.23213 8.92699 6.07268C8.76699 5.91324 8.56921 5.83324 8.33366 5.83268H5.00033C4.76421 5.83268 4.56644 5.91268 4.40699 6.07268C4.24755 6.23268 4.16755 6.43046 4.16699 6.66602V8.33268ZM3.33366 12.4993H16.667V10.8327C16.667 10.5966 16.587 10.3988 16.427 10.2393C16.267 10.0799 16.0692 9.9999 15.8337 9.99935H4.16699C3.93088 9.99935 3.7331 10.0793 3.57366 10.2393C3.41421 10.3993 3.33421 10.5971 3.33366 10.8327V12.4993Z"
+                                fill="#5C727D"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">700</h6>
+                              <small class="ct_text_5C727D">Beds</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="20"
+                              height="20"
+                              viewBox="0 0 20 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16.6663 18.3329V15.8329C16.6663 13.4762 16.6663 12.297 15.9338 11.5654C15.2022 10.832 14.023 10.832 11.6663 10.832H8.33301C5.97634 10.832 4.79717 10.832 4.06551 11.5654C3.33301 12.297 3.33301 13.4762 3.33301 15.832C3.33301 16.6095 3.33301 16.9979 3.45967 17.3037C3.54344 17.506 3.66625 17.6899 3.82111 17.8448C3.97597 17.9996 4.15983 18.1224 4.36217 18.2062C4.66801 18.3329 5.05634 18.3329 5.83301 18.3329V11.2495M7.91634 10.8329L10.4163 18.3329"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.99967 15.8327H12.083C12.4145 15.8327 12.7325 15.9644 12.9669 16.1988C13.2013 16.4332 13.333 16.7512 13.333 17.0827C13.333 17.4142 13.2013 17.7321 12.9669 17.9666C12.7325 18.201 12.4145 18.3327 12.083 18.3327H10.4163M12.9163 5.41602V4.58268C12.9163 4.19966 12.8409 3.82039 12.6943 3.46652C12.5477 3.11266 12.3329 2.79113 12.0621 2.52029C11.7912 2.24945 11.4697 2.03461 11.1158 1.88803C10.762 1.74146 10.3827 1.66602 9.99967 1.66602C9.61665 1.66602 9.23738 1.74146 8.88351 1.88803C8.52965 2.03461 8.20812 2.24945 7.93728 2.52029C7.66644 2.79113 7.4516 3.11266 7.30503 3.46652C7.15845 3.82039 7.08301 4.19966 7.08301 4.58268V5.41602C7.08301 5.79904 7.15845 6.17831 7.30503 6.53218C7.4516 6.88604 7.66644 7.20757 7.93728 7.47841C8.20812 7.74925 8.52965 7.96409 8.88351 8.11066C9.23738 8.25724 9.61665 8.33268 9.99967 8.33268C10.3827 8.33268 10.762 8.25724 11.1158 8.11066C11.4697 7.96409 11.7912 7.74925 12.0621 7.47841C12.3329 7.20757 12.5477 6.88604 12.6943 6.53218C12.8409 6.17831 12.9163 5.79904 12.9163 5.41602Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">18,000+</h6>
+                              <small class="ct_text_5C727D">Patients</small>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="d-flex gap-2">
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M21 22V19C21 16.172 21 14.757 20.121 13.879C19.243 13 17.828 13 15 13L13 15L11 13C8.172 13 6.757 13 5.879 13.879C5 14.757 5 16.172 5 19V22M17 13V18.5"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M9.5 13V17M9.5 17C10.0304 17 10.5391 17.2107 10.9142 17.5858C11.2893 17.9609 11.5 18.4696 11.5 19V20M9.5 17C8.96957 17 8.46086 17.2107 8.08579 17.5858C7.71071 17.9609 7.5 18.4696 7.5 19V20M16.5 6.5V5.5C16.5 5.04037 16.4095 4.58525 16.2336 4.16061C16.0577 3.73597 15.7999 3.35013 15.4749 3.02513C15.1499 2.70012 14.764 2.44231 14.3394 2.26642C13.9148 2.09053 13.4596 2 13 2C12.5404 2 12.0852 2.09053 11.6606 2.26642C11.236 2.44231 10.8501 2.70012 10.5251 3.02513C10.2001 3.35013 9.94231 3.73597 9.76642 4.16061C9.59053 4.58525 9.5 5.04037 9.5 5.5V6.5C9.5 6.95963 9.59053 7.41475 9.76642 7.83939C9.94231 8.26403 10.2001 8.64987 10.5251 8.97487C10.8501 9.29988 11.236 9.55769 11.6606 9.73358C12.0852 9.90947 12.5404 10 13 10C13.4596 10 13.9148 9.90947 14.3394 9.73358C14.764 9.55769 15.1499 9.29988 15.4749 8.97487C15.7999 8.64987 16.0577 8.26403 16.2336 7.83939C16.4095 7.41475 16.5 6.95963 16.5 6.5Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                              <path
+                                d="M17.75 19.25C17.75 19.4489 17.671 19.6397 17.5303 19.7803C17.3897 19.921 17.1989 20 17 20C16.8011 20 16.6103 19.921 16.4697 19.7803C16.329 19.6397 16.25 19.4489 16.25 19.25C16.25 19.0511 16.329 18.8603 16.4697 18.7197C16.6103 18.579 16.8011 18.5 17 18.5C17.1989 18.5 17.3897 18.579 17.5303 18.7197C17.671 18.8603 17.75 19.0511 17.75 19.25Z"
+                                stroke="#5C727D"
+                                stroke-width="1.5"
+                              />
+                            </svg>
+
+                            <div>
+                              <h6 class="mb-0 ct_fs_16 ct_fw_600">Neurology</h6>
+                              <small class="ct_text_5C727D">Speciality</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="ct_price_area">
+                      <div>
+                        <small
+                          class="text-uppercase ct_text_9CA3AF fw-semibold mb-1 d-block"
+                        >
+                          Starting From
+                        </small>
+
+                        <h4 class="mb-0 ct_fw_700">
+                          ₹34,900
+                          <span class="ct_fs_16 ct_fw_400">/Month</span>
+                        </h4>
+                      </div>
+
+                      <a href="clinics-details.html" class="ct_fw_600 ct_orange_text">
+                        VIEW DETAILS
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- news later section S -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="ct_newsletter_bg">
+              <img
+                src="../assets/img/newletter_left_img.png"
+                alt=""
+                class="ct_flex_shrink_0"
+              />
+              <div class="ct_py_70 ct_py_0_res_991">
+                <h4 class="ct_fs_24 ct_fw_600">Stay in the Loop</h4>
+                <p class="mb-0">
+                  Get exclusive updates, property highlights, and hosting tips
+                  delivered to your inbox.
+                </p>
+              </div>
+              <div class="">
+                <p class="mb-3">Never miss a new listing or a special offer.</p>
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="form-control ct_input ct_input_h_50 ct_border_radius_100 ct_pe_120"
+                    placeholder="Enter Email"
+                  />
+                  <button class="ct_subscribe_btn">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section S -->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-5 col-md-5 mb-4 mb-lg-0">
+            <div class="ct_footer_left_info">
+              <a href="index.html" class="ct_footer_logo">
+                <img src="../assets/img/logo.svg" alt="" />
+              </a>
+              <p class="my-4 text-white">
+                Mid‑term homes for students & nomads—direct from hosts. Verified
+                stays, flexible terms, zero hassle.
+              </p>
+              <p class="mb-0 text-white">
+                From verified listings to multilingual support, we’re on a
+                mission to help you feel at home—wherever life takes you.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3">
+            <h4 class="ct_fs_20 text-white mb-3">Usefull Link</h4>
+            <ul class="ct_footer_link">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="become-host.html">Become a host</a>
+              </li>
+              <li>
+                <a href="terms-&-policy.html">Terms & Privacy</a>
+              </li>
+              <li>
+                <a href="help.html">Help</a>
+              </li>
+              <li>
+                <a href="blogs.html">Blogs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section E -->
+    <div class="ct_loader_main">
+      <span class="loader"></span>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dubrox/Multiple-Dates-Picker-for-jQuery-UI/jquery-ui.multidatespicker.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="assets/img/fav_icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="assets/img/fav_icon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Flexsirent Medical Tourism</title>
+  </head>
+  <body>
+    <header class="ct_header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="ct_navbr_main">
+              <div class="ct_logo">
+                <a href="home.html"
+                  ><img loading="lazy" src="assets/img/logo.svg" alt=""
+                /></a>
+              </div>
+              <div class="ct_navbar">
+                <ul>
+                  <div class="ct_close_menu">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <li><a href="home.html" class="active">Home</a></li>
+                  <li><a  href="clinics.html">Clinics</a></li>
+                  <li>
+                    <a  href="join-us-clinic.html">Join as Clinic</a>
+                  </li>
+                  <li><a href="blog.html" class="">Blogs</a></li>
+                  <li><a href="help.html" class="">Help</a></li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <li class="d-flex align-items-center">
+                  <div
+                    class="mb-0"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="d-flex align-items-center gap-1">
+                      <div class="dropdown ct_login_dropdown ct_cursor_pointer">
+                        <span
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          data-bs-target="#ct_login_modal"
+                          class=""
+                          ><span>Sign Up</span> |</span
+                        >
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Sign up as Patient</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Sign up as Clinic</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="dropdown ct_login_dropdown ct_cursor_pointer">
+                        <span
+                          id="dropdownMenuButton2"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          ><span>Login</span></span
+                        >
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton2"
+                        >
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Login as Patient</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Login as Clinic</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <div class="ct_menu_bar">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="ct_banner_bg">
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-xxl-9 col-xl-10 col-md-12 mx-auto">
+            <div class="ct_banner_title">
+              <div class="ct_banner_desc">
+                <h2
+                  class="ct_fs_40 ct_blue_text mb-0 ct_fw_700 ct_ff_Agrandir_bold text-center"
+                >
+                  Welcome to Flexsi<span
+                    class="ct_fs_40 ct_blue_text mb-0 ct_fw_700 ct_ff_Agrandir_bold text-center ct_orange_text"
+                    >rent</span
+                  >
+                </h2>
+                <div
+                  class="ct_banner_subtitle text-center ct_text_5C739A ct_fs_18 mt-3"
+                >
+                  Find trusted clinics, world-class treatments, and personalized
+                  medical care across the globe.AI
+                </div>
+              </div>
+              <div class="ct_home_inner_shadow">
+                <div class="row justify-content-center">
+                  <div class="col-lg-10">
+                    <div class="search-wrapper">
+                      <div class="search-box">
+                        <input
+                          type="text"
+                          placeholder="Search treatments, clinics, countries, or specialties..."
+                        />
+
+                        <button class="search-btn">
+                          <i class="fa-solid fa-arrow-up"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex flex-wrap gap-4 justify-content-center ct_mt_35"
+                    >
+                      <div>
+                        <div class="d-flex gap-1 align-items-center">
+                          <img src="assets/img/carbon_hospital.png" alt="">
+
+                          <span class="ct_text_707070 ct_fs_15"
+                            >Trusted Clinics</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <div class="d-flex gap-1 align-items-center">
+                          <img src="assets/img/healthicons_doctor-outline.png" alt="">
+                          <span class="ct_text_707070 ct_fs_15"
+                            >Expert Doctors</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <div class="d-flex gap-1 align-items-center">
+                          <img src="assets/img/iconamoon_lock-light.png" alt="">
+                          <span class="ct_text_707070 ct_fs_15"
+                            >Secure Payments</span
+                          >
+                        </div>
+                      </div>
+                      <div>
+                        <div class="d-flex gap-1 align-items-center">
+                         <img src="assets/img/ix_support.png" alt="">
+                          <span class="ct_text_707070 ct_fs_15"
+                            >24/7 support</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Login Modal S -->
+    <div
+      class="modal fade modal-xl ct_custom_modal_main ct_login_modal"
+      id="ct_login_modal"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 py-0">
+            <button
+              type="button"
+              class="btn-close ct_login_btn_close"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ct_login_main">
+              <div class="ct_login_left_cnt">
+                <p class="ct_fs_18">
+                  Simplify your next move with one click<br /><span
+                    class="ct_fs_28 ct_fw_700"
+                    >Get Started</span
+                  >
+                </p>
+              </div>
+              <form>
+                <h2 class="ct_fs_20 ct_fw_600 mb-4">Log In</h2>
+                <div class="form-group mb-4">
+                  <label class="mb-2 ct_fw_400">Email</label
+                  ><input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control ct_input"
+                    id="email"
+                    value=""
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label class="mb-2 ct_fw_400">Password</label>
+                  <div class="position-relative">
+                    <input
+                      placeholder="Password"
+                      class="form-control ct_input pe-5"
+                      type="password"
+                      id="password"
+                      value=""
+                    />
+                    <div><i class="fa-solid ct_show_eye fa-eye-slash"></i></div>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label class="mb-2 ct_fw_400">Are you a Business</label>
+                  <div class="position-relative">
+                    <div class="form-group ct_w_100_575">
+                      <select
+                        id="statusfilter"
+                        name="statusfilter"
+                        class="form-control ct_input ct_input_h_50 ct_light_blue_input_border"
+                      >
+                        <option value="2">Yes</option>
+                        <option value="1" selected="">No</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-1"></div>
+                  <div>
+                    <a href="#" class="ct_orange_text ct_fW_700"
+                      >Forgot Password?</a
+                    >
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <a
+                    href="#"
+                    aria-label="Close"
+                    class="ct_orange_btn w-100"
+                    aria-disabled="false"
+                    style="pointer-events: auto; opacity: 1"
+                    >Log In</a
+                  >
+                </div>
+                <p class="mb-0 mt-2 text-center">
+                  Don't Have an Account?<!-- -->
+                  <a href="" class="ct_fw_600 ct_orange_text">Sign Up</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Signup modal S -->
+    <div
+      class="modal fade modal-xl ct_custom_modal_main ct_login_modal"
+      id="ct_signup_modal"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 py-0">
+            <button type="button" class="btn-close ct_login_btn_close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ct_login_main">
+              <div class="ct_login_left_cnt">
+                <p class="ct_fs_18">
+                  Simplify your next move with one click<br /><span
+                    class="ct_fs_28 ct_fw_700"
+                    >Get Started</span
+                  >
+                </p>
+              </div>
+              <form>
+                <h2 class="ct_fs_20 ct_fw_600 mb-4">Create an Account</h2>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group mb-4">
+                      <label for="" class="mb-2 ct_fw_400">First Name</label
+                      ><input
+                        type="text"
+                        placeholder="First Name"
+                        class="form-control ct_input"
+                        id="first_name"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group mb-4">
+                      <label for="" class="mb-2 ct_fw_400">Last Name</label
+                      ><input
+                        type="text"
+                        placeholder="Last Name"
+                        class="form-control ct_input"
+                        id="last_name"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="" class="mb-2 ct_fw_400">Email</label
+                  ><input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control ct_input"
+                    id="email"
+                    value=""
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label for="" class="mb-2 ct_fw_400">Password</label>
+                  <div class="position-relative">
+                    <input
+                      placeholder="Password"
+                      class="form-control ct_input pe-5"
+                      type="password"
+                      id="password"
+                      value=""
+                    />
+                    <div><i class="fa-solid ct_show_eye fa-eye-slash"></i></div>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="" class="mb-2 ct_fw_400">Confirm Password</label>
+                  <div class="position-relative">
+                    <input
+                      placeholder=" Confirm Password"
+                      class="form-control ct_input pe-5"
+                      type="password"
+                      id="confirm_password"
+                      value=""
+                    />
+                    <div><i class="fa-solid ct_show_eye fa-eye-slash"></i></div>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label class="mb-2 ct_fw_400">Are you a Business</label>
+                  <div class="position-relative">
+                    <div class="form-group ct_w_100_575">
+                      <select
+                        id="statusfilter"
+                        name="statusfilter"
+                        class="form-control ct_input ct_input_h_50 ct_light_blue_input_border"
+                      >
+                        <option value="2">Yes</option>
+                        <option value="1" selected="">No</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <a href="#" class="ct_orange_btn w-100">Sign Up</a>
+                </div>
+                <p class="mb-0 mt-2 text-center">
+                  Already Have an Account?<a
+                    href="#"
+                    class="ct_fw_600 ct_orange_text"
+                  >
+                    Log In</a
+                  >
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forgot Password Modal S -->
+    <div
+      class="modal fade modal-xl ct_custom_modal_main ct_login_modal"
+      id="ct_forgot_password_modal"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 py-0">
+            <button type="button" class="btn-close ct_login_btn_close"></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ct_login_main">
+              <div class="ct_login_left_cnt">
+                <p class="ct_fs_18">
+                  Simplify your next move with one click<br /><span
+                    class="ct_fs_28 ct_fw_700"
+                    >Get Started</span
+                  >
+                </p>
+              </div>
+              <form>
+                <h2 class="ct_fs_20 ct_fw_600 mb-2">Forgot Password</h2>
+                <p class="mb-4">
+                  Don’t worry, happens to all of us. Enter your email below to
+                  recover your password
+                </p>
+                <div class="form-group mb-4">
+                  <label for="" class="mb-2 ct_fw_400">Email</label
+                  ><input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control ct_input"
+                    id="email"
+                    value=""
+                  />
+                </div>
+                <div class="mt-4">
+                  <button class="ct_orange_btn w-100" type="button">
+                    Submit
+                  </button>
+                </div>
+                <p class="mb-0 mt-2 text-center">
+                  Already Know Your Password?<!-- -->
+                  <a href="#" class="ct_fw_600 ct_orange_text">Log In</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forgot Password Modal E -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dubrox/Multiple-Dates-Picker-for-jQuery-UI/jquery-ui.multidatespicker.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
