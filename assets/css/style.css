@@ -2748,7 +2748,7 @@ span.ct_pricing_badge {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 81vh;
+
 }
 
 .ct_login_left_cnt {
@@ -2768,19 +2768,23 @@ span.ct_pricing_badge {
 }
 
 .ct_login_main form {
-  padding: 30px 37px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    padding: 30px 37px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: start;
+    height: auto;
+    max-height: calc(100dvh - 62px);
+    overflow-y: auto;
 }
+
 
 .ct_login_modal .modal-content {
   overflow-y: auto;

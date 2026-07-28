@@ -38,10 +38,10 @@
                   <div class="ct_close_menu">
                     <i class="fa-solid fa-xmark"></i>
                   </div>
-                  <li><a href="home.html">Home</a></li>
-                  <li><a class="" href="clinics.html">Clinics</a></li>
+                  <li><a href="home.html" class="active">Home</a></li>
+                  <li><a  href="clinics.html">Clinics</a></li>
                   <li>
-                    <a class="active" href="join-us-clinic.html">Join as Clinic</a>
+                    <a  href="join-us-clinic.html">Join as Clinic</a>
                   </li>
                   <li><a href="blog.html" class="">Blogs</a></li>
                   <li><a href="help.html" class="">Help</a></li>
@@ -50,18 +50,14 @@
               <div class="d-flex align-items-center gap-3">
                 <li class="d-flex align-items-center">
                   <div
-                    class="mb-0"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
+                    class="mb-0">
                     <div class="d-flex align-items-center gap-1">
                       <div class="dropdown ct_login_dropdown ct_cursor_pointer">
                         <span
                           id="dropdownMenuButton1"
                           data-bs-toggle="dropdown"
                           aria-expanded="false"
-                          data-bs-target="#ct_login_modal"
+                          
                           class=""
                           ><span>Sign Up</span> |</span
                         >
@@ -70,12 +66,12 @@
                           aria-labelledby="dropdownMenuButton1"
                         >
                           <li>
-                            <a class="dropdown-item" href="#"
+                            <a class="dropdown-item" href="#" data-bs-target="#ct_signup_patient_modal" data-bs-toggle="modal"
                               >Sign up as Patient</a
                             >
                           </li>
                           <li>
-                            <a class="dropdown-item" href="#"
+                            <a class="dropdown-item" href="#" data-bs-target="#ct_signup_clinic_modal" data-bs-toggle="modal"
                               >Sign up as Clinic</a
                             >
                           </li>
@@ -85,7 +81,7 @@
                         <span
                           id="dropdownMenuButton2"
                           data-bs-toggle="dropdown"
-                          aria-expanded="false"
+                          aria-expanded="false" 
                           ><span>Login</span></span
                         >
                         <ul
@@ -93,12 +89,12 @@
                           aria-labelledby="dropdownMenuButton2"
                         >
                           <li>
-                            <a class="dropdown-item" href="#"
+                            <a class="dropdown-item" href="#" data-bs-target="#ct_login_patient_modal" data-bs-toggle="modal"
                               >Login as Patient</a
                             >
                           </li>
                           <li>
-                            <a class="dropdown-item" href="#"
+                            <a class="dropdown-item" href="#" data-bs-target="#ct_login_Clinic_modal" data-bs-toggle="modal"
                               >Login as Clinic</a
                             >
                           </li>
@@ -926,6 +922,8 @@ Join Flexsirent Medical and connect with international patients looking for trus
     </div>
 
 
+
+
      <div
             class="modal fade modal-lg"
             id="become_host_form_success"
@@ -969,6 +967,414 @@ Join Flexsirent Medical and connect with international patients looking for trus
                 </div>
             </div>
         </div>
+
+
+
+         <!-- Login patient Modal S -->
+    <div
+      class="modal fade modal-xl ct_custom_modal_main ct_login_modal"
+      id="ct_login_patient_modal"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 py-0">
+            <button
+              type="button"
+              class="btn-close ct_login_btn_close" data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ct_login_main">
+              <div class="ct_login_left_cnt">
+                <p class="ct_fs_18">
+                 Begin your healthcare journey <br> with one click<span
+                    class="ct_fs_28 ct_fw_700"
+                    > Get Started</span
+                  >
+                </p>
+              </div>
+              <form>
+                <h2 class="ct_fs_20 ct_fw_600 mb-4">Log In</h2>
+                <div class="form-group mb-4">
+                  <label class="mb-2 ct_fw_400">Email</label
+                  ><input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control ct_input ct_input_h_50"
+                    id="email"
+                    value=""
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label class="mb-2 ct_fw_400">Password</label>
+                  <div class="position-relative">
+                    <input
+                      placeholder="Password"
+                      class="form-control ct_input ct_input_h_50 pe-5"
+                      type="password"
+                      id="password"
+                      value=""
+                    />
+                    <div><i class="fa-solid ct_show_eye fa-eye-slash"></i></div>
+                  </div>
+                </div>
+             
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                        <label for="">Remember Me</label>
+                  </div>
+                  <div>
+                    <a href="#" class="ct_orange_text ct_fW_700" data-bs-target="#ct_forgot_password_modal" data-bs-toggle="modal"
+                      >Forgot Password?</a
+                    >
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <a
+                    href="#"
+                    aria-label="Close"
+                    class="ct_orange_btn w-100"
+                    aria-disabled="false" 
+                    style="pointer-events: auto; opacity: 1"
+                    >Log In</a
+                  >
+                </div>
+                <p class="mb-0 mt-2 text-center">
+                  Don't Have an Account?<!-- -->
+                  <a href="" class="ct_fw_600 ct_orange_text" data-bs-target="#ct_signup_patient_modal" data-bs-toggle="modal">Sign Up</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Login patient Modal E -->
+       <!-- Login Clinic Modal S -->
+    <div
+      class="modal fade modal-xl ct_custom_modal_main ct_login_modal"
+      id="ct_login_Clinic_modal"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 py-0">
+            <button
+              type="button"
+              class="btn-close ct_login_btn_close" data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ct_login_main">
+              <div class="ct_login_left_cnt">
+                <p class="ct_fs_18">
+                 Grow your clinic with global <br> patients Join as<span
+                    class="ct_fs_28 ct_fw_700"
+                    > Clinic</span
+                  >
+                </p>
+              </div>
+              <form>
+                <h2 class="ct_fs_20 ct_fw_600 mb-4">Log In</h2>
+                <div class="form-group mb-4">
+                  <label class="mb-2 ct_fw_400">Email</label
+                  ><input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control ct_input"
+                    id="email"
+                    value=""
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label class="mb-2 ct_fw_400">Password</label>
+                  <div class="position-relative">
+                    <input
+                      placeholder="Password"
+                      class="form-control ct_input pe-5"
+                      type="password"
+                      id="password"
+                      value=""
+                    />
+                    <div><i class="fa-solid ct_show_eye fa-eye-slash"></i></div>
+                  </div>
+                </div>
+              
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center gap-1">
+                      <div class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                        <label for="">Remember Me</label>
+                  </div>
+                  <div>
+                    <a href="#" class="ct_orange_text ct_fW_700"  data-bs-target="#ct_forgot_password_modal" data-bs-toggle="modal"
+                      >Forgot Password?</a
+                    >
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <a
+                    href="#"
+                    aria-label="Close"
+                    class="ct_orange_btn w-100"
+                    aria-disabled="false"
+                    style="pointer-events: auto; opacity: 1"
+                    >Log In</a
+                  >
+                </div>
+                <p class="mb-0 mt-2 text-center">
+                  Don't Have an Account?<!-- -->
+                  <a href="" class="ct_fw_600 ct_orange_text" data-bs-target="#ct_signup_clinic_modal" data-bs-toggle="modal">Sign Up</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- Login Clinic Modal E -->
+    <!-- Signup patient modal  S -->
+    <div
+      class="modal fade modal-xl ct_custom_modal_main ct_login_modal"
+      id="ct_signup_patient_modal"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 py-0">
+            <button type="button" class="btn-close ct_login_btn_close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ct_login_main">
+              <div class="ct_login_left_cnt">
+                <p class="ct_fs_18">
+                  Begin your healthcare journey with <br /> one click<span
+                    class="ct_fs_28 ct_fw_700"
+                    > Get Started</span
+                  >
+                </p>
+              </div>
+              <form>
+                <h2 class="ct_fs_20 ct_fw_600 mb-4">Create an Account</h2>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group mb-4">
+                      <label for="" class="mb-2 ct_fw_400">First Name</label
+                      ><input
+                        type="text"
+                        placeholder="First Name"
+                        class="form-control ct_input_h_50"
+                        id="first_name"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                
+                </div>
+                <div class="form-group mb-4">
+                  <label for="" class="mb-2 ct_fw_400">Email</label
+                  ><input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control ct_input_h_50"
+                    id="email"
+                    value=""
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label for="" class="mb-2 ct_fw_400">Create Password</label>
+                  <div class="position-relative">
+                    <input
+                      placeholder="Password"
+                      class="form-control ct_input_h_50 pe-5"
+                      type="password"
+                      id="password"
+                      value=""
+                    />
+                    <div><i class="fa-solid ct_show_eye fa-eye-slash"></i></div>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="" class="mb-2 ct_fw_400">Confirm Password</label>
+                  <div class="position-relative">
+                    <input
+                      placeholder=" Confirm Password"
+                      class="form-control ct_input_h_50 pe-5"
+                      type="password"
+                      id="confirm_password"
+                      value=""
+                    />
+                    <div><i class="fa-solid ct_show_eye fa-eye-slash"></i></div>
+                  </div>
+                </div>
+            
+                <div class="mt-4">
+                  <a href="#" class="ct_orange_btn w-100">Sign Up</a>
+                </div>
+                <p class="mb-0 mt-2 text-center">
+                  Already Have an Account?<a
+                    href="#"
+                    class="ct_fw_600 ct_orange_text" data-bs-target="ct_login_patient_modal" data-bs-toggle="modal"
+                  >
+                    Log In</a
+                  >
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Signup patient modal S -->
+
+       <!-- Signup clinic modal  S -->
+    <div
+      class="modal fade modal-xl ct_custom_modal_main ct_login_modal"
+      id="ct_signup_clinic_modal"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 py-0">
+            <button type="button" class="btn-close ct_login_btn_close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ct_login_main">
+              <div class="ct_login_left_cnt">
+                <p class="ct_fs_18">
+                  Grow your clinic with global  <br /> patients Join as<span
+                    class="ct_fs_28 ct_fw_700"
+                    > Clinic</span
+                  >
+                </p>
+              </div>
+              <form>
+                <h2 class="ct_fs_20 ct_fw_600 mb-4">Create an Account</h2>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group mb-4">
+                      <label for="" class="mb-2 ct_fw_400">Full Name</label
+                      ><input
+                        type="text"
+                        placeholder="First Name"
+                        class="form-control ct_input ct_input_h_50"
+                        id="first_name"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                
+                </div>
+                <div class="form-group mb-4">
+                  <label for="" class="mb-2 ct_fw_400">Email</label
+                  ><input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control ct_input ct_input_h_50"
+                    id="email"
+                    value=""
+                  />
+                </div>
+                <div class="form-group mb-4">
+                  <label for="" class="mb-2 ct_fw_400">Create Password</label>
+                  <div class="position-relative">
+                    <input
+                      placeholder="Password"
+                      class="form-control ct_input ct_input_h_50 pe-5"
+                      type="password"
+                      id="password"
+                      value=""
+                    />
+                    <div><i class="fa-solid ct_show_eye fa-eye-slash"></i></div>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="" class="mb-2 ct_fw_400">Confirm Password</label>
+                  <div class="position-relative">
+                    <input
+                      placeholder=" Confirm Password"
+                      class="form-control ct_input ct_input_h_50 pe-5"
+                      type="password"
+                      id="confirm_password"
+                      value=""
+                    />
+                    <div><i class="fa-solid ct_show_eye fa-eye-slash"></i></div>
+                  </div>
+                </div>
+               
+                <div class="mt-4">
+                  <a href="#" class="ct_orange_btn w-100">Sign Up</a>
+                </div>
+                <p class="mb-0 mt-2 text-center">
+                  Already Have an Account?<a
+                    href="#"
+                    class="ct_fw_600 ct_orange_text" data-bs-target="#ct_login_Clinic_modal" data-bs-toggle="modal"
+                  >
+                    Log In</a
+                  >
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- Signup clinic modal S -->
+    <!-- Forgot Password patient Modal S -->
+    <div
+      class="modal fade modal-xl ct_custom_modal_main ct_login_modal"
+      id="ct_forgot_password_modal"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 py-0">
+            <button type="button" class="btn-close ct_login_btn_close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="ct_login_main">
+              <div class="ct_login_left_cnt">
+                <p class="ct_fs_18">
+                  Simplify your next move with one click<br /><span
+                    class="ct_fs_28 ct_fw_700"
+                    >Get Started</span
+                  >
+                </p>
+              </div>
+              <form>
+                <h2 class="ct_fs_20 ct_fw_600 mb-2">Forgot Password</h2>
+                <p class="mb-4">
+                  Don’t worry, happens to all of us. Enter your email below to
+                  recover your password
+                </p>
+                <div class="form-group mb-4">
+                  <label for="" class="mb-2 ct_fw_400">Email</label
+                  ><input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control ct_input"
+                    id="email"
+                    value=""
+                  />
+                </div>
+                <div class="mt-4">
+                  <button class="ct_orange_btn w-100" type="button">
+                    Submit
+                  </button>
+                </div>
+                <p class="mb-0 mt-2 text-center">
+                  Already Know Your Password?<!-- -->
+                  <a href="#" class="ct_fw_600 ct_orange_text">Log In</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forgot Password patient Modal E -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
