@@ -3838,7 +3838,7 @@ html .ui-button.ui-state-disabled:active {
   display: none;
 }
 
-.ct_product_gallary_slider .owl-nav button {
+.ct_product_gallary_slider .swiper-button-next,.ct_product_gallary_slider .swiper-button-prev {
   width: 40px;
   height: 40px;
   border-radius: 100px;
@@ -3859,28 +3859,6 @@ html .ui-button.ui-state-disabled:active {
   display: none;
 }
 
-.ct_product_gallary_slider .owl-nav button.owl-prev:before,
-.ct_product_gallary_slider .owl-nav button.owl-next:before {
-  content: "";
-  position: absolute;
-  background-position: center;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-repeat: no-repeat;
-}
-
-.ct_product_gallary_slider .owl-nav button.owl-prev:before {
-  background-image: url(../img/left_icon.png);
-}
-
-.ct_product_gallary_slider .owl-nav button.owl-next:before {
-  background-image: url(../img/right_icon.png);
-}
 
 .ct_custom_drop_mega {
   position: relative;
@@ -5254,6 +5232,9 @@ position: relative !important;
 }
 .et_doctor_drops li a:hover p{
   color: #fff;
+}
+.swiper-pagination{
+    display: none !important;
 }
 
 

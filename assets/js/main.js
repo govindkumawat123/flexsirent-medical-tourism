@@ -188,5 +188,26 @@ new Swiper(".ct_review_slider", {
   },
 });
 
+new Swiper(".ct_product_gallary_slider", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  dots: false,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".ct_product_gallary_slider .swiper-pagination",
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: ".ct_product_gallary_slider .swiper-button-next",
+    prevEl: ".ct_product_gallary_slider .swiper-button-prev",
+  },
+});
+
 
 
