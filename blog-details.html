@@ -336,7 +336,7 @@
                   >
                 </p>
               </div>
-              <form>
+              <form class="ct_custom_scroll">
                 <h2 class="ct_fs_20 ct_fw_600 mb-4">Log In</h2>
                 <div class="form-group mb-4">
                   <label class="mb-2 ct_fw_400">Email</label
@@ -392,7 +392,7 @@
                     aria-label="Close"
                     class="ct_orange_btn w-100"
                     aria-disabled="false"
-                    style="pointer-events: auto; opacity: 1" data-bs-target="#ct_onboarding_form_modal" data-bs-toggle="modal"
+                    style="pointer-events: auto; opacity: 1"
                     >Log In</a
                   >
                 </div>
@@ -537,7 +537,7 @@
                   one click<span class="ct_fs_28 ct_fw_700"> Get Started</span>
                 </p>
               </div>
-              <form>
+              <form class="ct_custom_scroll">
                 <h2 class="ct_fs_20 ct_fw_600 mb-4">Create an Account</h2>
                 <div class="row">
                   <div class="col-md-12">
@@ -591,7 +591,8 @@
                 </div>
 
                 <div class="mt-4">
-                  <a href="#" class="ct_orange_btn w-100" data-bs-target="#ct_onboarding_form_modal" data-bs-toggle="modal">Sign Up</a>
+                  <a href="#"  data-bs-target="#ct_step_form_modal"
+                    data-bs-toggle="modal"  class="ct_orange_btn w-100">Sign Up</a>
                 </div>
                 <p class="mb-0 mt-2 text-center">
                   Already Have an Account?<a
@@ -635,7 +636,7 @@
                   >
                 </p>
               </div>
-              <form>
+               <form class="ct_custom_scroll">
                 <h2 class="ct_fs_20 ct_fw_600 mb-4">Create an Account</h2>
                 <div class="row">
                   <div class="col-md-12">
@@ -732,7 +733,7 @@
                   >
                 </p>
               </div>
-              <form>
+              <form class="ct_custom_scroll">
                 <h2 class="ct_fs_20 ct_fw_600 mb-2">Forgot Password</h2>
                 <p class="mb-4">
                   Don’t worry, happens to all of us. Enter your email below to
@@ -765,12 +766,13 @@
     </div>
     <!-- Forgot Password patient Modal E -->
 
-    <!-- Step Form Modal S -->
+    <!-- step form modal -->
+
     <div
       class="modal fade modal-xl ct_custom_modal_main ct_login_modal"
-      id="ct_onboarding_form_modal"
+      id="ct_step_form_modal"
     >
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
         <div class="modal-content">
           <div class="modal-header border-0 py-0">
             <button
@@ -779,1138 +781,392 @@
               data-bs-dismiss="modal"
             ></button>
           </div>
-          <div class="modal-body p-0">
-            <div class="ct_login_main d-block">
-              <div
-                class="ct_multistep_form_card pt-4 mt-3 mb-3 ct_host_process_bg"
-              >
-                <form id="msform">
-                  <!-- progressbar -->
-                  <ul
-                    id="ct_form_progressbar"
-                    class="ct_host_process_multi_form"
+          <div class="modal-body p-0 ct_custom_scroll">
+            <div
+              class="ct_multistep_form_card pt-4 ct_host_process_bg ct_host_process_onboarding bg-white"
+            >
+              <form id="msform">
+                <!-- progressbar -->
+                <ul id="ct_form_progressbar" class="ct_host_process_multi_form">
+                  <li class="active ct_flex_1">
+                    <h5>Clinic Information</h5>
+                  </li>
+                  <li class="ct_flex_1">
+                    <h5>Clinic Profile</h5>
+                  </li>
+                  <li class="ct_flex_1">
+                    <h5>Services & Facilities</h5>
+                  </li>
+                  <li id="ct_pricing">
+                    <h5>Verification</h5>
+                  </li>
+                </ul>
+                <fieldset class="ct_mt_60">
+                  <div class="ct_form-card">
+                    <h2 class="ct_fs_35 ct_fw_600 mb-2">
+                      1. Tell Us About Your Clinic
+                    </h2>
+                    <p class="ct_text_op_8 mb-0">
+                      Help us get to know your clinic by sharing your basic
+                      contact information.
+                    </p>
+                    <div class="row mt-5">
+                      <div class="col-md-6">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >Clinic Name
+                          </label>
+                          <input
+                            type="text"
+                            placeholder="Clinic Name"
+                            class="form-control ct_input ct_input ct_input_h_50"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >Contact Person</label
+                          >
+                          <input
+                            type="text"
+                            placeholder="Contact Person"
+                            class="form-control ct_input ct_input_h_50"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >Business Email Address</label
+                          >
+                          <input
+                            type="email"
+                            placeholder="Email Address"
+                            class="form-control ct_input ct_input_h_50"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >Phone Number</label
+                          >
+                          <input
+                            type="number"
+                            placeholder="Phone Number"
+                            class="form-control ct_input ct_input_h_50"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400">Country</label>
+                          <select class="form-select ct_input ct_input_h_50">
+                            <option value="">India</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400">City</label>
+                          <select class="form-select ct_input ct_input_h_50">
+                            <option value="">Madhya Pradesh</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >Clinic Type</label
+                          >
+                          <select class="form-select ct_input ct_input_h_50">
+                            <option value="">Primary Care clinic</option>
+                            <option value="">Urgent Care Centers</option>
+                            <option value="">Specialty</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >Are you registering as?</label
+                          >
+                          <div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                              </div>
+                              <label for="">Independent Clinic</label>
+                            </div>
+                          </div>
+                          <div class="mt-2">
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                              </div>
+                              <label for="">Healthcare Network</label>
+                            </div>
+                          </div>
+
+                          <div class="mt-2">
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                              </div>
+                              <label for=""> Hospital / Medical Group</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               
+                  <button
+                    type="button"
+                    class="ct_orange_btn ct_form_next float-end"
                   >
-                    <li class="active ct_flex_1">
-                      <h5>Clinic Information</h5>
-                    </li>
-                    <li class="ct_flex_1">
-                      <h5>Clinic Profile</h5>
-                    </li>
-                    <li class="ct_flex_1">
-                      <h5>Services & Facilities</h5>
-                    </li>
-                    <li id="ct_pricing">
-                      <h5>Verification</h5>
-                    </li>
-                  </ul>
-                  <fieldset class="ct_mt_60">
-                    <div class="ct_form-card">
-                      <h2 class="ct_fs_35 ct_fw_600 mb-2">
-                        1. Tell Us About Your Clinic
-                      </h2>
-                      <p class="ct_text_op_8 mb-0">
-                        Help us get to know your clinic by sharing your basic
-                        contact information.
-                      </p>
-                      <div class="row mt-5">
-                        <div class="col-md-6">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >Clinic Name
-                            </label>
+                    Next
+                  </button>
+                  <a
+                    href="become-a-host-process.html"
+                    class="ct_outline_btn previous float-end me-3"
+                    >Back</a
+                  >
+                </fieldset>
+                <fieldset class="ct_mt_60">
+                  <div class="ct_form-card">
+                    <h2 class="ct_fs_35 ct_fw_600 mb-2">
+                      2. Describe Your Clinic
+                    </h2>
+                    <p class="ct_text_op_8 mb-0">
+                      Add key information about your clinic to help patients
+                      understand your services and facilities.
+                    </p>
+                    <div class="row mt-5">
+                      <div class="col-md-12">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >About Your Clinic</label
+                          >
+                          <textarea
+                            type="text"
+                            placeholder="About Your Clinic"
+                            rows="4"
+                            class="form-control ct_input ct_input ct_input_h_50 h-auto"
+                            aria-placeholder=""
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >Clinic Address</label
+                          >
+                          <div class="position-relative">
                             <input
                               type="text"
-                              placeholder="Clinic Name"
-                              class="form-control ct_input ct_input ct_input_h_50"
+                              placeholder="Clinic Address"
+                              class="form-control ct_input ct_input ct_input_h_50 pe-5"
                             />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >Contact Person</label
-                            >
-                            <input
-                              type="text"
-                              placeholder="Contact Person"
-                              class="form-control ct_input ct_input_h_50"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >Business Email Address</label
-                            >
-                            <input
-                              type="email"
-                              placeholder="Email Address"
-                              class="form-control ct_input ct_input_h_50"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >Phone Number</label
-                            >
-                            <input
-                              type="number"
-                              placeholder="Phone Number"
-                              class="form-control ct_input ct_input_h_50"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400">Country</label>
-                            <select class="form-select ct_input ct_input_h_50">
-                              <option value="">India</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400">City</label>
-                            <select class="form-select ct_input ct_input_h_50">
-                              <option value="">Madhya Pradesh</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >Clinic Type</label
-                            >
-                            <select class="form-select ct_input ct_input_h_50">
-                              <option value="">Primary Care clinic</option>
-                              <option value="">Urgent Care Centers</option>
-                              <option value="">Specialty</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >Are you registering as?</label
-                            >
-                            <div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault"
-                                  />
-                                </div>
-                                <label for="">Independent Clinic</label>
-                              </div>
-                            </div>
-                            <div class="mt-2">
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault"
-                                  />
-                                </div>
-                                <label for="">Healthcare Network</label>
-                              </div>
-                            </div>
-
-                            <div class="mt-2">
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault"
-                                  />
-                                </div>
-                                <label for=""> Hospital / Medical Group</label>
-                              </div>
+                            <div class="ct_show_eye">
+                              <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 20 20"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M15.625 8.125C15.625 6.63316 15.0324 5.20242 13.9775 4.14752C12.9226 3.09263 11.4918 2.5 10 2.5C8.50816 2.5 7.07742 3.09263 6.02252 4.14752C4.96763 5.20242 4.375 6.63316 4.375 8.125C4.375 10.4316 6.2207 13.4395 10 17.043C13.7793 13.4375 15.625 10.4297 15.625 8.125ZM10 18.75C5.41667 14.5833 3.125 11.0417 3.125 8.125C3.125 6.30164 3.84933 4.55295 5.13864 3.26364C6.42795 1.97433 8.17664 1.25 10 1.25C11.8234 1.25 13.572 1.97433 14.8614 3.26364C16.1507 4.55295 16.875 6.30164 16.875 8.125C16.875 11.0417 14.5833 14.5833 10 18.75Z"
+                                  fill="black"
+                                />
+                                <path
+                                  d="M10 10C10.4973 10 10.9742 9.80246 11.3258 9.45083C11.6775 9.09919 11.875 8.62228 11.875 8.125C11.875 7.62772 11.6775 7.15081 11.3258 6.79917C10.9742 6.44754 10.4973 6.25 10 6.25C9.50272 6.25 9.02581 6.44754 8.67417 6.79917C8.32254 7.15081 8.125 7.62772 8.125 8.125C8.125 8.62228 8.32254 9.09919 8.67417 9.45083C9.02581 9.80246 9.50272 10 10 10ZM10 11.25C9.1712 11.25 8.37634 10.9208 7.79029 10.3347C7.20424 9.74866 6.875 8.9538 6.875 8.125C6.875 7.2962 7.20424 6.50134 7.79029 5.91529C8.37634 5.32924 9.1712 5 10 5C10.8288 5 11.6237 5.32924 12.2097 5.91529C12.7958 6.50134 13.125 7.2962 13.125 8.125C13.125 8.9538 12.7958 9.74866 12.2097 10.3347C11.6237 10.9208 10.8288 11.25 10 11.25Z"
+                                  fill="black"
+                                />
+                              </svg>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <!-- <input type="button" name="next" class="ct_form_next action-button" value="Next" /> -->
-                    <button
-                      type="button"
-                      class="ct_orange_btn ct_form_next float-end"
-                    >
-                      Next
-                    </button>
-                    <a
-                      href="become-a-host-process.html"
-                      class="ct_outline_btn previous float-end me-3"
-                      >Back</a
-                    >
-                  </fieldset>
-                  <fieldset class="ct_mt_60">
-                    <div class="ct_form-card">
-                      <h2 class="ct_fs_35 ct_fw_600 mb-2">
-                        2. Describe Your Clinic
-                      </h2>
-                      <p class="ct_text_op_8 mb-0">
-                        Add key information about your clinic to help patients
-                        understand your services and facilities.
-                      </p>
-                      <div class="row mt-5">
-                        <div class="col-md-12">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >About Your Clinic</label
-                            >
-                            <textarea
-                              type="text"
-                              placeholder="About Your Clinic"
-                              rows="4"
-                              class="form-control ct_input ct_input ct_input_h_50 h-auto"
-                              aria-placeholder=""
-                            ></textarea>
-                          </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >Established Year</label
+                          >
+                          <select
+                            type="text"
+                            placeholder="Last Name"
+                            class="form-select ct_input ct_input_h_50"
+                          >
+                            <option>2016</option>
+                          </select>
                         </div>
-                        <div class="col-md-6">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >Clinic Address</label
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >Upload Clinic Images & Videos</label
+                          >
+                          <div class="ct_upload_product_main">
+                            <svg
+                              width="33"
+                              height="33"
+                              viewBox="0 0 33 33"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
                             >
-                            <div class="position-relative">
+                              <path
+                                d="M5.87174 22.0167C4.26376 20.9403 3.20508 19.1073 3.20508 17.027C3.20508 13.9023 5.59376 11.3354 8.64473 11.0528C9.26883 7.25653 12.5654 4.36035 16.5384 4.36035C20.5114 4.36035 23.808 7.25653 24.4321 11.0528C27.4831 11.3354 29.8717 13.9023 29.8717 17.027C29.8717 19.1073 28.8131 20.9403 27.2051 22.0167M11.2051 21.6937L16.5384 16.3604M16.5384 16.3604L21.8717 21.6937M16.5384 16.3604V28.3604"
+                                stroke="#9CA3AF"
+                                stroke-width="2.66667"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                            <p class="text-center ct_fs_18 ct_text_op_6 mb-0">
+                              Drag and drop your images here
+                            </p>
+                            <p class="text-center ct_fs_12 ct_text_op_6 mb-0">
+                              PNG, JPG up to 5MB
+                            </p>
+                            <label for="ct_upload_product">
                               <input
-                                type="text"
-                                placeholder="Clinic Address"
-                                class="form-control ct_input ct_input ct_input_h_50 pe-5"
+                                type="file"
+                                name=""
+                                id="ct_upload_product"
+                                class="d-none"
                               />
-                              <div class="ct_show_eye">
-                                <svg
-                                  width="20"
-                                  height="20"
-                                  viewBox="0 0 20 20"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M15.625 8.125C15.625 6.63316 15.0324 5.20242 13.9775 4.14752C12.9226 3.09263 11.4918 2.5 10 2.5C8.50816 2.5 7.07742 3.09263 6.02252 4.14752C4.96763 5.20242 4.375 6.63316 4.375 8.125C4.375 10.4316 6.2207 13.4395 10 17.043C13.7793 13.4375 15.625 10.4297 15.625 8.125ZM10 18.75C5.41667 14.5833 3.125 11.0417 3.125 8.125C3.125 6.30164 3.84933 4.55295 5.13864 3.26364C6.42795 1.97433 8.17664 1.25 10 1.25C11.8234 1.25 13.572 1.97433 14.8614 3.26364C16.1507 4.55295 16.875 6.30164 16.875 8.125C16.875 11.0417 14.5833 14.5833 10 18.75Z"
-                                    fill="black"
-                                  />
-                                  <path
-                                    d="M10 10C10.4973 10 10.9742 9.80246 11.3258 9.45083C11.6775 9.09919 11.875 8.62228 11.875 8.125C11.875 7.62772 11.6775 7.15081 11.3258 6.79917C10.9742 6.44754 10.4973 6.25 10 6.25C9.50272 6.25 9.02581 6.44754 8.67417 6.79917C8.32254 7.15081 8.125 7.62772 8.125 8.125C8.125 8.62228 8.32254 9.09919 8.67417 9.45083C9.02581 9.80246 9.50272 10 10 10ZM10 11.25C9.1712 11.25 8.37634 10.9208 7.79029 10.3347C7.20424 9.74866 6.875 8.9538 6.875 8.125C6.875 7.2962 7.20424 6.50134 7.79029 5.91529C8.37634 5.32924 9.1712 5 10 5C10.8288 5 11.6237 5.32924 12.2097 5.91529C12.7958 6.50134 13.125 7.2962 13.125 8.125C13.125 8.9538 12.7958 9.74866 12.2097 10.3347C11.6237 10.9208 10.8288 11.25 10 11.25Z"
-                                    fill="black"
-                                  />
-                                </svg>
+                              <div class="ct_browse_btn mt-3">
+                                <span>Browse Files</span>
                               </div>
-                            </div>
+                            </label>
                           </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >Established Year</label
-                            >
-                            <select
-                              type="text"
-                              placeholder="Last Name"
-                              class="form-select ct_input ct_input_h_50"
-                            >
-                              <option>2016</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >Upload Clinic Images & Videos</label
-                            >
-                            <div class="ct_upload_product_main">
-                              <svg
-                                width="33"
-                                height="33"
-                                viewBox="0 0 33 33"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M5.87174 22.0167C4.26376 20.9403 3.20508 19.1073 3.20508 17.027C3.20508 13.9023 5.59376 11.3354 8.64473 11.0528C9.26883 7.25653 12.5654 4.36035 16.5384 4.36035C20.5114 4.36035 23.808 7.25653 24.4321 11.0528C27.4831 11.3354 29.8717 13.9023 29.8717 17.027C29.8717 19.1073 28.8131 20.9403 27.2051 22.0167M11.2051 21.6937L16.5384 16.3604M16.5384 16.3604L21.8717 21.6937M16.5384 16.3604V28.3604"
-                                  stroke="#9CA3AF"
-                                  stroke-width="2.66667"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                ></path>
-                              </svg>
-                              <p class="text-center ct_fs_18 ct_text_op_6 mb-0">
-                                Drag and drop your images here
-                              </p>
-                              <p class="text-center ct_fs_12 ct_text_op_6 mb-0">
-                                PNG, JPG up to 5MB
-                              </p>
-                              <label for="ct_upload_product">
-                                <input
-                                  type="file"
-                                  name=""
-                                  id="ct_upload_product"
-                                  class="d-none"
+                          <div
+                            class="ct_multiple_img_div ct_custom_scroll d-none"
+                          >
+                            <div class="ct_uploaded_img123 position-relative">
+                              <div class="ct_uploaded_img_w">
+                                <img
+                                  src="assets/img/apartments/apartment_detail_small_1.png"
+                                  alt=""
                                 />
-                                <div class="ct_browse_btn mt-3">
-                                  <span>Browse Files</span>
-                                </div>
-                              </label>
+                                <i class="fa-solid fa-xmark"></i>
+                              </div>
                             </div>
-                            <div
-                              class="ct_multiple_img_div ct_custom_scroll d-none"
-                            >
-                              <div class="ct_uploaded_img123 position-relative">
-                                <div class="ct_uploaded_img_w">
-                                  <img
-                                    src="assets/img/apartments/apartment_detail_small_1.png"
-                                    alt=""
-                                  />
-                                  <i class="fa-solid fa-xmark"></i>
-                                </div>
+                            <div class="ct_uploaded_img123 position-relative">
+                              <div class="ct_uploaded_img_w">
+                                <img
+                                  src="assets/img/apartments/apartment_detail_small_1.png"
+                                  alt=""
+                                />
+                                <i class="fa-solid fa-xmark"></i>
                               </div>
-                              <div class="ct_uploaded_img123 position-relative">
-                                <div class="ct_uploaded_img_w">
-                                  <img
-                                    src="assets/img/apartments/apartment_detail_small_1.png"
-                                    alt=""
-                                  />
-                                  <i class="fa-solid fa-xmark"></i>
-                                </div>
+                            </div>
+                            <div class="ct_uploaded_img123 position-relative">
+                              <div class="ct_uploaded_img_w">
+                                <img
+                                  src="assets/img/apartments/apartment_detail_small_1.png"
+                                  alt=""
+                                />
+                                <i class="fa-solid fa-xmark"></i>
                               </div>
-                              <div class="ct_uploaded_img123 position-relative">
-                                <div class="ct_uploaded_img_w">
-                                  <img
-                                    src="assets/img/apartments/apartment_detail_small_1.png"
-                                    alt=""
+                            </div>
+                            <div class="ct_uploaded_img123 position-relative">
+                              <div class="ct_uploaded_img_w">
+                                <video width="100" height="100" controls>
+                                  <source
+                                    src="https://youtu.be/9xwazD5SyVg?si=FBRmGuM69BoRrXvp"
+                                    type="video/mp4"
                                   />
-                                  <i class="fa-solid fa-xmark"></i>
-                                </div>
+                                </video>
+                                <i class="fa-solid fa-xmark"></i>
                               </div>
-                              <div class="ct_uploaded_img123 position-relative">
-                                <div class="ct_uploaded_img_w">
-                                  <video width="100" height="100" controls>
-                                    <source
-                                      src="https://youtu.be/9xwazD5SyVg?si=FBRmGuM69BoRrXvp"
-                                      type="video/mp4"
-                                    />
-                                  </video>
-                                  <i class="fa-solid fa-xmark"></i>
-                                </div>
+                            </div>
+                            <div class="ct_uploaded_img123 position-relative">
+                              <div class="ct_uploaded_img_w">
+                                <img
+                                  src="assets/img/apartments/apartment_detail_small_1.png"
+                                  alt=""
+                                />
+                                <i class="fa-solid fa-xmark"></i>
                               </div>
-                              <div class="ct_uploaded_img123 position-relative">
-                                <div class="ct_uploaded_img_w">
-                                  <img
-                                    src="assets/img/apartments/apartment_detail_small_1.png"
-                                    alt=""
-                                  />
-                                  <i class="fa-solid fa-xmark"></i>
-                                </div>
-                              </div>
-                              <div class="ct_uploaded_img123 position-relative">
-                                <div class="ct_uploaded_img_w">
-                                  <img
-                                    src="assets/img/apartments/apartment_detail_small_1.png"
-                                    alt=""
-                                  />
-                                  <i class="fa-solid fa-xmark"></i>
-                                </div>
+                            </div>
+                            <div class="ct_uploaded_img123 position-relative">
+                              <div class="ct_uploaded_img_w">
+                                <img
+                                  src="assets/img/apartments/apartment_detail_small_1.png"
+                                  alt=""
+                                />
+                                <i class="fa-solid fa-xmark"></i>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-
-                    <br />
-                    <br />
-                    <button
-                      type="button"
-                      class="ct_orange_btn ct_form_next float-end"
-                    >
-                      Next
-                    </button>
-                    <button
-                      type="button"
-                      class="ct_outline_btn previous float-end me-3"
-                    >
-                      Back
-                    </button>
-                  </fieldset>
-                  <fieldset class="ct_mt_60">
-                    <div class="ct_form-card">
-                      <h2 class="ct_fs_35 ct_fw_600 mb-2">
-                        3. Services & Facilities
-                      </h2>
-                      <p class="ct_text_op_8 mb-0">
-                        Tell patients about your specialties, treatments, and
-                        the support services your clinic provides.
-                      </p>
-                      <div class="row mt-5">
-                        <div class="col-md-12">
-                          <div class="mb-4">
-                            <p class="ct_fs_18 ct_fw_500 mb-2">
-                              Medical Specialties
-                            </p>
-                            <div
-                              class="d-flex align-items-center gap-3 flex-wrap"
-                            >
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault"
-                                  />
-                                </div>
-                                <label for="">Cardiology </label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault2"
-                                  />
-                                </div>
-                                <label for="">Orthopedics</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault3"
-                                  />
-                                </div>
-                                <label for="">Neurology</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault4"
-                                  />
-                                </div>
-                                <label for="">Oncology</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault5"
-                                  />
-                                </div>
-                                <label for="">Dental Care </label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault6"
-                                  />
-                                </div>
-                                <label for="">IVF & Fertility</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault7"
-                                  />
-                                </div>
-                                <label for="">Cosmetic Surgery</label>
-                              </div>
-
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault7"
-                                  />
-                                </div>
-                                <label for="">Gastroenterology</label>
-                              </div>
-
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault7"
-                                  />
-                                </div>
-                                <label for="">Urology </label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault7"
-                                  />
-                                </div>
-                                <label for="">Pediatrics</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault7"
-                                  />
-                                </div>
-                                <label for="">ENT</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault7"
-                                  />
-                                </div>
-                                <label for=""> Ophthalmology</label>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="mb-4">
-                            <div class="form-group ct_mb_12">
-                              <label for="" class="mb-2 ct_fw_400"
-                                >Clinic Facilities</label
-                              >
-                              <select
-                                class="form-select ct_input ct_input_h_50"
-                              >
-                                <option>Emergency Department</option>
-                              </select>
-                            </div>
-                            <div class="clinic_facility_select_box">
-                              <div class="clinic_facility_select_box_desc">
-                                Emergency Department<i
-                                  class="fa-solid fa-plus ms-2"
-                                ></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                Laboratory <i class="fa-solid fa-plus ms-2"></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                MRI <i class="fa-solid fa-plus ms-2"></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                CT Scan<i class="fa-solid fa-plus ms-2"></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                Blood Bank <i class="fa-solid fa-plus ms-2"></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                ICU<i class="fa-solid fa-plus ms-2"></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                Pharmacy<i class="fa-solid fa-plus ms-2"></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                Cafeteria<i class="fa-solid fa-plus ms-2"></i>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="mb-4">
-                            <div class="form-group ct_mb_12">
-                              <label for="" class="mb-2 ct_fw_400"
-                                >Treatments Offered
-                              </label>
-                              <select
-                                class="form-select ct_input ct_input_h_50"
-                              >
-                                <option>Knee Replacement</option>
-                              </select>
-                            </div>
-                            <div class="clinic_facility_select_box">
-                              <div class="clinic_facility_select_box_desc">
-                                Knee Replacement
-                                <i class="fa-solid fa-plus ms-2"></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                Hip Replacement
-                                <i class="fa-solid fa-plus ms-2"></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                Dental Implant
-                                <i class="fa-solid fa-plus ms-2"></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                Heart Bypass
-                                <i class="fa-solid fa-plus ms-2"></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                LASIK <i class="fa-solid fa-plus ms-2"></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                IVF<i class="fa-solid fa-plus ms-2"></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                Cataract Surgery<i
-                                  class="fa-solid fa-plus ms-2"
-                                ></i>
-                              </div>
-                              <div class="clinic_facility_select_box_desc">
-                                Spine Surgery<i
-                                  class="fa-solid fa-plus ms-2"
-                                ></i>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="mb-4">
-                            <p class="ct_fs_18 ct_fw_500 mb-2">
-                              Languages Spoken
-                            </p>
-                            <div
-                              class="d-flex align-items-center gap-3 flex-wrap"
-                            >
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault"
-                                  />
-                                </div>
-                                <label for="">English </label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault2"
-                                  />
-                                </div>
-                                <label for="">Hindi</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault3"
-                                  />
-                                </div>
-                                <label for="">Arabic</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault4"
-                                  />
-                                </div>
-                                <label for="">French</label>
-                              </div>
-
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault4"
-                                  />
-                                </div>
-                                <label for="">Russian</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault4"
-                                  />
-                                </div>
-                                <label for="">Spanish</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault4"
-                                  />
-                                </div>
-                                <label for="">German</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="mb-4">
-                            <p class="ct_fs_18 ct_fw_500 mb-2">
-                              Consultation Services
-                            </p>
-                            <div
-                              class="d-flex align-items-center gap-3 flex-wrap"
-                            >
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault"
-                                  />
-                                </div>
-                                <label for="">In-Person Consultation</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault2"
-                                  />
-                                </div>
-                                <label for="">Online Consultation</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault3"
-                                  />
-                                </div>
-                                <label for="">Second Opinion</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault4"
-                                  />
-                                </div>
-                                <label for="">Emergency Consultation</label>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="mb-4">
-                            <p class="ct_fs_18 ct_fw_500 mb-2">
-                              Patient Support
-                            </p>
-                            <div
-                              class="d-flex align-items-center gap-3 flex-wrap"
-                            >
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault"
-                                  />
-                                </div>
-                                <label for="">Airport Pickup</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault2"
-                                  />
-                                </div>
-                                <label for="">Medical Interpreter</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault3"
-                                  />
-                                </div>
-                                <label for="">Accommodation Assistance</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault4"
-                                  />
-                                </div>
-                                <label for="">Insurance Support</label>
-                              </div>
-                              <div class="d-flex align-items-center gap-1">
-                                <div
-                                  class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                    id="flexCheckDefault4"
-                                  />
-                                </div>
-                                <label for="">Pharmacy </label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- <input type="button" name="previous" class="previous" value="Previous" />
+                  </div>
+                  <!-- <input type="button" name="previous" class="previous" value="Previous" />
                                 <input type="button" name="next" class="ct_form_next" value="Next" /> -->
-                    <br />
-                    <br />
-                    <button
-                      type="button"
-                      class="ct_orange_btn ct_form_next float-end"
-                    >
-                      Next
-                    </button>
-                    <button
-                      type="button"
-                      class="ct_outline_btn previous float-end me-3"
-                    >
-                      Back
-                    </button>
-                  </fieldset>
-                  <fieldset>
-                    <div class="ct_form-card">
-                      <h2 class="ct_fs_35 ct_fw_600 mb-2">
-                        4. Verify Your Clinic
-                      </h2>
-                      <p class="ct_text_op_8 mb-0">
-                        Upload the required documents to verify your clinic and
-                        complete your registration.
-                      </p>
-                      <div class="row mt-5">
-                        <div class="col-md-12">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >Clinic License
-                            </label>
-                            <div class="ct_upload_product_main">
-                              <svg
-                                width="33"
-                                height="33"
-                                viewBox="0 0 33 33"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M5.87174 22.0167C4.26376 20.9403 3.20508 19.1073 3.20508 17.027C3.20508 13.9023 5.59376 11.3354 8.64473 11.0528C9.26883 7.25653 12.5654 4.36035 16.5384 4.36035C20.5114 4.36035 23.808 7.25653 24.4321 11.0528C27.4831 11.3354 29.8717 13.9023 29.8717 17.027C29.8717 19.1073 28.8131 20.9403 27.2051 22.0167M11.2051 21.6937L16.5384 16.3604M16.5384 16.3604L21.8717 21.6937M16.5384 16.3604V28.3604"
-                                  stroke="#9CA3AF"
-                                  stroke-width="2.66667"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                ></path>
-                              </svg>
-                              <p class="text-center ct_fs_18 ct_text_op_6 mb-0">
-                                Upload your clinic's valid operating or medical
-                                license.
-                              </p>
-                              <p class="text-center ct_fs_12 ct_text_op_6 mb-0">
-                                PDF ,PNG, JPG up to 5MB
-                              </p>
-                              <label for="ct_upload_product">
-                                <input
-                                  type="file"
-                                  name=""
-                                  id="ct_upload_product"
-                                  class="d-none"
-                                />
-                                <div class="ct_browse_btn mt-3">
-                                  <span>Browse Files</span>
-                                </div>
-                              </label>
-                            </div>
-                            <div
-                              class="ct_multiple_img_div ct_custom_scroll d-none"
-                            >
-                              <div class="ct_uploaded_img123 position-relative">
-                                <div class="ct_uploaded_img_w">
-                                  <img src="assets/img/pdf.png" alt="" />
-                                  <i class="fa-solid fa-xmark"></i>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >Government Registration
-                            </label>
-                            <div class="ct_upload_product_main">
-                              <svg
-                                width="33"
-                                height="33"
-                                viewBox="0 0 33 33"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M5.87174 22.0167C4.26376 20.9403 3.20508 19.1073 3.20508 17.027C3.20508 13.9023 5.59376 11.3354 8.64473 11.0528C9.26883 7.25653 12.5654 4.36035 16.5384 4.36035C20.5114 4.36035 23.808 7.25653 24.4321 11.0528C27.4831 11.3354 29.8717 13.9023 29.8717 17.027C29.8717 19.1073 28.8131 20.9403 27.2051 22.0167M11.2051 21.6937L16.5384 16.3604M16.5384 16.3604L21.8717 21.6937M16.5384 16.3604V28.3604"
-                                  stroke="#9CA3AF"
-                                  stroke-width="2.66667"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                ></path>
-                              </svg>
-                              <p class="text-center ct_fs_18 ct_text_op_6 mb-0">
-                                Upload your business or healthcare registration
-                                certificate.
-                              </p>
-                              <p class="text-center ct_fs_12 ct_text_op_6 mb-0">
-                                PDF ,PNG, JPG up to 5MB
-                              </p>
-                              <label for="ct_upload_product">
-                                <input
-                                  type="file"
-                                  name=""
-                                  id="ct_upload_product"
-                                  class="d-none"
-                                />
-                                <div class="ct_browse_btn mt-3">
-                                  <span>Browse Files</span>
-                                </div>
-                              </label>
-                            </div>
-                            <div
-                              class="ct_multiple_img_div ct_custom_scroll d-none"
-                            >
-                              <div class="ct_uploaded_img123 position-relative">
-                                <div class="ct_uploaded_img_w">
-                                  <img src="assets/img/pdf.png" alt="" />
-                                  <i class="fa-solid fa-xmark"></i>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >Accreditation Certificate
-                              <span class="fst-italic ct_text_5C727D"
-                                >(Optional)</span
-                              >
-                            </label>
-                            <div class="ct_upload_product_main">
-                              <svg
-                                width="33"
-                                height="33"
-                                viewBox="0 0 33 33"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M5.87174 22.0167C4.26376 20.9403 3.20508 19.1073 3.20508 17.027C3.20508 13.9023 5.59376 11.3354 8.64473 11.0528C9.26883 7.25653 12.5654 4.36035 16.5384 4.36035C20.5114 4.36035 23.808 7.25653 24.4321 11.0528C27.4831 11.3354 29.8717 13.9023 29.8717 17.027C29.8717 19.1073 28.8131 20.9403 27.2051 22.0167M11.2051 21.6937L16.5384 16.3604M16.5384 16.3604L21.8717 21.6937M16.5384 16.3604V28.3604"
-                                  stroke="#9CA3AF"
-                                  stroke-width="2.66667"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                ></path>
-                              </svg>
-                              <p class="text-center ct_fs_18 ct_text_op_6 mb-0">
-                                Upload your accreditation certificate (JCI,
-                                NABH, ISO, etc.)
-                              </p>
-                              <p class="text-center ct_fs_12 ct_text_op_6 mb-0">
-                                PDF ,PNG, JPG up to 5MB
-                              </p>
-                              <label for="ct_upload_product">
-                                <input
-                                  type="file"
-                                  name=""
-                                  id="ct_upload_product"
-                                  class="d-none"
-                                />
-                                <div class="ct_browse_btn mt-3">
-                                  <span>Browse Files</span>
-                                </div>
-                              </label>
-                            </div>
-                            <div
-                              class="ct_multiple_img_div ct_custom_scroll d-none"
-                            >
-                              <div class="ct_uploaded_img123 position-relative">
-                                <div class="ct_uploaded_img_w">
-                                  <img src="assets/img/pdf.png" alt="" />
-                                  <i class="fa-solid fa-xmark"></i>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <div class="form-group mb-4">
-                            <label for="" class="mb-2 ct_fw_400"
-                              >Insurance / Liability Certificate<span
-                                class="fst-italic ct_text_5C727D"
-                                >(Optional)</span
-                              >
-                            </label>
-                            <div class="ct_upload_product_main">
-                              <svg
-                                width="33"
-                                height="33"
-                                viewBox="0 0 33 33"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M5.87174 22.0167C4.26376 20.9403 3.20508 19.1073 3.20508 17.027C3.20508 13.9023 5.59376 11.3354 8.64473 11.0528C9.26883 7.25653 12.5654 4.36035 16.5384 4.36035C20.5114 4.36035 23.808 7.25653 24.4321 11.0528C27.4831 11.3354 29.8717 13.9023 29.8717 17.027C29.8717 19.1073 28.8131 20.9403 27.2051 22.0167M11.2051 21.6937L16.5384 16.3604M16.5384 16.3604L21.8717 21.6937M16.5384 16.3604V28.3604"
-                                  stroke="#9CA3AF"
-                                  stroke-width="2.66667"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
-                                ></path>
-                              </svg>
-                              <p class="text-center ct_fs_18 ct_text_op_6 mb-0">
-                                Upload your insurance or liability certificate.
-                              </p>
-                              <p class="text-center ct_fs_12 ct_text_op_6 mb-0">
-                                PDF ,PNG, JPG up to 5MB
-                              </p>
-                              <label for="ct_upload_product">
-                                <input
-                                  type="file"
-                                  name=""
-                                  id="ct_upload_product"
-                                  class="d-none"
-                                />
-                                <div class="ct_browse_btn mt-3">
-                                  <span>Browse Files</span>
-                                </div>
-                              </label>
-                            </div>
-                            <div
-                              class="ct_multiple_img_div ct_custom_scroll d-none"
-                            >
-                              <div class="ct_uploaded_img123 position-relative">
-                                <div class="ct_uploaded_img_w">
-                                  <img src="assets/img/pdf.png" alt="" />
-                                  <i class="fa-solid fa-xmark"></i>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-12">
-                          <div class="declaration_box">
-                            <h3
-                              class="ct_fs_16 ct_fw_600 ct_orange_text ct_mb_15"
-                            >
-                              Declaration
-                            </h3>
-
-                            <div
-                              class="d-flex align-items-center gap-1 ct_mb_12"
-                            >
+                  <br />
+                  <br />
+                  <button
+                    type="button"
+                    class="ct_orange_btn ct_form_next float-end"
+                  >
+                    Next
+                  </button>
+                  <button
+                    type="button"
+                    class="ct_outline_btn previous float-end me-3"
+                  >
+                    Back
+                  </button>
+                </fieldset>
+                <fieldset class="ct_mt_60">
+                  <div class="ct_form-card">
+                    <h2 class="ct_fs_35 ct_fw_600 mb-2">
+                      3. Services & Facilities
+                    </h2>
+                    <p class="ct_text_op_8 mb-0">
+                      Tell patients about your specialties, treatments, and the
+                      support services your clinic provides.
+                    </p>
+                    <div class="row mt-5">
+                      <div class="col-md-12">
+                        <div class="mb-4">
+                          <p class="ct_fs_18 ct_fw_500 mb-2">
+                            Medical Specialties
+                          </p>
+                          <div
+                            class="d-flex align-items-center gap-3 flex-wrap"
+                          >
+                            <div class="d-flex align-items-center gap-1">
                               <div
                                 class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
                               >
@@ -1918,17 +1174,12 @@
                                   class="form-check-input"
                                   type="checkbox"
                                   value=""
-                                  id="flexCheckDefault4"
+                                  id="flexCheckDefault"
                                 />
                               </div>
-                              <label for=""
-                                >I confirm that all information provided is
-                                accurate.</label
-                              >
+                              <label for="">Cardiology </label>
                             </div>
-                            <div
-                              class="d-flex align-items-center gap-1 ct_mb_12"
-                            >
+                            <div class="d-flex align-items-center gap-1">
                               <div
                                 class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
                               >
@@ -1936,23 +1187,23 @@
                                   class="form-check-input"
                                   type="checkbox"
                                   value=""
-                                  id="flexCheckDefault4"
+                                  id="flexCheckDefault2"
                                 />
                               </div>
-                              <label for=""
-                                >I agree to the
-                                <a
-                                  href="terms-condition.html"
-                                  class="ct_orange_text text-decoration-underline"
-                                  >Terms & Conditions</a
-                                >
-                                and
-                                <a
-                                  href="privacy-policy.html"
-                                  class="ct_orange_text text-decoration-underline"
-                                  >Privacy Policy.</a
-                                ></label
+                              <label for="">Orthopedics</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
                               >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault3"
+                                />
+                              </div>
+                              <label for="">Neurology</label>
                             </div>
                             <div class="d-flex align-items-center gap-1">
                               <div
@@ -1965,40 +1216,821 @@
                                   id="flexCheckDefault4"
                                 />
                               </div>
-                              <label for=""
-                                >I authorize Flexsirent Medical to verify the
-                                submitted documents.</label
+                              <label for="">Oncology</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
                               >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault5"
+                                />
+                              </div>
+                              <label for="">Dental Care </label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault6"
+                                />
+                              </div>
+                              <label for="">IVF & Fertility</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault7"
+                                />
+                              </div>
+                              <label for="">Cosmetic Surgery</label>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault7"
+                                />
+                              </div>
+                              <label for="">Gastroenterology</label>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault7"
+                                />
+                              </div>
+                              <label for="">Urology </label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault7"
+                                />
+                              </div>
+                              <label for="">Pediatrics</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault7"
+                                />
+                              </div>
+                              <label for="">ENT</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault7"
+                                />
+                              </div>
+                              <label for=""> Ophthalmology</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-4">
+                          <div class="form-group ct_mb_12">
+                            <label for="" class="mb-2 ct_fw_400"
+                              >Clinic Facilities</label
+                            >
+                            <select class="form-select ct_input ct_input_h_50">
+                              <option>Emergency Department</option>
+                            </select>
+                          </div>
+                          <div class="clinic_facility_select_box">
+                            <div class="clinic_facility_select_box_desc">
+                              Emergency Department<i
+                                class="fa-solid fa-plus ms-2"
+                              ></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              Laboratory <i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              MRI <i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              CT Scan<i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              Blood Bank <i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              ICU<i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              Pharmacy<i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              Cafeteria<i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-4">
+                          <div class="form-group ct_mb_12">
+                            <label for="" class="mb-2 ct_fw_400"
+                              >Treatments Offered
+                            </label>
+                            <select class="form-select ct_input ct_input_h_50">
+                              <option>Knee Replacement</option>
+                            </select>
+                          </div>
+                          <div class="clinic_facility_select_box">
+                            <div class="clinic_facility_select_box_desc">
+                              Knee Replacement
+                              <i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              Hip Replacement
+                              <i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              Dental Implant
+                              <i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              Heart Bypass <i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              LASIK <i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              IVF<i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              Cataract Surgery<i
+                                class="fa-solid fa-plus ms-2"
+                              ></i>
+                            </div>
+                            <div class="clinic_facility_select_box_desc">
+                              Spine Surgery<i class="fa-solid fa-plus ms-2"></i>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-4">
+                          <p class="ct_fs_18 ct_fw_500 mb-2">
+                            Languages Spoken
+                          </p>
+                          <div
+                            class="d-flex align-items-center gap-3 flex-wrap"
+                          >
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                              </div>
+                              <label for="">English </label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault2"
+                                />
+                              </div>
+                              <label for="">Hindi</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault3"
+                                />
+                              </div>
+                              <label for="">Arabic</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault4"
+                                />
+                              </div>
+                              <label for="">French</label>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault4"
+                                />
+                              </div>
+                              <label for="">Russian</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault4"
+                                />
+                              </div>
+                              <label for="">Spanish</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault4"
+                                />
+                              </div>
+                              <label for="">German</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mb-4">
+                          <p class="ct_fs_18 ct_fw_500 mb-2">
+                            Consultation Services
+                          </p>
+                          <div
+                            class="d-flex align-items-center gap-3 flex-wrap"
+                          >
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                              </div>
+                              <label for="">In-Person Consultation</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault2"
+                                />
+                              </div>
+                              <label for="">Online Consultation</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault3"
+                                />
+                              </div>
+                              <label for="">Second Opinion</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault4"
+                                />
+                              </div>
+                              <label for="">Emergency Consultation</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mb-4">
+                          <p class="ct_fs_18 ct_fw_500 mb-2">Patient Support</p>
+                          <div
+                            class="d-flex align-items-center gap-3 flex-wrap"
+                          >
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault"
+                                />
+                              </div>
+                              <label for="">Airport Pickup</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault2"
+                                />
+                              </div>
+                              <label for="">Medical Interpreter</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault3"
+                                />
+                              </div>
+                              <label for="">Accommodation Assistance</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault4"
+                                />
+                              </div>
+                              <label for="">Insurance Support</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                              <div
+                                class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                              >
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="flexCheckDefault4"
+                                />
+                              </div>
+                              <label for="">Pharmacy </label>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <br />
-                    <br />
-                    <button
-                      type="button"
-                      class="ct_orange_btn float-end"
-                      data-bs-toggle="modal"
-                      data-bs-target="#become_host_form_success"
-                    >
-                      Submit
-                    </button>
-                    <button
-                      type="button"
-                      class="ct_outline_btn previous float-end me-3"
-                    >
-                      Back
-                    </button>
-                  </fieldset>
-                </form>
-              </div>
+                  </div>
+                  <!-- <input type="button" name="previous" class="previous" value="Previous" />
+                                <input type="button" name="next" class="ct_form_next" value="Next" /> -->
+                  <br />
+                  <br />
+                  <button
+                    type="button"
+                    class="ct_orange_btn ct_form_next float-end"
+                  >
+                    Next
+                  </button>
+                  <button
+                    type="button"
+                    class="ct_outline_btn previous float-end me-3"
+                  >
+                    Back
+                  </button>
+                </fieldset>
+                <fieldset>
+                  <div class="ct_form-card">
+                    <h2 class="ct_fs_35 ct_fw_600 mb-2">
+                      4. Verify Your Clinic
+                    </h2>
+                    <p class="ct_text_op_8 mb-0">
+                      Upload the required documents to verify your clinic and
+                      complete your registration.
+                    </p>
+                    <div class="row mt-5">
+                      <div class="col-md-12">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >Clinic License
+                          </label>
+                          <div class="ct_upload_product_main">
+                            <svg
+                              width="33"
+                              height="33"
+                              viewBox="0 0 33 33"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5.87174 22.0167C4.26376 20.9403 3.20508 19.1073 3.20508 17.027C3.20508 13.9023 5.59376 11.3354 8.64473 11.0528C9.26883 7.25653 12.5654 4.36035 16.5384 4.36035C20.5114 4.36035 23.808 7.25653 24.4321 11.0528C27.4831 11.3354 29.8717 13.9023 29.8717 17.027C29.8717 19.1073 28.8131 20.9403 27.2051 22.0167M11.2051 21.6937L16.5384 16.3604M16.5384 16.3604L21.8717 21.6937M16.5384 16.3604V28.3604"
+                                stroke="#9CA3AF"
+                                stroke-width="2.66667"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                            <p class="text-center ct_fs_18 ct_text_op_6 mb-0">
+                              Upload your clinic's valid operating or medical
+                              license.
+                            </p>
+                            <p class="text-center ct_fs_12 ct_text_op_6 mb-0">
+                              PDF ,PNG, JPG up to 5MB
+                            </p>
+                            <label for="ct_upload_product">
+                              <input
+                                type="file"
+                                name=""
+                                id="ct_upload_product"
+                                class="d-none"
+                              />
+                              <div class="ct_browse_btn mt-3">
+                                <span>Browse Files</span>
+                              </div>
+                            </label>
+                          </div>
+                          <div
+                            class="ct_multiple_img_div ct_custom_scroll d-none"
+                          >
+                            <div class="ct_uploaded_img123 position-relative">
+                              <div class="ct_uploaded_img_w">
+                                <img src="assets/img/pdf.png" alt="" />
+                                <i class="fa-solid fa-xmark"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >Government Registration
+                          </label>
+                          <div class="ct_upload_product_main">
+                            <svg
+                              width="33"
+                              height="33"
+                              viewBox="0 0 33 33"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5.87174 22.0167C4.26376 20.9403 3.20508 19.1073 3.20508 17.027C3.20508 13.9023 5.59376 11.3354 8.64473 11.0528C9.26883 7.25653 12.5654 4.36035 16.5384 4.36035C20.5114 4.36035 23.808 7.25653 24.4321 11.0528C27.4831 11.3354 29.8717 13.9023 29.8717 17.027C29.8717 19.1073 28.8131 20.9403 27.2051 22.0167M11.2051 21.6937L16.5384 16.3604M16.5384 16.3604L21.8717 21.6937M16.5384 16.3604V28.3604"
+                                stroke="#9CA3AF"
+                                stroke-width="2.66667"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                            <p class="text-center ct_fs_18 ct_text_op_6 mb-0">
+                              Upload your business or healthcare registration
+                              certificate.
+                            </p>
+                            <p class="text-center ct_fs_12 ct_text_op_6 mb-0">
+                              PDF ,PNG, JPG up to 5MB
+                            </p>
+                            <label for="ct_upload_product">
+                              <input
+                                type="file"
+                                name=""
+                                id="ct_upload_product"
+                                class="d-none"
+                              />
+                              <div class="ct_browse_btn mt-3">
+                                <span>Browse Files</span>
+                              </div>
+                            </label>
+                          </div>
+                          <div
+                            class="ct_multiple_img_div ct_custom_scroll d-none"
+                          >
+                            <div class="ct_uploaded_img123 position-relative">
+                              <div class="ct_uploaded_img_w">
+                                <img src="assets/img/pdf.png" alt="" />
+                                <i class="fa-solid fa-xmark"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >Accreditation Certificate
+                            <span class="fst-italic ct_text_5C727D"
+                              >(Optional)</span
+                            >
+                          </label>
+                          <div class="ct_upload_product_main">
+                            <svg
+                              width="33"
+                              height="33"
+                              viewBox="0 0 33 33"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5.87174 22.0167C4.26376 20.9403 3.20508 19.1073 3.20508 17.027C3.20508 13.9023 5.59376 11.3354 8.64473 11.0528C9.26883 7.25653 12.5654 4.36035 16.5384 4.36035C20.5114 4.36035 23.808 7.25653 24.4321 11.0528C27.4831 11.3354 29.8717 13.9023 29.8717 17.027C29.8717 19.1073 28.8131 20.9403 27.2051 22.0167M11.2051 21.6937L16.5384 16.3604M16.5384 16.3604L21.8717 21.6937M16.5384 16.3604V28.3604"
+                                stroke="#9CA3AF"
+                                stroke-width="2.66667"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                            <p class="text-center ct_fs_18 ct_text_op_6 mb-0">
+                              Upload your accreditation certificate (JCI, NABH,
+                              ISO, etc.)
+                            </p>
+                            <p class="text-center ct_fs_12 ct_text_op_6 mb-0">
+                              PDF ,PNG, JPG up to 5MB
+                            </p>
+                            <label for="ct_upload_product">
+                              <input
+                                type="file"
+                                name=""
+                                id="ct_upload_product"
+                                class="d-none"
+                              />
+                              <div class="ct_browse_btn mt-3">
+                                <span>Browse Files</span>
+                              </div>
+                            </label>
+                          </div>
+                          <div
+                            class="ct_multiple_img_div ct_custom_scroll d-none"
+                          >
+                            <div class="ct_uploaded_img123 position-relative">
+                              <div class="ct_uploaded_img_w">
+                                <img src="assets/img/pdf.png" alt="" />
+                                <i class="fa-solid fa-xmark"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group mb-4">
+                          <label for="" class="mb-2 ct_fw_400"
+                            >Insurance / Liability Certificate<span
+                              class="fst-italic ct_text_5C727D"
+                              >(Optional)</span
+                            >
+                          </label>
+                          <div class="ct_upload_product_main">
+                            <svg
+                              width="33"
+                              height="33"
+                              viewBox="0 0 33 33"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M5.87174 22.0167C4.26376 20.9403 3.20508 19.1073 3.20508 17.027C3.20508 13.9023 5.59376 11.3354 8.64473 11.0528C9.26883 7.25653 12.5654 4.36035 16.5384 4.36035C20.5114 4.36035 23.808 7.25653 24.4321 11.0528C27.4831 11.3354 29.8717 13.9023 29.8717 17.027C29.8717 19.1073 28.8131 20.9403 27.2051 22.0167M11.2051 21.6937L16.5384 16.3604M16.5384 16.3604L21.8717 21.6937M16.5384 16.3604V28.3604"
+                                stroke="#9CA3AF"
+                                stroke-width="2.66667"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              ></path>
+                            </svg>
+                            <p class="text-center ct_fs_18 ct_text_op_6 mb-0">
+                              Upload your insurance or liability certificate.
+                            </p>
+                            <p class="text-center ct_fs_12 ct_text_op_6 mb-0">
+                              PDF ,PNG, JPG up to 5MB
+                            </p>
+                            <label for="ct_upload_product">
+                              <input
+                                type="file"
+                                name=""
+                                id="ct_upload_product"
+                                class="d-none"
+                              />
+                              <div class="ct_browse_btn mt-3">
+                                <span>Browse Files</span>
+                              </div>
+                            </label>
+                          </div>
+                          <div
+                            class="ct_multiple_img_div ct_custom_scroll d-none"
+                          >
+                            <div class="ct_uploaded_img123 position-relative">
+                              <div class="ct_uploaded_img_w">
+                                <img src="assets/img/pdf.png" alt="" />
+                                <i class="fa-solid fa-xmark"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="declaration_box">
+                          <h3
+                            class="ct_fs_16 ct_fw_600 ct_orange_text ct_mb_15"
+                          >
+                            Declaration
+                          </h3>
+
+                          <div class="d-flex align-items-center gap-1 ct_mb_12">
+                            <div
+                              class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                            >
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault4"
+                              />
+                            </div>
+                            <label for=""
+                              >I confirm that all information provided is
+                              accurate.</label
+                            >
+                          </div>
+                          <div class="d-flex align-items-center gap-1 ct_mb_12">
+                            <div
+                              class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                            >
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault4"
+                              />
+                            </div>
+                            <label for=""
+                              >I agree to the
+                              <a
+                                href="terms-condition.html"
+                                class="ct_orange_text text-decoration-underline"
+                                >Terms & Conditions</a
+                              >
+                              and
+                              <a
+                                href="privacy-policy.html"
+                                class="ct_orange_text text-decoration-underline"
+                                >Privacy Policy.</a
+                              ></label
+                            >
+                          </div>
+                          <div class="d-flex align-items-center gap-1">
+                            <div
+                              class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
+                            >
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value=""
+                                id="flexCheckDefault4"
+                              />
+                            </div>
+                            <label for=""
+                              >I authorize Flexsirent Medical to verify the
+                              submitted documents.</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br />
+                  <br />
+                  <button
+                    type="button"
+                    class="ct_orange_btn float-end"
+                    data-bs-toggle="modal"
+                    data-bs-target="#become_host_form_success"
+                  >
+                    Submit
+                  </button>
+                  <button
+                    type="button"
+                    class="ct_outline_btn previous float-end me-3"
+                  >
+                    Back
+                  </button>
+                </fieldset>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Step Form Modal E -->
+
+    <!-- step form modal end -->
+
+    <!-- step form submit modal -->
+      <div
+            class="modal fade modal-lg"
+            id="become_host_form_success"
+            tabindex="-1"
+            aria-labelledby="become_host_form_successLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" style="max-width: 750px;">
+                <div class="modal-content">
+                    <div class="modal-header py-0 border-0">
+                        <!-- <button
+                            type="button"
+                            class="btn-close ct_login_btn_close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button> -->
+                    </div>
+                    <div class="modal-body py-5 mx-auto" style="max-width: 600px;">
+                        <div class="text-center">
+
+                   <div class="mb-4">
+                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15 27.5C8.09625 27.5 2.5 21.9038 2.5 15C2.5 8.09625 8.09625 2.5 15 2.5C21.9038 2.5 27.5 8.09625 27.5 15C27.5 21.9038 21.9038 27.5 15 27.5ZM15 26C17.9174 26 20.7153 24.8411 22.7782 22.7782C24.8411 20.7153 26 17.9174 26 15C26 12.0826 24.8411 9.28473 22.7782 7.22183C20.7153 5.15893 17.9174 4 15 4C12.0826 4 9.28473 5.15893 7.22183 7.22183C5.15893 9.28473 4 12.0826 4 15C4 17.9174 5.15893 20.7153 7.22183 22.7782C9.28473 24.8411 12.0826 26 15 26ZM13.535 18.1975L20.7963 10.9375L21.8563 11.9988L14.4188 19.4363C14.1843 19.6706 13.8665 19.8022 13.535 19.8022C13.2035 19.8022 12.8857 19.6706 12.6513 19.4363L8.75 15.5325L9.81125 14.4713L13.5363 18.1963L13.535 18.1975Z" fill="#FF8000"/>
+</svg>
+                   </div>
+
+                           
+                            <h4 class="ct_fs_22 ct_fw_600">Thank you for submitting your clinic!</h4>
+                            <p>Our team is currently reviewing your details to ensure everything meets our guidelines.</p>
+                            <div class="mt-5 pb-4">
+                                <a href="#" class="ct_orange_btn ct_border_radius_100 ct_fit_content mx-auto">
+                                    Go to
+                                Dashboard
+                                </a>
+                            </div>
+                            <small>
+                            Your listing will be reviewed and approved by our admin team within 24–48 hours. You’ll receive a confirmation email once your listing goes live.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- step form submit modal end-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
