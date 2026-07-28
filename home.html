@@ -215,107 +215,6 @@
         </div>
       </div>
     </section>
-    <!-- Login patient Modal S -->
-    <div
-      class="modal fade modal-xl ct_custom_modal_main ct_login_modal"
-      id="ct_login_patient_modal"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header border-0 py-0">
-            <button
-              type="button"
-              class="btn-close ct_login_btn_close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body p-0">
-            <div class="ct_login_main">
-              <div class="ct_login_left_cnt">
-                <p class="ct_fs_18">
-                  Begin your healthcare journey <br />
-                  with one click<span class="ct_fs_28 ct_fw_700">
-                    Get Started</span
-                  >
-                </p>
-              </div>
-              <form class="ct_custom_scroll">
-                <h2 class="ct_fs_20 ct_fw_600 mb-4">Log In</h2>
-                <div class="form-group mb-4">
-                  <label class="mb-2 ct_fw_400">Email</label
-                  ><input
-                    type="email"
-                    placeholder="Email"
-                    class="form-control ct_input ct_input_h_50"
-                    id="email"
-                    value=""
-                  />
-                </div>
-                <div class="form-group mb-4">
-                  <label class="mb-2 ct_fw_400">Password</label>
-                  <div class="position-relative">
-                    <input
-                      placeholder="Password"
-                      class="form-control ct_input ct_input_h_50 pe-5"
-                      type="password"
-                      id="password"
-                      value=""
-                    />
-                    <div><i class="fa-solid ct_show_eye fa-eye-slash"></i></div>
-                  </div>
-                </div>
-
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="d-flex align-items-center gap-1">
-                    <div
-                      class="form-check ct_custom_check ct_flex_shrink_0 w-auto h-auto mt-0"
-                    >
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckDefault"
-                      />
-                    </div>
-                    <label for="">Remember Me</label>
-                  </div>
-                  <div>
-                    <a
-                      href="#"
-                      class="ct_orange_text ct_fW_700"
-                      data-bs-target="#ct_forgot_password_modal"
-                      data-bs-toggle="modal"
-                      >Forgot Password?</a
-                    >
-                  </div>
-                </div>
-                <div class="mt-4">
-                  <a
-                    href="#"
-                    aria-label="Close"
-                    class="ct_orange_btn w-100"
-                    aria-disabled="false"
-                    style="pointer-events: auto; opacity: 1"
-                    >Log In</a
-                  >
-                </div>
-                <p class="mb-0 mt-2 text-center">
-                  Don't Have an Account?<!-- -->
-                  <a
-                    href=""
-                    class="ct_fw_600 ct_orange_text"
-                    data-bs-target="#ct_signup_patient_modal"
-                    data-bs-toggle="modal"
-                    >Sign Up</a
-                  >
-                </p>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Login patient Modal E -->
     <!-- Login Clinic Modal S -->
     <div
@@ -495,8 +394,13 @@
                 </div>
 
                 <div class="mt-4">
-                  <a href="#"  data-bs-target="#ct_step_form_modal"
-                    data-bs-toggle="modal"  class="ct_orange_btn w-100">Sign Up</a>
+                  <a
+                    href="#"
+                    data-bs-target="#ct_step_form_modal"
+                    data-bs-toggle="modal"
+                    class="ct_orange_btn w-100"
+                    >Sign Up</a
+                  >
                 </div>
                 <p class="mb-0 mt-2 text-center">
                   Already Have an Account?<a
@@ -508,6 +412,13 @@
                     Log In</a
                   >
                 </p>
+                <div class="text-center mt-4">
+                  <a
+                    href=""
+                    class="ct_orange_text ct_fs_14 ct_fw_500 d-flex align-items-center gap-2 justify-content-center"
+                    >Continue with <img src="assets/img/google_icon.png" alt=""
+                  /></a>
+                </div>
               </form>
             </div>
           </div>
@@ -540,7 +451,7 @@
                   >
                 </p>
               </div>
-               <form class="ct_custom_scroll">
+              <form class="ct_custom_scroll">
                 <h2 class="ct_fs_20 ct_fw_600 mb-4">Create an Account</h2>
                 <div class="row">
                   <div class="col-md-12">
@@ -606,6 +517,14 @@
                     Log In</a
                   >
                 </p>
+
+                <div class="text-center mt-4">
+                  <a
+                    href=""
+                    class="ct_orange_text ct_fs_14 ct_fw_500 d-flex align-items-center gap-2 justify-content-center"
+                    >Continue with <img src="assets/img/google_icon.png" alt=""
+                  /></a>
+                </div>
               </form>
             </div>
           </div>
@@ -676,7 +595,7 @@
       class="modal fade modal-xl ct_custom_modal_main ct_login_modal"
       id="ct_step_form_modal"
     >
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header border-0 py-0">
             <button
@@ -685,7 +604,7 @@
               data-bs-dismiss="modal"
             ></button>
           </div>
-          <div class="modal-body p-0 ct_custom_scroll">
+          <div class="modal-body p-0">
             <div
               class="ct_multistep_form_card pt-4 ct_host_process_bg ct_host_process_onboarding bg-white"
             >
@@ -706,7 +625,7 @@
                   </li>
                 </ul>
                 <fieldset class="ct_mt_60">
-                  <div class="ct_form-card">
+                  <div class="ct_form-card ct_custom_scroll">
                     <h2 class="ct_fs_35 ct_fw_600 mb-2">
                       1. Tell Us About Your Clinic
                     </h2>
@@ -714,7 +633,9 @@
                       Help us get to know your clinic by sharing your basic
                       contact information.
                     </p>
-                    <div class="row mt-5">
+                    <div
+                      class="row mt-5 ct_step_form_scroll_main ct_custom_scroll"
+                    >
                       <div class="col-md-6">
                         <div class="form-group mb-4">
                           <label for="" class="mb-2 ct_fw_400"
@@ -848,7 +769,7 @@
                       </div>
                     </div>
                   </div>
-               
+
                   <button
                     type="button"
                     class="ct_orange_btn ct_form_next float-end"
@@ -862,7 +783,7 @@
                   >
                 </fieldset>
                 <fieldset class="ct_mt_60">
-                  <div class="ct_form-card">
+                  <div class="ct_form-card ct_custom_scroll">
                     <h2 class="ct_fs_35 ct_fw_600 mb-2">
                       2. Describe Your Clinic
                     </h2>
@@ -870,7 +791,9 @@
                       Add key information about your clinic to help patients
                       understand your services and facilities.
                     </p>
-                    <div class="row mt-5">
+                    <div
+                      class="row mt-5 ct_step_form_scroll_main ct_custom_scroll"
+                    >
                       <div class="col-md-12">
                         <div class="form-group mb-4">
                           <label for="" class="mb-2 ct_fw_400"
@@ -1037,8 +960,7 @@
                   </div>
                   <!-- <input type="button" name="previous" class="previous" value="Previous" />
                                 <input type="button" name="next" class="ct_form_next" value="Next" /> -->
-                  <br />
-                  <br />
+
                   <button
                     type="button"
                     class="ct_orange_btn ct_form_next float-end"
@@ -1053,7 +975,7 @@
                   </button>
                 </fieldset>
                 <fieldset class="ct_mt_60">
-                  <div class="ct_form-card">
+                  <div class="ct_form-card ct_custom_scroll">
                     <h2 class="ct_fs_35 ct_fw_600 mb-2">
                       3. Services & Facilities
                     </h2>
@@ -1061,7 +983,9 @@
                       Tell patients about your specialties, treatments, and the
                       support services your clinic provides.
                     </p>
-                    <div class="row mt-5">
+                    <div
+                      class="row mt-5 ct_step_form_scroll_main ct_custom_scroll"
+                    >
                       <div class="col-md-12">
                         <div class="mb-4">
                           <p class="ct_fs_18 ct_fw_500 mb-2">
@@ -1552,8 +1476,7 @@
                   </div>
                   <!-- <input type="button" name="previous" class="previous" value="Previous" />
                                 <input type="button" name="next" class="ct_form_next" value="Next" /> -->
-                  <br />
-                  <br />
+
                   <button
                     type="button"
                     class="ct_orange_btn ct_form_next float-end"
@@ -1568,7 +1491,7 @@
                   </button>
                 </fieldset>
                 <fieldset>
-                  <div class="ct_form-card">
+                  <div class="ct_form-card ct_custom_scroll">
                     <h2 class="ct_fs_35 ct_fw_600 mb-2">
                       4. Verify Your Clinic
                     </h2>
@@ -1576,7 +1499,9 @@
                       Upload the required documents to verify your clinic and
                       complete your registration.
                     </p>
-                    <div class="row mt-5">
+                    <div
+                      class="row mt-5 ct_step_form_scroll_main ct_custom_scroll"
+                    >
                       <div class="col-md-12">
                         <div class="form-group mb-4">
                           <label for="" class="mb-2 ct_fw_400"
@@ -1864,8 +1789,7 @@
                       </div>
                     </div>
                   </div>
-                  <br />
-                  <br />
+
                   <button
                     type="button"
                     class="ct_orange_btn float-end"
@@ -1891,50 +1815,68 @@
     <!-- step form modal end -->
 
     <!-- step form submit modal -->
-      <div
-            class="modal fade modal-lg"
-            id="become_host_form_success"
-            tabindex="-1"
-            aria-labelledby="become_host_form_successLabel"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog modal-dialog-centered" style="max-width: 750px;">
-                <div class="modal-content">
-                    <div class="modal-header py-0 border-0">
-                        <!-- <button
+    <div
+      class="modal fade modal-lg"
+      id="become_host_form_success"
+      tabindex="-1"
+      aria-labelledby="become_host_form_successLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 750px">
+        <div class="modal-content">
+          <div class="modal-header py-0 border-0">
+            <!-- <button
                             type="button"
                             class="btn-close ct_login_btn_close"
                             data-bs-dismiss="modal"
                             aria-label="Close"
                         ></button> -->
-                    </div>
-                    <div class="modal-body py-5 mx-auto" style="max-width: 600px;">
-                        <div class="text-center">
+          </div>
+          <div class="modal-body py-5 mx-auto" style="max-width: 600px">
+            <div class="text-center">
+              <div class="mb-4">
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M15 27.5C8.09625 27.5 2.5 21.9038 2.5 15C2.5 8.09625 8.09625 2.5 15 2.5C21.9038 2.5 27.5 8.09625 27.5 15C27.5 21.9038 21.9038 27.5 15 27.5ZM15 26C17.9174 26 20.7153 24.8411 22.7782 22.7782C24.8411 20.7153 26 17.9174 26 15C26 12.0826 24.8411 9.28473 22.7782 7.22183C20.7153 5.15893 17.9174 4 15 4C12.0826 4 9.28473 5.15893 7.22183 7.22183C5.15893 9.28473 4 12.0826 4 15C4 17.9174 5.15893 20.7153 7.22183 22.7782C9.28473 24.8411 12.0826 26 15 26ZM13.535 18.1975L20.7963 10.9375L21.8563 11.9988L14.4188 19.4363C14.1843 19.6706 13.8665 19.8022 13.535 19.8022C13.2035 19.8022 12.8857 19.6706 12.6513 19.4363L8.75 15.5325L9.81125 14.4713L13.5363 18.1963L13.535 18.1975Z"
+                    fill="#FF8000"
+                  />
+                </svg>
+              </div>
 
-                   <div class="mb-4">
-                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M15 27.5C8.09625 27.5 2.5 21.9038 2.5 15C2.5 8.09625 8.09625 2.5 15 2.5C21.9038 2.5 27.5 8.09625 27.5 15C27.5 21.9038 21.9038 27.5 15 27.5ZM15 26C17.9174 26 20.7153 24.8411 22.7782 22.7782C24.8411 20.7153 26 17.9174 26 15C26 12.0826 24.8411 9.28473 22.7782 7.22183C20.7153 5.15893 17.9174 4 15 4C12.0826 4 9.28473 5.15893 7.22183 7.22183C5.15893 9.28473 4 12.0826 4 15C4 17.9174 5.15893 20.7153 7.22183 22.7782C9.28473 24.8411 12.0826 26 15 26ZM13.535 18.1975L20.7963 10.9375L21.8563 11.9988L14.4188 19.4363C14.1843 19.6706 13.8665 19.8022 13.535 19.8022C13.2035 19.8022 12.8857 19.6706 12.6513 19.4363L8.75 15.5325L9.81125 14.4713L13.5363 18.1963L13.535 18.1975Z" fill="#FF8000"/>
-</svg>
-                   </div>
-
-                           
-                            <h4 class="ct_fs_22 ct_fw_600">Thank you for submitting your clinic!</h4>
-                            <p>Our team is currently reviewing your details to ensure everything meets our guidelines.</p>
-                            <div class="mt-5 pb-4">
-                                <a href="#" class="ct_orange_btn ct_border_radius_100 ct_fit_content mx-auto">
-                                    Go to
-                                Dashboard
-                                </a>
-                            </div>
-                            <small>
-                            Your listing will be reviewed and approved by our admin team within 24–48 hours. You’ll receive a confirmation email once your listing goes live.
-                            </small>
-                        </div>
-                    </div>
-                </div>
+              <h4 class="ct_fs_22 ct_fw_600">
+                Thank you for submitting your clinic!
+              </h4>
+              <p>
+                Our team is currently reviewing your details to ensure
+                everything meets our guidelines.
+              </p>
+              <div class="mt-5 pb-4">
+                <a
+                  href="#"
+                  class="ct_orange_btn ct_border_radius_100 ct_fit_content mx-auto"
+                >
+                  Go to Dashboard
+                </a>
+              </div>
+              <small>
+                Your listing will be reviewed and approved by our admin team
+                within 24–48 hours. You’ll receive a confirmation email once
+                your listing goes live.
+              </small>
             </div>
+          </div>
         </div>
-         <!-- step form submit modal end-->
+      </div>
+    </div>
+    <!-- step form submit modal end-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>

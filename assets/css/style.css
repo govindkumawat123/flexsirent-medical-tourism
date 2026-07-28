@@ -2813,6 +2813,7 @@ span.ct_pricing_badge {
 
 .ct_form-card {
   text-align: left;
+  margin-bottom: 30px;
 }
 
 #msform fieldset:not(:first-of-type) {
@@ -5239,4 +5240,49 @@ a{
 
 .ct_host_process_onboarding:after{
 position: relative !important;
+}
+.ct_host_process_onboarding {
+    padding-block: 30px;
+    height: calc(100dvh - 58px);
+}
+
+.ct_form-card {
+    height: calc(100dvh - 341px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+}
+.et_doctor_drops li a:hover p{
+  color: #fff;
+}
+
+
+.ct_time_slot_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.ct_time_slot_btn {
+    white-space: nowrap;
+    height: 37px;
+    font-size: 12px;
+    padding-inline: 14px;
+    width: 83px;
+    border-color: #E5E7EB;
+    color: #111827;
+
+}
+.ct_time_slot_btn.active{
+  border-color: var(--orange);
+  color: var(--orange);
+  font-weight: 700;
+}
+
+@media (max-width: 767px){
+
+    .ct_time_slot_btn{
+        flex: 0 0 calc(50% - 6px);
+    }
+
 }
