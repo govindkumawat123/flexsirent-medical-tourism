@@ -5226,3 +5226,7 @@ ul#ct_bhk_drop {
     max-width: 331px;
     min-width: 331px;
 }
+
+a{
+  cursor: pointer;
+}
